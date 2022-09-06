@@ -1,0 +1,309 @@
+{
+    "JSON-languaje":"spanish",
+    "type":"curriculum",
+    "name":"Andrés Hugo Bernárdez",
+    "id":"32379265-ESP",
+
+    "education":
+    {
+        "titles":
+        [
+            
+            {
+                "name": "Bachiller, Modalidad Producción de Bienes y Servicios con especialización de Técnico en Instalaciones Electromecánicas",
+                "ending":"2004",
+                "average":"7.97",
+                "institution":"Esc. Gral. Ing. M. N. Savio EET N°2",
+                "level":"secundario",
+                "observations":""
+
+            },
+            
+            {
+             
+                "name": "Técnico Universitario en Electrónica",
+                "ending":"2014",
+                "average":"7.06",
+                "institution":"UTN San Nicolás",
+                "level":"universitario",
+                "observations":"Por haber terminado todas las materias universitarias hasta 4to año de la carrera."
+
+                          
+            },
+           
+            {
+             
+                "name": "Profesor de Educación Primaria",
+                "ending":"2019",
+                "average":"9.17",
+                "institution":"ISFD y T N°128",
+                "level":"terciario",
+                "observations":""
+
+                          
+            },
+            
+            {
+             
+                "name": "Ingeniería Electrónica",
+                "ending":"2023 (estimado)",
+                "average":"7,76",
+                "institution":"ISFD y T N°128",
+                "level":"terciario",
+                "observations":""
+
+                          
+            }
+        ],
+
+        "recognitions":
+        [
+            
+            {
+                "name":"Mejor compañero",
+                "ending":"2018",
+                "institution":"ISFD y T N°128",
+                "observations":"Obtuve el diploma de Mejor Compañero en mi carrera de profesorado de primaria en el ISFD y T N°128"
+            
+
+            }
+        ]        
+    },
+
+    "experience":
+    [
+        
+        {
+            "name":"Profesor de Educación Primaria",
+            "company":"Escuelas en general",
+            "category":"Educación",
+            "tasks performed":
+                [
+                    "Planificación de clases",
+                    "Desarrollo de clases",
+                    "Evaluación de los estudiantes y de las clases"
+                ],
+            "from":"junio 2019",
+            "until":"agosto 2022"
+        },
+        
+        {
+            "name":"Técnico a domicilio",
+            "company":"freelancer",
+            "category":"Reparaciones en general de casas",
+            "tasks performed":
+                [
+                    "Trabajos de electricidad",
+                    "Colocación de Cuadros y Repisas",
+                    "Reparación de persianas",
+                    "Reparación de canillas y fontanería en general",
+                    "Reparaciones en general"
+
+                ],
+            "from":"enero 2018",
+            "until":"noviembre 2018"
+        },
+        
+        {
+            "name":"Ayudante de técnico electricista",
+            "company":"Taller Pro",
+            "category":"Electricidad del automotor",
+            "tasks performed":
+                [
+                    "Asistencia técnica",
+                    "Mantenimiento eléctrico",
+                    "Cableado del automotor",
+                    "Detección de fallas"
+                    
+
+                ],
+            "from":"septiembre 2014",
+            "until":"septiembre 2015"
+        },
+        
+        {
+            "name":"Programador",
+            "company":"Tesis Automation & IT",
+            "category":"IT",
+            "tasks performed":
+                [
+                    "Revisión de Base de Datos",
+                    "Bajada de información",
+                    "Programación de programas en C para administrar base de datos",
+                    "Programación de aplicaciones dirigidas a usuarios de la empresa",
+                    "Asistencia a usuarios"
+                    
+
+                ],
+            "from":"abril 2013",
+            "until":"febrero 2014"
+        },
+        
+        {
+            "name":"Vendedor",
+            "company":"Kiosco propio",
+            "category":"Comercio",
+            "tasks performed":
+                [
+                    "Vender productos",
+                    "Comprar mercadería",
+                    "Mantenimiento del local"
+                    
+
+                ],
+            "from":"septiembre 2010",
+            "until":"enero 2011"
+        },
+        
+        {
+            "name":"Ayudante de mecánico",
+            "company":"Taller El Pato",
+            "category":"Taller mecánico de automotores diésel y nafteros",
+            "tasks performed":
+                [
+                    "Tareas de mantenimiento en general",
+                    "Asistencia al mecánico",
+                    "Desarmar y armar piezas mecánicas: Tren delantero, tapa de cilindro, block, etc."
+
+                    
+
+                ],
+            "from":"marzo de 2007",
+            "until":"junio de 2009"
+        },
+        
+        {
+            "name":"Operario",
+            "company":"Fábrica de Papas Fritas Galante",
+            "category":"Fábrica de productos de copetín",
+            "tasks performed":
+                [
+                    "Preparación del producto",
+                    "Cocción del producto",
+                    "Limpieza del lugar de trabajo"
+
+                    
+
+                ],
+            "from":"marzo de 2007",
+            "until":"junio de 2009"
+        },
+        
+        {
+            "name":"Pasante de técnico",
+            "company":"Ecofrío",
+            "category":"Refrigeración y calefacción",
+            "tasks performed":
+                [
+                    "Asistencia técnica",
+                    "Ayuda en la instalación de aire acondicionado"
+
+                    
+
+                ],
+            "from":"julio 2003",
+            "until":"febrero 2004"
+        },
+        
+        {
+            "name":"Ayudante de depósito",
+            "company":"La Casa del Parabrisas",
+            "category":"venta de autopartes y accesorios para automotor",
+            "tasks performed":
+                [
+                    "Colocación de accesorios en vehículos",
+                    "Logística del almacén"
+
+                    
+
+                ],
+            "from":"diciembre 2002",
+            "until":"febrero 2003"
+        }
+
+    ],
+
+    "computing":
+    {
+        "programming languajes":
+        [
+            {
+                "name":"C",
+                "level":"intermedio"
+            },
+            {
+                "name":"C++",
+                "level":"básico"
+            },
+            {
+                "name":"HTML",
+                "level":"básico"
+            },
+            {
+                "name":"Javascript",
+                "level":"básico"
+            },
+            {
+                "name":"Assembler",
+                "level":"básico"
+            }
+        ],
+        "database":
+        [
+            {
+                "name":"Sybase SQL",
+                "level":"básico"
+            }
+        ],
+        "SO":
+        [
+            {
+                "name":"Windows",
+                "level":"intermedio"
+            },
+            {
+                "name":"Linux",
+                "level":"básico"
+            }
+        ],
+        "office":
+        [
+            {
+                "name":"Microsoft Office",
+                "level":"intermedio"
+            },
+            {
+                "name":"Herramientas de diseño gráfico",
+                "level":"básico"
+            }
+        ]
+    },
+    "languajes":
+    [
+        {
+            "name":"Inglés",
+            "level":"intermedio"
+        },
+        {
+            "name":"Español",
+            "level":"nativo"
+        }
+    ],
+    "virtues":
+    [
+        "Reservado",
+        "Perseverante",
+        "Responsable",
+        "Proactivo",
+        "Capaz de estudiar y capacitarme continuamente",
+        "Resiliente"
+    ],
+    "supplementary data":
+    [
+        "Carnet de Conducir: Sí, clase A3-B1.",
+        "Movilidad propia: Sí.",
+        "Disponibilidad para viajar: Sí.",
+        "Disponibilidad para reubicarse: Negociable."
+    ]
+
+}
