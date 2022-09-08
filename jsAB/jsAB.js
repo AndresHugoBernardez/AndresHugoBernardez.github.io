@@ -204,10 +204,10 @@ function mostrarExperiencia(posts) {
             }
 
             from = document.createElement('li');
-            from.innerHTML="Institución: "+posts["experience"][i]["from"];
+            from.innerHTML="Desde: "+posts["experience"][i]["from"];
             lista.appendChild(from);
             until = document.createElement('li');
-            until.innerHTML="Observaciones: "+posts["experience"][i]["until"];
+            until.innerHTML="Hasta: "+posts["experience"][i]["until"];
             lista.appendChild(until);
 
             contenedor.appendChild(lista);
