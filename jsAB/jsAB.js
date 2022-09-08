@@ -22,6 +22,8 @@ window.addEventListener('load',(event)=>{
                 })
         .then(jsondata => {
             posts=jsondata;
+            mostrarExperiencia(posts);
+
         });
     
 
@@ -44,7 +46,7 @@ window.addEventListener('load',(event)=>{
     BotonVirtudes.addEventListener('click',()=>mostrarVirtudes(posts));
     BotonComplementarios.addEventListener('click',()=>mostrarComplementarios(posts));  
             
-    mostrarExperiencia(posts);
+    
         });
     
  
