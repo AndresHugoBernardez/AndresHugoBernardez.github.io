@@ -22,7 +22,7 @@ window.addEventListener('load',(event)=>{
                 })
         .then(jsondata => {
             posts=jsondata;
-            
+            mostrarExperiencia(posts);
 
         });
     
