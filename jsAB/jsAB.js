@@ -427,7 +427,7 @@ function mostrarComplementarios(posts) {
         titulo.innerHTML =  "Datos Complementarios:";
         contenedor.appendChild(titulo);
 
-    
+     
         for (let i in posts["supplementary data"])
         {
             name = document.createElement('p');
