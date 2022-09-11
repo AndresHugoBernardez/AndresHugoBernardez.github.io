@@ -2,6 +2,10 @@
     "JSON-languaje":"Idioma del archivo: ",
     "type":"Tipo: ",
     "id":"ID: ",
+    "age":"Edad: ",
+    "Date of Birth":"Fecha de nacimiento: ",
+    "civil state":"Estado Civil: ",
+    "address":"Lugar de residencia: ",
 
     "education":"Educación: ",
     "titles":"Títulos: ",
