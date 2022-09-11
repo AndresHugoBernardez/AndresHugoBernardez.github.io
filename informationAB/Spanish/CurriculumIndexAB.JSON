@@ -1,0 +1,31 @@
+{
+    "JSON-languaje":"Idioma del archivo: ",
+    "type":"Tipo: ",
+    "id":"ID: ",
+
+    "education":"Educación: ",
+    "titles":"Títulos: ",
+    "name": "",
+    "ending":"Finalización: ",
+    "average":"7.97: ",
+    "institution":"Institución: ",
+    "level":"Nivel: ",
+    "observations":"Observaciones: ",
+    "recognitions":"Reconocimientos: ",
+    "experience":"Experiencia: ",
+    "company":"Empresa: ",
+    "category":"Rubro: ",
+    "tasks performed":"Tareas Realizadas: ",
+    "from":"Desde: ",
+    "until":"Hasta: ",
+    "computing":"Informática: ",
+    "programming languajes":"Lenguajes de programación: ",
+    "database":"Bases de datos: ",
+    "SO":"Sistemas Operativos: ",
+    "office":"Office: ",
+    "languajes":"Idiomas: ",
+    "virtues":"Virtudes: ",
+    "supplementary data":"Datos Complementarios: "
+  
+
+}
