@@ -43,7 +43,7 @@ var posts2=null;
 
 window.addEventListener('load',(event)=>{
 
-    fetch("https://andreshugobernardez.github.io/informationAB/Spanish/CurriculumIndexAB.JSON")
+    fetch("./informationAB/Spanish/CurriculumIndexAB.JSON")
         .then(response => {
                 return response.json();
                 })
@@ -54,7 +54,7 @@ window.addEventListener('load',(event)=>{
         });
 
    
-    fetch("https://andreshugobernardez.github.io/informationAB/Spanish/CurriculumAB.JSON")
+    fetch("./informationAB/Spanish/CurriculumAB.JSON")
         .then(response => {
                 return response.json();
                 })
