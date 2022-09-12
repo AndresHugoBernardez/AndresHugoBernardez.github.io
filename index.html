@@ -32,9 +32,23 @@
         
         
     }
-    .div1{
+
+    .divShowroom{
+        width: 100%;
+        border-top-style: solid;
+        border-top-width: solid 3px;
+        border-top-color: blue;
+        
         
     }
+    .stlnivel0{font-size: 35px;font-weight:bold;}
+    .stlnivel1{font-size: 30px;font-weight:bold;}
+    .stlnivel2{font-size: 25px;}
+    .stlnivel3{font-size: 22px;}
+    .stlnivel4{font-size: 16px;}
+    .stlnivel5{font-size: 13px;}
+    
+    
     .divError{
         background-color: red;
 
@@ -47,27 +61,35 @@
     header{
         background-color: darkslateblue;
         min-height: 15%;
-        min-width:600px;
+        min-width:450px;
         color:white;
         
         padding:10px;
         
         
     }
-    input{
+    label{
         font-size:larger;
     }
 
     @media screen and (max-width: 800px) {
     h1{
-        font-size:6vw;
+        font-size:5.8vw;
     }
-    input,h2{
-        font-size:4vw;
+    input,label,h2{
+        font-size:3.7vw;
     }
     p,li,dd,a{
         font-size: 3vw;
     }
+
+    .stlnivel0{font-size: 5.8vw;font-weight:bold;}
+    .stlnivel1{font-size: 4.8vw;font-weight:bold;}
+    .stlnivel2{font-size: 4.2vw;}
+    .stlnivel3{font-size: 3.9vw;}
+    .stlnivel4{font-size: 3.2vw;}
+    .stlnivel5{font-size: 3vw;}
+
     }
     
 
@@ -82,25 +104,40 @@
 <header>
 
 <h1> Curriculum de Andrés Hugo Bernárdez</h1>
-<p> *Página aún en contrucción: Última actualización 9/9/2022</p>
+<p> *Página aún en contrucción: Última actualización 12/9/2022</p>
 </header>
 
-<input type="button" value="Experiencia" id="BotonExperiencia">
-<input type="button" value="Estudios" id="BotonEstudios">
-<input type="button" value="Informática" id="BotonInformatica">
-<input type="button" value="Idiomas" id="BotonIdiomas">
-<input type="button" value="Virtudes" id="BotonVirtudes">
-<input type="button" value="Datos Complementarios" id="BotonComplementario">
-<input type="button" value="Portfolio" id="Portfolio">
+<div style="min-height: 70%;">
+
+<form id="formularioMostrar">
+<input type="checkbox" checked="true" id="BotonDatos">
+<label for="BotonDatos">Datos</label>
+<input type="checkbox" checked="true" id="BotonExperiencia">
+<label for="BotonDatos">Experiencia</label>
+<input type="checkbox" checked="true" id="BotonEstudios">
+<label for="BotonDatos">Estudios</label>
+<input type="checkbox" checked="true" id="BotonInformatica">
+<label for="BotonDatos">Informática</label>
+<input type="checkbox" checked="true" id="BotonIdiomas">
+<label for="BotonDatos">Idiomas</label>
+<input type="checkbox" checked="true" id="BotonVirtudes">
+<label for="BotonDatos">Virtudes</label>
+<input type="checkbox" checked="true" id="BotonComplementario">
+<label for="BotonDatos">Datos Complementarios</label>
+<input type="checkbox" checked="true" id="Portfolio">
+<label for="BotonDatos">Portfolio</label>
+</form>
 
 <div id="errorSquare" class="divError hide"></div>
 
 
-<table style="width:100%;min-height: 55%;">
+
+<table style="width:100%;" id="tablaDatos">
     <tr style="width: 100%;">
-        <td  style="width:70%;min-width:400px;vertical-align: top;">
+        <td  style="width:70%;min-width:250px;vertical-align: top;">
             
-        <div id="contenedor" class="div1">
+            <div id="elemDatos" class="divShowroom" ></div>
+    
         </td>
         <td style="min-width:200px;width:40%;vertical-align: top;">
             <img src="photosAB/perfil.jpg" style="width:100%;">
@@ -108,6 +145,21 @@
         </td>
     </tr>
 </table>
+
+            <div id="contenedor" class="divShowroom" ></div>
+            <div id="elemExperiencia" class="divShowroom" ></div>
+            <div id="elemEstudios" class="divShowroom" ></div>
+            <div id="elemInformatica" class="divShowroom" ></div>
+            <div id="elemIdiomas" class="divShowroom" ></div>
+            <div id="elemVirtudes" class="divShowroom"></div>
+            <div id="elemComplementarios" class="divShowroom" ></div>
+            <div id="elemPortafolio" class="divShowroom" >
+                <h1>Portfolio:</h1>
+                <a href="./portfolioAB/Calculadora.html">CALCULADORA</a>
+                <br>
+                <br>
+            </div>
+
 </div>
 
 <footer>
