@@ -9,7 +9,8 @@ var BotonVirtudes;
 var BotonIdiomas;
 var BotonComplementarios;
 var BotonPortfolio;
-var formularioMostrar;
+var botonMostrar;
+var botonOcultar;
 
 var contenedor ;
 var errorElement;
@@ -24,24 +25,52 @@ var elemComplementarios;
 var elemPortafolio;
 var tablaDatos;
 
+var formularioMostrar;
+var botonOcultar;
+var botonMostrar;
 
-var pepe={
-    chicos:["pepe","luis"],
-    auto:
-        {modelo:"lamborgini",
-        velocidades:["cien Kph","200 Kph"]
 
-        },
-    fabrica:"Pepitos CO",
-    mascota:"Perro"
-};
-var arrpepe=["hola","chau","goodby"];
+
 
 var posts = null;
 var posts2=null;
 
 
 window.addEventListener('load',(event)=>{
+
+    elemDatos= document.getElementById("elemDatos");
+    elemExperiencia= document.getElementById("elemExperiencia");
+    elemEstudios= document.getElementById("elemEstudios");
+    elemInformatica= document.getElementById("elemInformatica");
+    elemIdiomas= document.getElementById("elemIdiomas");
+    elemVirtudes= document.getElementById("elemVirtudes");
+    elemComplementarios= document.getElementById("elemComplementarios");
+
+    tablaDatos= document.getElementById("tablaDatos");
+    elemPortafolio= document.getElementById("elemPortafolio");
+
+
+    
+
+
+
+    BotonDatos= document.getElementById("BotonDatos");
+    BotonExperiencia= document.getElementById("BotonExperiencia");
+    BotonEstudios= document.getElementById("BotonEstudios");
+    BotonInformatica= document.getElementById("BotonInformatica");
+    BotonVirtudes= document.getElementById("BotonVirtudes");
+    BotonIdiomas= document.getElementById("BotonIdiomas");
+    BotonComplementarios= document.getElementById("BotonComplementario");
+    BotonPortfolio= document.getElementById("Portfolio");
+
+    botonMostrar= document.getElementById("botonMostrar");
+    botonOcultar= document.getElementById("botonOcultar");
+
+    formularioMostrar= document.getElementById("formularioMostrar");
+
+
+    errorElement = document.getElementById("errorSquare");
+
 
     fetch("./informationAB/Spanish/CurriculumIndexAB.JSON")
         .then(response => {
@@ -60,7 +89,14 @@ window.addEventListener('load',(event)=>{
                 })
         .then(jsondata => {
             posts=jsondata;
+
+            
+
+            
+        
+
            // mostrarExperiencia(posts);
+           
            appendDatos(elemDatos,posts,posts2);
            appendContenido(elemExperiencia,posts["experience"],posts2,0,posts2["experience"]);
            appendContenido(elemEstudios,posts["education"],posts2,0,posts2["education"]);
@@ -72,44 +108,22 @@ window.addEventListener('load',(event)=>{
         });
 
 
+        
     
-    tablaDatos= document.getElementById("tablaDatos");
-    elemDatos= document.getElementById("elemDatos");
-    elemExperiencia= document.getElementById("elemExperiencia");
-    elemEstudios= document.getElementById("elemEstudios");
-    elemInformatica= document.getElementById("elemInformatica");
-    elemIdiomas= document.getElementById("elemIdiomas");
-    elemVirtudes= document.getElementById("elemVirtudes");
-    elemComplementarios= document.getElementById("elemComplementarios");
-    elemPortafolio= document.getElementById("elemPortafolio");
-
-    contenedor= document.getElementById("contenedor");
+   
+    //contenedor= document.getElementById("contenedor");
 
    
  
-
-
-
-    BotonDatos= document.getElementById("BotonDatos");
-    BotonExperiencia= document.getElementById("BotonExperiencia");
-    BotonEstudios= document.getElementById("BotonEstudios");
-    BotonInformatica= document.getElementById("BotonInformatica");
-    BotonVirtudes= document.getElementById("BotonVirtudes");
-    BotonIdiomas= document.getElementById("BotonIdiomas");
-    BotonComplementarios= document.getElementById("BotonComplementario");
-    BotonPortfolio= document.getElementById("Portfolio");
-
-    formularioMostrar= document.getElementById("formularioMostrar");
-
-
-    errorElement = document.getElementById("errorSquare");
 
     
 
 
 
     formularioMostrar.addEventListener('click',()=>verificarCheckBoxes()); 
-
+    botonOcultar.addEventListener('click',()=>uncheckAll());
+    botonMostrar.addEventListener('click',()=>checkAll());
+    verificarCheckBoxes();
   
     
         });
@@ -157,16 +171,21 @@ function appendString(Padre,cadena,nivel,tagSeleccionado)
 function appendDatos(padre,objetivo,nombresDeEtiquetas)
 {
     let cadena="";
+    
 
     appendString(padre,objetivo["name"],0,"h1");
-    cadena=nombresDeEtiquetas["age"]+objetivo["age"];
+    cadena="<b>"+nombresDeEtiquetas["age"]+"</b>"+objetivo["age"];
     appendString(padre,cadena,2,"dt");
-    cadena=nombresDeEtiquetas["Date of Birth"]+objetivo["Date of Birth"];
+    cadena="<b>"+nombresDeEtiquetas["Date of Birth"]+"</b>"+objetivo["Date of Birth"];
     appendString(padre,cadena,2,"dt");
-    cadena=nombresDeEtiquetas["civil state"]+objetivo["civil state"];
+    cadena="<b>"+nombresDeEtiquetas["civil state"]+"</b>"+objetivo["civil state"];
     appendString(padre,cadena,2,"dt");
-    cadena=nombresDeEtiquetas["address"]+objetivo["address"];
+    cadena="<b>"+nombresDeEtiquetas["address"]+"</b>"+objetivo["address"];
     appendString(padre,cadena,2,"dt");
+    cadena="<b>E-mail: </b><a href='mailto:andreshugobernardez@gmail.com?Subject=Interesado%20en%20contratar%20sus%20servicios'>andreshugobernardez@gmail.com.ar</a>"
+    appendString(padre,cadena,2,"dt");
+  
+
 
 }
 
@@ -190,7 +209,7 @@ function  appendContenido(padre,objetivo,nombresDeEtiquetas,nivel,strAnexo)
         case "string":
             strOut=strAnexo+objetivo;
             //console.log(strOut);
-            appendString(padre,strOut,nivel,'dt');
+            appendString(padre,strOut,nivel,'p');
         break;
 
         case "object":
@@ -198,7 +217,7 @@ function  appendContenido(padre,objetivo,nombresDeEtiquetas,nivel,strAnexo)
            
             strOut=strAnexo;
             //console.log(strOut);
-            appendString(padre,strOut,nivel,'dt');
+            appendString(padre,strOut,nivel,'p');
 
             if(objetivo[0])
             {
@@ -214,8 +233,7 @@ function  appendContenido(padre,objetivo,nombresDeEtiquetas,nivel,strAnexo)
                 for(let dato in objetivo)
                 {
                     if(dato=="name")
-                    {   
-                        appendString(padre,objetivo[dato],nivel,'h1');
+                    {                           appendString(padre,objetivo[dato],nivel,'h1');
                     }
 
                     else 
@@ -268,6 +286,30 @@ function verificarCheckBox(chkbxElement,elementoAMostrar)
     else elementoAMostrar.style.display='none';
 }
 
+function checkAll()
+{
+    BotonDatos.checked=true;
+    BotonExperiencia.checked=true;
+    BotonEstudios.checked=true;
+    BotonInformatica.checked=true;
+    BotonIdiomas.checked=true;
+    BotonVirtudes.checked=true;
+    BotonComplementarios.checked=true;
+    BotonPortfolio.checked=true;
+    verificarCheckBoxes()
+}
+function uncheckAll()
+{
+    BotonDatos.checked=false;
+    BotonExperiencia.checked=false;
+    BotonEstudios.checked=false;
+    BotonInformatica.checked=false;
+    BotonIdiomas.checked=false;
+    BotonVirtudes.checked=false;
+    BotonComplementarios.checked=false;
+    BotonPortfolio.checked=false;
+    verificarCheckBoxes()
+}
 function verificarCheckBoxes()
 {
     verificarCheckBox(BotonDatos,tablaDatos);
@@ -279,8 +321,7 @@ function verificarCheckBoxes()
     verificarCheckBox(BotonComplementarios,elemComplementarios);
     verificarCheckBox(BotonPortfolio,elemPortafolio);
     
-
-
+    
 
 }
 
