@@ -6,22 +6,29 @@
 
 <head>
 <title>ANDRÉS HUGO BERNÁRDEZ</title>
+<script src="jsAB/jsLanguagesLabels.js"></script>
 <script src="jsAB/jsAB.js"></script>
+
 <style >
     html,body
 {
      width:100%;
      height:100%;
      margin:0;
-     padding:0
+     padding:0;
+    /* color:white;
+     background-color: rgb(12, 12, 63);*/
 }
 
-    
+
+    h1{
+        font-size: 4.7vw;
+    }
 
     footer{
         position:relative;
         background-color: blue;
-        background: linear-gradient(to bottom, rgb(54, 140, 240),rgb(8, 8, 167));
+        background: linear-gradient(to bottom, rgb(54, 141, 240),rgb(9, 9, 167));
         bottom:0px;
         width: 100%;
         min-height: 15%;
@@ -49,6 +56,7 @@
     
     .divError{
         background-color: red;
+        
 
 
 
@@ -57,13 +65,17 @@
         display: none;
     }
     header{
+        
+      
+        
+    
         background-color: blue;
         background: /*darkslateblue;*/ linear-gradient(to bottom, rgb(8, 8, 167), rgb(54, 140, 240));
         min-height: 15%;
         
         color:white;
         
-        padding:10px;
+        padding:10px 10px 10px 10px;
         
         
     }
@@ -71,11 +83,75 @@
         font-size:larger;
     }
 
+    
+
+    button{
+        background-color: transparent;
+        border:none;
+        font-weight: bolder;
+        font-size:1.8vw;
+        padding:1vw 3vw;
+        display:inline-block;
+        margin:0;
+       /* border-style: solid;
+        border-color: lightblue blue blue lightblue;*/
+        border-width: 1px;
+        border-radius: 1vw;
+        
+        
+
+        
+        
+    }
+    button:hover{
+        background-color: blue;
+        color:white;
+        /*border-color: blue;*/
+        
+    }
+
+    .SLIDEDOWN
+    {
+        display: inline-block;
+        margin:0;
+        padding:0;
+        border:none;
+        margin-right: 10px;
+    }
+    .menuprincipal{
+        background-color: darkcyan;
+        width:260px;
+        display:none;
+        position:absolute;
+        z-index: 1;
+        margin:0;
+    }
+    .SLIDEDOWN:hover .menuprincipal
+    {
+        display:block ;
+    }
+
+    .menuprincipal div
+    {
+        display:inline-block;
+        width:230px;
+        padding:0;
+        margin:0;
+
+
+    }
+    .menuprincipal div:hover
+    {
+        background-color: blue;
+        color:white
+       
+    }
+ 
     @media screen and (max-width: 800px) {
     h1{
         font-size:5.8vw;
     }
-    input,label,h2{
+    input,label,h2,button{
         font-size:3.7vw;
     }
     p,li,dd,a{
@@ -102,38 +178,73 @@
 
 <header>
 
-<h1> Curriculum de Andrés Hugo Bernárdez</h1>
-<p> *Página aún en contrucción: Última actualización 27/9/2022</p>
+<h1 id="EtiquetaCurriculumAB"> Curriculum de Andrés Hugo Bernárdez</h1>
+<br>
+<br>
+<div style="height: 0px;">
+<div class="SLIDEDOWN" style="transform: translateY(-100%);" >
+    <button class="Dropbutton">MENU</button><div class="menuprincipal">
+        <form id="formularioMostrar">
+        <input type="checkbox" checked="true" id="BotonDatos">
+        <label for="BotonDatos"><div id="etiquetaDatos">Datos</div></label>
+        <br>
+        <input type="checkbox" checked="true" id="BotonExperiencia">
+        <label for="BotonExperiencia"><div id="etiquetaExperiencia">Experiencia</div></label>
+        <br>
+        
+        
+        <input type="checkbox" checked="true" id="BotonEstudios">
+        <label for="BotonEstudios"><div id="etiquetaEstudios">Estudios</div></label>
+        <br>
+        
+        
+        <input type="checkbox" checked="true" id="BotonInformatica">
+        <label for="BotonInformatica"><div id="etiquetaInformatica">Informática</div></label>
+        <br>
+        
+        
+        <input type="checkbox" checked="true" id="BotonIdiomas">
+        <label for="BotonIdiomas"><div id="etiquetaIdiomas">Idiomas</div></label>
+        <br>
+        
+        
+        <input type="checkbox" checked="true" id="BotonVirtudes">
+        <label for="BotonVirtudes"><div id="etiquetaVirtudes">Virtudes</div></label>
+        <br>
+        
+        
+        <input type="checkbox" checked="true" id="BotonComplementario">
+        <label for="BotonComplementario"><div id="etiquetaDatosComplementarios">Datos Complementarios</div></label>
+        <br>
+        
+        <input type="checkbox" checked="true" id="Portfolio">
+        <label for="Portfolio"><div id="etiquetaPortfolio">Portfolio</div></label>
+        <br>
+        
+        </form>
+        
+        <form>
+        <div id="botonMostrar" style="padding-left: 2vw;"><label id="etiquetaMostrarTodo">Mostrar Todo</label></div>
+        
+        <div id="botonOcultar" style="padding-left: 2vw;"><label id="etiquetaOcultarTodo">Ocultar Todo</label></div>
+        
+        <!-- <a href="mailto:andreshugobernardez@gmail.com?Subject=Interesado%20en%20contratar%20sus%20servicios">andreshugobernardez@gmail.com.ar</a>-->
+        </form>
+    </div>
+
+</div>
+<button style="float:right;transform: translateY(-100%);" id="etiquetaDescargarCV">Descargar CV</button>
+<button onclick="englishVersion()" style="font-size: 12px;margin-right: 10px;float:right;transform: translateY(-100%);">English</button>
+<button onclick="spanishVersion()" style="font-size: 12px;margin-right: 10px;float:right;transform: translateY(-100%);">Español</button>
+</div>
+
 </header>
 
-<div style="min-height: 70%;">
+<div style="min-height: 55%;">
 
-<form id="formularioMostrar">
-<input type="checkbox" checked="true" id="BotonDatos">
-<label for="BotonDatos">Datos</label>
-<input type="checkbox" checked="true" id="BotonExperiencia">
-<label for="BotonExperiencia">Experiencia</label>
-<input type="checkbox" checked="true" id="BotonEstudios">
-<label for="BotonEstudios">Estudios</label>
-<input type="checkbox" checked="true" id="BotonInformatica">
-<label for="BotonInformatica">Informática</label>
-<input type="checkbox" checked="true" id="BotonIdiomas">
-<label for="BotonIdiomas">Idiomas</label>
-<input type="checkbox" checked="true" id="BotonVirtudes">
-<label for="BotonVirtudes">Virtudes</label>
-<input type="checkbox" checked="true" id="BotonComplementario">
-<label for="BotonComplementario">Datos Complementarios</label>
-<input type="checkbox" checked="true" id="Portfolio">
-<label for="Portfolio">Portfolio</label>
-</form>
+<div id="carta" style="width:40%;min-width: 200px; max-width: 350px; margin-left: auto;margin-right: auto;padding-top: 4vw;padding-bottom: 4vw; "> <img src="photosAB/carta.png"  style="object-fit:contain;width: 100%;"></div>
+<div id="errorSquare" class="divError" style="display:none"></div>
 
-<form>
-<input type="button" id="botonMostrar" value="Mostrar Todo">
-<input type="button" id="botonOcultar" value="Ocultar Todo">
-<input type="button" onClick="window.location.href='informationAB/Spanish/cv Bernardez Andres Hugo.pdf'" value="Descargar CV">
-<!-- <a href="mailto:andreshugobernardez@gmail.com?Subject=Interesado%20en%20contratar%20sus%20servicios">andreshugobernardez@gmail.com.ar</a>-->
-</form>
-<div id="errorSquare" class="divError hide"></div>
 
 
 
@@ -148,7 +259,7 @@
     
         </td>
         <td style="min-width:200px;max-height:400;width:20%;vertical-align: top;">
-            <img src="photosAB/perfil.jpg" style="width:100%;">
+            <img src="photosAB/perfil2.jpg" style="width:100%;">
             
         </td>
     </tr>
@@ -174,7 +285,8 @@
 </div>
 
 <footer>
-    <a href="https://www.linkedin.com/in/andr%C3%A9s-hugo-bern%C3%A1rdez-245760188/" style="font-weight: bold;color:yellow" >Visite mi LINKEDIN haciendo click aquí</a>
-    <p style="color:white" >* Esta página aún está en construcción</p>
+    <a href="https://www.linkedin.com/in/andr%C3%A9s-hugo-bern%C3%A1rdez-245760188/" id="etiquetaLinkedin" style="font-weight: bold;color:yellow" >Visite mi LINKEDIN haciendo click aquí</a>
+    <p id="etiquetaPaginaEnContruccion2" style="color:white" >* Última actualización: 29 de marzo del 2023</p>
 </footer>
 </body>
+</html>

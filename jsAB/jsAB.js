@@ -29,11 +29,19 @@ var formularioMostrar;
 var botonOcultar;
 var botonMostrar;
 
+var elemCarta;
+
+var errorShow;
+
+
 
 
 
 var posts = null;
 var posts2=null;
+var postsEnglish=null;
+var posts2English=null;
+
 
 
 window.addEventListener('load',(event)=>{
@@ -48,7 +56,7 @@ window.addEventListener('load',(event)=>{
 
     tablaDatos= document.getElementById("tablaDatos");
     elemPortafolio= document.getElementById("elemPortafolio");
-
+    
 
     
 
@@ -70,51 +78,17 @@ window.addEventListener('load',(event)=>{
 
 
     errorElement = document.getElementById("errorSquare");
-
-
-    fetch("./informationAB/Spanish/CurriculumIndexAB.JSON")
-        .then(response => {
-                return response.json();
-                })
-        .then(jsondata => {
-            posts2=jsondata;
-            
-
-        });
-
-   
-    fetch("./informationAB/Spanish/CurriculumAB.JSON")
-        .then(response => {
-                return response.json();
-                })
-        .then(jsondata => {
-            posts=jsondata;
-
-            
-
-            
-        
-
-           // mostrarExperiencia(posts);
-           
-           appendDatos(elemDatos,posts,posts2);
-           appendContenido(elemExperiencia,posts["experience"],posts2,0,posts2["experience"]);
-           appendContenido(elemEstudios,posts["education"],posts2,0,posts2["education"]);
-           appendContenido(elemInformatica,posts["computing"],posts2,0,posts2["computing"]);
-           appendContenido(elemIdiomas,posts["languajes"],posts2,0,posts2["languajes"]);
-           appendContenido(elemVirtudes,posts["virtues"],posts2,1,posts2["virtues"]);
-           appendContenido(elemComplementarios,posts["supplementary data"],posts2,1,posts2["supplementary data"]);
-
-        });
-
-
-        
+    elemCarta= document.getElementById("carta");
     
-   
+    getEtiquetasID();
+
+
+
+    
     //contenedor= document.getElementById("contenedor");
 
    
- 
+    FetchCall();
 
     
 
@@ -128,6 +102,147 @@ window.addEventListener('load',(event)=>{
     
         });
     
+
+
+//--------------------------------
+
+function appendALL(postsData,postsIndex)
+{
+
+    appendDatos(elemDatos,postsData,postsIndex);
+       appendContenido(elemExperiencia,postsData["experience"],postsIndex,0,postsIndex["experience"]);
+       appendContenido(elemEstudios,postsData["education"],postsIndex,0,postsIndex["education"]);
+       appendContenido(elemInformatica,postsData["computing"],postsIndex,0,postsIndex["computing"]);
+       appendContenido(elemIdiomas,postsData["languajes"],postsIndex,0,postsIndex["languajes"]);
+       appendContenido(elemVirtudes,postsData["virtues"],postsIndex,1,postsIndex["virtues"]);
+       appendContenido(elemComplementarios,postsData["supplementary data"],postsIndex,1,postsIndex["supplementary data"]);
+
+}
+
+
+//-------------------------
+function FetchCall()
+{
+
+    errorShow="";
+    fetch("./informationAB/Spanish/CurriculumIndexAB.JSON")
+    .then(response => {
+            return response.json();
+            })
+    .then(jsondata => {
+        posts2=jsondata;
+        
+
+    
+
+
+fetch("./informationAB/Spanish/CurriculumAB.JSON")
+    .then(response => {
+            return response.json();
+            })
+    .then(jsondata => {
+        posts=jsondata;
+
+        
+
+        appendALL(posts,posts2);
+    
+
+       // mostrarExperiencia(posts);
+       
+       
+    })
+    .catch(err =>{  
+      
+        errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err;
+        console.log('Solicitud fallida 1', err);
+
+                 errorElement.style.display='';
+                 errorElement.innerHTML = errorShow;
+                 setTimeout(() => errorElement.style.display='none', 8000);
+ 
+                 
+        
+    
+    }) ;     
+        
+
+})
+.catch(err =>{  
+   
+    errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err;
+
+    console.log('Solicitud fallida 2', err);
+   
+        errorElement.style.display='';
+        errorElement.innerHTML = errorShow;
+         setTimeout(() => errorElement.style.display='none', 8000);
+
+
+}) ;
+
+
+
+
+errorShow="";
+    fetch("./informationAB/English/CurriculumIndexABen.JSON")
+    .then(response => {
+            return response.json();
+            })
+    .then(jsondata => {
+        posts2English=jsondata;
+        
+
+    
+
+
+fetch("./informationAB/English/CurriculumABen.JSON")
+    .then(response => {
+            return response.json();
+            })
+    .then(jsondata => {
+        postsEnglish=jsondata;
+
+        
+
+    
+
+       // mostrarExperiencia(posts);
+       
+       
+    })
+    .catch(err =>{  
+      
+        errorShow="ERROR: press F5 "+err;
+        console.log('Solicitud fallida 3', err);
+
+                 errorElement.style.display='';
+                 errorElement.innerHTML = errorShow;
+                 setTimeout(() => errorElement.style.display='none', 8000);
+ 
+                 
+        
+    
+    }) ;     
+        
+
+})
+.catch(err =>{  
+   
+    errorShow="ERROR: Press F5 "+err;
+
+    console.log('Solicitud fallida 4', err);
+   
+        errorElement.style.display='';
+        errorElement.innerHTML = errorShow;
+         setTimeout(() => errorElement.style.display='none', 8000);
+
+
+}) ;
+
+
+}
+
  
 //------------------------
 
@@ -162,7 +277,6 @@ function appendString(Padre,cadena,nivel,tagSeleccionado)
     elemento1.classList.add(claseObjeto);
     elemento1.innerHTML=cadena;
     Padre.appendChild(elemento1);
-
 
 
 }
@@ -280,10 +394,46 @@ function BorrarContenedor(Padre){
 
 }
 
+//-------------Borra todo el contenido incluido el padre.
+function BorrarTodo(Padre)
+{
+    while(Padre.firstChild)
+    {
+        BorrarTodo(Padre.firstChild);
+    }
+    Padre.remove();
+}
+
+//---------------Borra todo el contenido sin incluir el padre
+function BorrarTodoElContenido(Padre)
+{
+    while(Padre.firstChild)
+    {
+        BorrarTodo(Padre.firstChild);
+    }
+
+}
+
+
+//-----------------Borrar todos los datos del ShowRoom
+
+function BorrarShowroom()
+{
+   BorrarTodoElContenido(elemDatos)
+   BorrarTodoElContenido(elemExperiencia)
+   BorrarTodoElContenido(elemEstudios)
+   BorrarTodoElContenido(elemInformatica)
+   BorrarTodoElContenido(elemIdiomas)
+   BorrarTodoElContenido(elemVirtudes)
+   BorrarTodoElContenido(elemComplementarios)
+}
+
+//-----------------------------------------------------------------
+
 function verificarCheckBox(chkbxElement,elementoAMostrar)
 {
-    if(chkbxElement.checked) elementoAMostrar.style.display='';
-    else elementoAMostrar.style.display='none';
+    if(chkbxElement.checked) {elementoAMostrar.style.display='';return 1;}
+    else {elementoAMostrar.style.display='none';return 0}
 }
 
 function checkAll()
@@ -312,15 +462,20 @@ function uncheckAll()
 }
 function verificarCheckBoxes()
 {
-    verificarCheckBox(BotonDatos,tablaDatos);
-    verificarCheckBox(BotonExperiencia,elemExperiencia);
-    verificarCheckBox(BotonEstudios,elemEstudios);
-    verificarCheckBox(BotonInformatica,elemInformatica);
-    verificarCheckBox(BotonIdiomas,elemIdiomas);
-    verificarCheckBox(BotonVirtudes,elemVirtudes);
-    verificarCheckBox(BotonComplementarios,elemComplementarios);
-    verificarCheckBox(BotonPortfolio,elemPortafolio);
+    let CantidadOn;
+    CantidadOn=0;
+
+    CantidadOn+= verificarCheckBox(BotonDatos,tablaDatos);
+    CantidadOn+= verificarCheckBox(BotonExperiencia,elemExperiencia);
+    CantidadOn+= verificarCheckBox(BotonEstudios,elemEstudios);
+    CantidadOn+= verificarCheckBox(BotonInformatica,elemInformatica);
+    CantidadOn+= verificarCheckBox(BotonIdiomas,elemIdiomas);
+    CantidadOn+= verificarCheckBox(BotonVirtudes,elemVirtudes);
+    CantidadOn+= verificarCheckBox(BotonComplementarios,elemComplementarios);
+    CantidadOn+= verificarCheckBox(BotonPortfolio,elemPortafolio);
     
+    if(CantidadOn==0)elemCarta.style.display='block';
+    else elemCarta.style.display='none';
     
 
 }
