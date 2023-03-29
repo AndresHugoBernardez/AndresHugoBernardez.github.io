@@ -113,7 +113,7 @@ function appendALL(postsData,postsIndex)
        appendContenido(elemExperiencia,postsData["experience"],postsIndex,0,postsIndex["experience"]);
        appendContenido(elemEstudios,postsData["education"],postsIndex,0,postsIndex["education"]);
        appendContenido(elemInformatica,postsData["computing"],postsIndex,0,postsIndex["computing"]);
-       appendContenido(elemIdiomas,postsData["languajes"],postsIndex,0,postsIndex["languajes"]);
+       appendContenido(elemIdiomas,postsData["languages"],postsIndex,0,postsIndex["languages"]);
        appendContenido(elemVirtudes,postsData["virtues"],postsIndex,1,postsIndex["virtues"]);
        appendContenido(elemComplementarios,postsData["supplementary data"],postsIndex,1,postsIndex["supplementary data"]);
 
