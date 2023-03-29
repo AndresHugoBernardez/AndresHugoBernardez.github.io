@@ -1,5 +1,5 @@
 {
-    "JSON-languaje":"spanish",
+    "JSON-language":"spanish",
     "type":"curriculum",
     "name":"Andrés Hugo Bernárdez",
     "id":"32379265-ESP",
@@ -76,6 +76,19 @@
 
     "experience":
     [
+        {
+            "name":"Profesor de Educación Técnica",
+            "company":"Escuelas Técnicas en general",
+            "category":"Educación",
+            "tasks performed":
+                [
+                    "Planificación de clases",
+                    "Desarrollo de clases",
+                    "Evaluación de los estudiantes y de las clases"
+                ],
+            "from":"septiembre 2022",
+            "until":"Actualmente me encuentro trabajando aquí"
+        },
         
         {
             "name":"Profesor de Educación Primaria",
@@ -229,7 +242,7 @@
 
     "computing":
     {
-        "programming languajes":
+        "programming languages":
         [
             {
                 "name":"C",
@@ -282,7 +295,7 @@
             }
         ]
     },
-    "languajes":
+    "languages":
     [
         {
             "name":"Inglés",

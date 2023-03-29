@@ -1,0 +1,325 @@
+{
+    "JSON-language":"English",
+    "type":"curriculum",
+    "name":"Andrés Hugo Bernárdez",
+    "id":"32379265-EN",
+    "age":"36",
+    "civil state":"single",
+    "Date of Birth":"April 16th, 1986",
+    "address":"San Nicolás de los Arroyos, prov. Buenos Aires, Argentina",
+
+    "education":
+    {
+        "titles":
+        [
+            
+            {
+                "name": "Bachelor, Production of Goods and Services Modality with specialization in Technician in Electromechanical Installations",
+                "ending":"2004",
+                "average":"7.97",
+                "institution":"Esc. Gral. Ing. M. N. Savio EET N°2",
+                "level":"high school",
+                "observations":""
+
+            },
+            
+            {
+             
+                "name": "University Technician in Electronics",
+                "ending":"2014",
+                "average":"7.06",
+                "institution":"UTN San Nicolás",
+                "level":"College degree",
+                "observations":"For having finished all university subjects up to the 4th year of the degree."
+
+                          
+            },
+           
+            {
+             
+                "name": "Elementary School teacher",
+                "ending":"2019",
+                "average":"9.17",
+                "institution":"ISFD y T N°128",
+                "level":"College degree",
+                "observations":""
+
+                          
+            },
+            
+            {
+             
+                "name": "Electronic Engineering",
+                "ending":"2024 (estimated)",
+                "average":"7,76",
+                "institution":"ISFD y T N°128",
+                "level":"College degree",
+                "observations":""
+
+                          
+            }
+        ],
+
+        "recognitions":
+        [
+            
+            {
+                "name":"Best Companion",
+                "ending":"2018",
+                "institution":"ISFD y T N°128",
+                "observations":"I obtained the Best Companion diploma in my primary teaching career at the ISFD & T N°128"
+            
+
+            }
+        ]        
+    },
+
+    "experience":
+    [
+        {
+            "name":"Technical Education Teacher",
+            "company":"High School Technical Schools",
+            "category":"Education",
+            "tasks performed":
+                [
+                     "Class planning",
+                     "Development of classes",
+                     "Evaluation of students and classes"
+                ],
+            "from":"September 2022",
+            "until":"I am currently working here"
+        },
+        {
+            "name":"Primary Education Teacher",
+            "company":"Primary schools",
+            "category":"Education",
+            "tasks performed":
+                [
+                    "Class planning",
+                    "Development of classes",
+                    "Evaluation of students and classes"
+                ],
+            "from":"June 2019",
+            "until":"August 2022"
+        },
+        
+        {
+            "name":"Home Technician",
+            "company":"freelancer",
+            "category":"General Home's repairs",
+            "tasks performed":
+                [
+                    "Electrical works",
+                    "Placement of Tables and Shelves",
+                    "Blinds repair",
+                    "Repair of faucets and plumbing in general",
+                    "General repairs"
+
+                ],
+            "from":"January 2018",
+            "until":"November 2018"
+        },
+        
+        {
+            "name":"Electrician Assistant",
+            "company":"Taller Pro",
+            "category":"Automotive Electricity",
+            "tasks performed":
+                [
+                    "Technical assistance",
+                     "Electrical maintenance",
+                     "Automotive Wiring",
+                     "Fault detection"
+                    
+
+                ],
+            "from":"September 2014",
+            "until":"September 2015"
+        },
+        
+        {
+            "name":"Programmer",
+            "company":"Tesis Automation & IT",
+            "category":"IT",
+            "tasks performed":
+                [
+                     "Database Review",
+                     "Download of information",
+                     "Programming programs in C to manage database",
+                     "Programming of applications aimed at company users",
+                     "User Assistance"
+                    
+
+                ],
+            "from":"April 2013",
+            "until":"February 2014"
+        },
+        
+        {
+            "name":"Seller",
+            "company":"Own Candy Shop",
+            "category":"Commerce",
+            "tasks performed":
+                [
+                    "Sell products",
+                    "Buy merchandise",
+                    "Shop's Maintenance"
+                    
+
+                ],
+            "from":"September 2010",
+            "until":"January 2011"
+        },
+        
+        {
+            "name":"Mechanical Assistant",
+            "company":"Taller El Pato",
+            "category":"Mechanical workshop for diesel and gasoline vehicles",
+            "tasks performed":
+                [
+                    "Maintenance tasks in general",
+                     "Assistance to the mechanic",
+                     "Disarm and assemble mechanical parts: front axle, cylinder head   , block, etc."
+
+                    
+
+                ],
+            "from":"March 2007",
+            "until":"June 2009"
+        },
+        
+        {
+            "name":"Operator",
+            "company":"Fábrica de Papas Fritas Galante",
+            "category":"Snacks Factory",
+            "tasks performed":
+                [
+                     "Preparation of the product",
+                     "Product cooking",
+                     "Workplace Cleaning"
+
+                    
+
+                ],
+            "from":"March 2007",
+            "until":"June 2009"
+        },
+        
+        {
+            "name":"Technical Intern",
+            "company":"Ecofrío",
+            "category":"Cooling and heating services",
+            "tasks performed":
+                [
+                    "Technical assistance",
+                    "Help in the installation of air conditioning"
+
+                    
+
+                ],
+            "from":"July 2003",
+            "until":"February 2004"
+        },
+        
+        {
+            "name":"Warehouse's Helper",
+            "company":"La Casa del Parabrisas",
+            "category":"Automotive accessories shop",
+            "tasks performed":
+                [
+                     "Placement of accessories in vehicles",
+                     "Warehouse logistics"
+                    
+
+                ],
+            "from":"December 2002",
+            "until":"February 2003"
+        }
+
+    ],
+
+    "computing":
+    {
+        "programming languages":
+        [
+            {
+                "name":"C",
+                "level":"intermediate"
+            },
+            {
+                "name":"C++",
+                "level":"essential"
+            },
+            {
+                "name":"HTML",
+                "level":"essential"
+            },
+            {
+                "name":"Javascript",
+                "level":"essential"
+            },
+            {
+                "name":"Assembler",
+                "level":"essential"
+            }
+        ],
+        "database":
+        [
+            {
+                "name":"Sybase SQL",
+                "level":"essential"
+            }
+        ],
+        "SO":
+        [
+            {
+                "name":"Windows",
+                "level":"intermediate"
+            },
+            {
+                "name":"Linux",
+                "level":"essential"
+            }
+        ],
+        "office":
+        [
+            {
+                "name":"Microsoft Office",
+                "level":"intermediate"
+            },
+            {
+                "name":"Grafic design tools",
+                "level":"essential"
+            }
+        ]
+    },
+    "languages":
+    [
+        {
+            "name":"English",
+            "level":"intermediate"
+        },
+        {
+            "name":"Spanish",
+            "level":"native"
+        }
+    ],
+    "virtues":
+    [
+        "Creative",
+         "Reserved",
+         "Persistent",
+         "Responsible",
+         "Proactive",
+         "Able to study and train continuously",
+         "Resilient"
+    ],
+    "supplementary data":
+    [
+        "Driving license: Yes, class A3-B1, Argentina.",
+         "Own mobility: Yes.",
+         "Availability to travel: Yes.",
+         "Availability to relocate: Negotiable."
+    ]
+
+}

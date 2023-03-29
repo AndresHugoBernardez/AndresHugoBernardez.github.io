@@ -1,0 +1,36 @@
+{
+    "JSON-language":"File language: ",
+    "type":"Type: ",
+    "id":"ID: ",
+    "age":"Age: ",
+    "Date of Birth":"Date of Birth: ",
+    "civil state":"Civil State: ",
+    "address":"Address: ",
+
+    "education":"Education: ",
+    "titles":"Degrees: ",
+    "name": "",
+    "ending":"Ending: ",
+    "average":"Average: ",
+    "institution":"Institution: ",
+    "level":"Level: ",
+    "observations":"Observations: ",
+    "recognitions":"Recognitions: ",
+    "experience":"Experience: ",
+    "company":"Company: ",
+    "category":"Category: ",
+    "tasks performed":"Tasks Performed: ",
+    "from":"From: ",
+    "until":"Until: ",
+    "computing":"Computing: ",
+    "programming languages":"Programming Languages: ",
+    "database":"Database: ",
+    "SO":"SO: ",
+    "office":"Office: ",
+    "languages":"Languages: ",
+    "virtues":"Virtues: ",
+    "supplementary data":"Supplementary Data: ",
+    "teamwork":"Andreweb Industries"
+  
+
+}
