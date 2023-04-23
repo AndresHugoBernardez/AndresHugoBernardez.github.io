@@ -1,0 +1,1497 @@
+<html>
+
+<head>
+<script>
+
+
+    var go=true;
+    const palo=0;
+    const ele1=1;
+    const ele2=2;
+    const ese1=3;
+    const ese2=4;
+    const cubo=5;
+    const te=6;
+
+    var reset=false;
+    var lineas=0;
+
+
+    var tablero     =[[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,1,1,1,1,1,1,1,1,1,1,1]];
+    var tableroReset=[[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,0,0,0,0,0,0,0,0,0,0,1],[1,1,1,1,1,1,1,1,1,1,1,1]];
+    var maxY=20;
+    var maxX=11;
+    var gameover=false;
+
+    var proximapieza=-1;
+    var piezaactual=-1;
+    var tiempo=500;
+    
+
+
+    var pieza={posiciones:[[0,0],[0,0],[0,0],[0,0]],tipo:0,rotacion:0,posicionActual:[maxY,maxX]};
+    var RotPos= [[0,0],[0,0],[0,0],[0,0]];
+    var proxPieza=[[0,0],[0,0],[0,0],[0,0]];
+
+    function PaloRotacion1(pos)
+    {
+        pos[0][0]=0;
+        pos[0][1]=0;
+        pos[1][0]=1;
+        pos[1][1]=0;
+        pos[2][0]=2;
+        pos[2][1]=0;
+        pos[3][0]=3;
+        pos[3][1]=0;
+    }
+    function PaloRotacion2(pos)
+    {
+        pos[0][0]=2;
+        pos[0][1]=-1;
+        pos[1][0]=2;
+        pos[1][1]=0;
+        pos[2][0]=2;
+        pos[2][1]=1;
+        pos[3][0]=2;
+        pos[3][1]=2;
+    }
+
+    function ele1Rotacion1(pos)
+    {
+        pos[0][0]=0;
+        pos[0][1]=0;
+        pos[1][0]=0;
+        pos[1][1]=1;
+        pos[2][0]=1;
+        pos[2][1]=0;
+        pos[3][0]=2;
+        pos[3][1]=0;
+    }
+
+    function ele1Rotacion2(pos)
+    {
+        pos[0][0]=1;
+        pos[0][1]=-1;
+        pos[1][0]=1;
+        pos[1][1]=0;
+        pos[2][0]=1;
+        pos[2][1]=1;
+        pos[3][0]=2;
+        pos[3][1]=1;
+    }
+
+    function ele1Rotacion3(pos)
+    {
+        pos[0][0]=0;
+        pos[0][1]=0;
+        pos[1][0]=1;
+        pos[1][1]=0;
+        pos[2][0]=2;
+        pos[2][1]=0;
+        pos[3][0]=2;
+        pos[3][1]=-1;
+    }
+
+    function ele1Rotacion4(pos)
+    {
+        pos[0][0]=0;
+        pos[0][1]=-1;
+        pos[1][0]=1;
+        pos[1][1]=-1;
+        pos[2][0]=1;
+        pos[2][1]=0;
+        pos[3][0]=1;
+        pos[3][1]=1;
+    }
+
+
+
+
+
+    function ele2Rotacion1(pos)
+    {
+        pos[0][0]=0;
+        pos[0][1]=0;
+        pos[1][0]=0;
+        pos[1][1]=-1;
+        pos[2][0]=1;
+        pos[2][1]=0;
+        pos[3][0]=2;
+        pos[3][1]=0;
+    }
+
+    function ele2Rotacion2(pos)
+    {
+        pos[0][0]=1;
+        pos[0][1]=-1;
+        pos[1][0]=1;
+        pos[1][1]=0;
+        pos[2][0]=1;
+        pos[2][1]=1;
+        pos[3][0]=0;
+        pos[3][1]=1;
+    }
+
+    function ele2Rotacion3(pos)
+    {
+        pos[0][0]=0;
+        pos[0][1]=0;
+        pos[1][0]=1;
+        pos[1][1]=0;
+        pos[2][0]=2;
+        pos[2][1]=0;
+        pos[3][0]=2;
+        pos[3][1]=1;
+    }
+
+    function ele2Rotacion4(pos)
+    {
+        pos[0][0]=2;
+        pos[0][1]=-1;
+        pos[1][0]=1;
+        pos[1][1]=-1;
+        pos[2][0]=1;
+        pos[2][1]=0;
+        pos[3][0]=1;
+        pos[3][1]=1;
+    }
+
+
+    function teRotacion1(pos)
+    {
+        pos[0][0]=1;
+        pos[0][1]=-1;
+        pos[1][0]=1;
+        pos[1][1]=0;
+        pos[2][0]=1;
+        pos[2][1]=1;
+        pos[3][0]=2;
+        pos[3][1]=0;
+    }
+    
+    function teRotacion2(pos)
+    {
+        pos[0][0]=1;
+        pos[0][1]=-1;
+        pos[1][0]=1;
+        pos[1][1]=0;
+        pos[2][0]=0;
+        pos[2][1]=0;
+        pos[3][0]=2;
+        pos[3][1]=0;
+    }
+
+    function teRotacion3(pos)
+    {
+        pos[0][0]=1;
+        pos[0][1]=-1;
+        pos[1][0]=1;
+        pos[1][1]=0;
+        pos[2][0]=1;
+        pos[2][1]=1;
+        pos[3][0]=0;
+        pos[3][1]=0;
+    }
+
+    function teRotacion4(pos)
+    {
+        pos[0][0]=1;
+        pos[0][1]=1;
+        pos[1][0]=1;
+        pos[1][1]=0;
+        pos[2][0]=0;
+        pos[2][1]=0;
+        pos[3][0]=2;
+        pos[3][1]=0;
+    }
+
+    function ese1Rotacion1(pos)
+    {
+        pos[0][0]=1;
+        pos[0][1]=-1;
+        pos[1][0]=1;
+        pos[1][1]=0;
+        pos[2][0]=2;
+        pos[2][1]=0;
+        pos[3][0]=2;
+        pos[3][1]=1;
+    }
+
+    function ese1Rotacion2(pos)
+    {
+        pos[0][0]=0;
+        pos[0][1]=1;
+        pos[1][0]=1;
+        pos[1][1]=1;
+        pos[2][0]=1;
+        pos[2][1]=0;
+        pos[3][0]=2;
+        pos[3][1]=0;
+    }
+
+    function ese2Rotacion1(pos)
+    {
+        pos[0][0]=1;
+        pos[0][1]=1;
+        pos[1][0]=1;
+        pos[1][1]=0;
+        pos[2][0]=2;
+        pos[2][1]=0;
+        pos[3][0]=2;
+        pos[3][1]=-1;
+    }
+
+    function ese2Rotacion2(pos)
+    {
+        pos[0][0]=0;
+        pos[0][1]=-1;
+        pos[1][0]=1;
+        pos[1][1]=-1;
+        pos[2][0]=1;
+        pos[2][1]=0;
+        pos[3][0]=2;
+        pos[3][1]=0;
+    }
+    function cuboRotacion1(pos)
+    {
+        pos[0][0]=1;
+        pos[0][1]=0;
+        pos[1][0]=1;
+        pos[1][1]=1;
+        pos[2][0]=2;
+        pos[2][1]=0;
+        pos[3][0]=2;
+        pos[3][1]=1;
+    }
+
+
+
+    
+    function crearPalo()
+    {
+        PaloRotacion1(pieza.posiciones);
+        pieza.tipo=palo;
+        pieza.rotacion=1;
+        pieza.posicionActual[0]=0;
+        pieza.posicionActual[1]=5;
+        insertarPieza(pieza,"black","blue");
+    }
+
+    function crearCubo()
+    {
+        cuboRotacion1(pieza.posiciones);
+        pieza.tipo=cubo;
+        pieza.rotacion=1;
+        pieza.posicionActual[0]=0;
+        pieza.posicionActual[1]=5;
+        insertarPieza(pieza,"black","blue");
+    }
+
+    function crearEse1()
+    {
+        ese1Rotacion1(pieza.posiciones);
+        pieza.tipo=ese1;
+        pieza.rotacion=1;
+        pieza.posicionActual[0]=0;
+        pieza.posicionActual[1]=5;
+        insertarPieza(pieza,"black","blue");
+    }
+
+    function crearEse2()
+    {
+        ese2Rotacion1(pieza.posiciones);
+        pieza.tipo=ese2;
+        pieza.rotacion=1;
+        pieza.posicionActual[0]=0;
+        pieza.posicionActual[1]=5;
+        insertarPieza(pieza,"black","blue");
+    }
+    function crearEle1()
+    {
+        ele1Rotacion1(pieza.posiciones);
+        pieza.tipo=ele1;
+        pieza.rotacion=1;
+        pieza.posicionActual[0]=0;
+        pieza.posicionActual[1]=5;
+        insertarPieza(pieza,"black","blue");
+    }
+    function crearEle2()
+    {
+        ele2Rotacion1(pieza.posiciones);
+        pieza.tipo=ele2;
+        pieza.rotacion=1;
+        pieza.posicionActual[0]=0;
+        pieza.posicionActual[1]=5;
+        insertarPieza(pieza,"black","blue");
+    }
+
+    function crearTe()
+    {
+        teRotacion1(pieza.posiciones);
+        pieza.tipo=te;
+        pieza.rotacion=1;
+        pieza.posicionActual[0]=0;
+        pieza.posicionActual[1]=5;
+        insertarPieza(pieza,"black","blue");
+    }
+
+    function cambiarcolor(nombreBloque,coloractual,nuevocolor)
+    {
+            bloquebuscado=document.getElementById(nombreBloque);
+            if(bloquebuscado)
+            {
+                
+                if(bloquebuscado.className)bloquebuscado.classList.remove(bloquebuscado.className);
+                if(bloquebuscado.className!=nuevocolor)bloquebuscado.classList.add(nuevocolor);
+            }
+    }
+
+    function insertarPieza(pieza,colorActual,nuevoColor)
+    {
+        let k;
+        let idbloque;
+        let bloquebuscado
+        
+        for (k=0;k<4;k++)
+        {
+            cambiarcolor("cuadro"+String(pieza.posiciones[0][0]+pieza.posicionActual[0])+String(pieza.posiciones[0][1]+pieza.posicionActual[1]-1),colorActual,nuevoColor);
+            cambiarcolor("cuadro"+String(pieza.posiciones[1][0]+pieza.posicionActual[0])+String(pieza.posiciones[1][1]+pieza.posicionActual[1]-1),colorActual,nuevoColor);
+            cambiarcolor("cuadro"+String(pieza.posiciones[2][0]+pieza.posicionActual[0])+String(pieza.posiciones[2][1]+pieza.posicionActual[1]-1),colorActual,nuevoColor);
+            cambiarcolor("cuadro"+String(pieza.posiciones[3][0]+pieza.posicionActual[0])+String(pieza.posiciones[3][1]+pieza.posicionActual[1]-1),colorActual,nuevoColor);
+        }
+
+    }
+
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+
+    function insertarPiezaElegida(Rnumber)
+    {
+
+
+        if(!gameover)
+        {
+        switch(Rnumber){
+            case cubo:crearCubo();
+            break;
+            case ele1:crearEle1();
+            break;
+            case ele2:crearEle2();
+            break;
+            case ese1:crearEse1();
+            break;
+            case ese2:crearEse2();
+            break;
+            case te:crearTe();
+            break;
+            case palo:crearPalo();
+            break;
+
+        }
+
+
+        if(tablero[pieza.posiciones[0][0]+pieza.posicionActual[0]][pieza.posiciones[0][1]+pieza.posicionActual[1]]==1||tablero[pieza.posiciones[1][0]+pieza.posicionActual[0]][pieza.posiciones[1][1]+pieza.posicionActual[1]]==1||tablero[pieza.posiciones[2][0]+pieza.posicionActual[0]][pieza.posiciones[2][1]+pieza.posicionActual[1]]==1||tablero[pieza.posiciones[3][0]+pieza.posicionActual[0]][pieza.posiciones[3][1]+pieza.posicionActual[1]]==1)
+            {
+                gameover=true;
+            }
+        
+        }
+        return gameover;
+
+    }
+
+
+    function proximaPiezaMostrar(Rnumber)
+    {
+
+        for (k=0;k<4;k++)
+        {
+            cambiarcolor("muestra"+String(proxPieza[0][0])+String(proxPieza[0][1]+1),"red","black");
+            cambiarcolor("muestra"+String(proxPieza[1][0])+String(proxPieza[1][1]+1),"red","black");
+            cambiarcolor("muestra"+String(proxPieza[2][0])+String(proxPieza[2][1]+1),"red","black");
+            cambiarcolor("muestra"+String(proxPieza[3][0])+String(proxPieza[3][1]+1),"red","black");
+        }
+
+
+        switch(Rnumber){
+            case cubo:cuboRotacion1(proxPieza);
+            break;
+            case ele1:ele1Rotacion1(proxPieza);
+            break;
+            case ele2:ele2Rotacion1(proxPieza);
+            break;
+            case ese1:ese1Rotacion1(proxPieza);
+            break;
+            case ese2:ese2Rotacion1(proxPieza);
+            break;
+            case te:teRotacion1(proxPieza);
+            break;
+            case palo:PaloRotacion1(proxPieza);
+            break;
+
+        }
+        for (k=0;k<4;k++)
+        {
+            cambiarcolor("muestra"+String(proxPieza[0][0])+String(proxPieza[0][1]+1),"black","red");
+            cambiarcolor("muestra"+String(proxPieza[1][0])+String(proxPieza[1][1]+1),"black","red");
+            cambiarcolor("muestra"+String(proxPieza[2][0])+String(proxPieza[2][1]+1),"black","red");
+            cambiarcolor("muestra"+String(proxPieza[3][0])+String(proxPieza[3][1]+1),"black","red");
+        }
+
+
+    }
+
+    function bajarBloque()
+    {
+
+       let k;
+       let autorizacion;
+       let freezar;
+       freezar=false;
+       autorizacion=true;
+       //for (k=0;k<4;k++)
+        /*if((pieza.posiciones[0][0]+pieza.posicionActual[0]>maxY)||(pieza.posiciones[1][0]+pieza.posicionActual[0]>maxY)||(pieza.posiciones[2][0]+pieza.posicionActual[0]>maxY)||(pieza.posiciones[3][0]+pieza.posicionActual[0]>maxY))
+            autorizacion=false;
+
+        if(autorizacion)*/
+        if(tablero[pieza.posiciones[0][0]+pieza.posicionActual[0]+1][pieza.posiciones[0][1]+pieza.posicionActual[1]]==1||tablero[pieza.posiciones[1][0]+pieza.posicionActual[0]+1][pieza.posiciones[1][1]+pieza.posicionActual[1]]==1||tablero[pieza.posiciones[2][0]+pieza.posicionActual[0]+1][pieza.posiciones[2][1]+pieza.posicionActual[1]]==1||tablero[pieza.posiciones[3][0]+pieza.posicionActual[0]+1][pieza.posiciones[3][1]+pieza.posicionActual[1]]==1)
+            autorizacion=false;
+       if(autorizacion)
+       {
+        insertarPieza(pieza,"blue","black");
+        pieza.posicionActual[0]++;
+        insertarPieza(pieza,"black","blue");
+       }
+       else
+       {
+        insertarPieza(pieza,"blue","red");
+        tablero[pieza.posiciones[0][0]+pieza.posicionActual[0]][pieza.posiciones[0][1]+pieza.posicionActual[1]]=1
+        tablero[pieza.posiciones[1][0]+pieza.posicionActual[0]][pieza.posiciones[1][1]+pieza.posicionActual[1]]=1
+        tablero[pieza.posiciones[2][0]+pieza.posicionActual[0]][pieza.posiciones[2][1]+pieza.posicionActual[1]]=1
+        tablero[pieza.posiciones[3][0]+pieza.posicionActual[0]][pieza.posiciones[3][1]+pieza.posicionActual[1]]=1
+        freezar=true
+        // CREAR NUEVA PIEZA
+        }
+       return freezar;
+    }
+    function moverDerecha()
+    {
+        
+
+       let k;
+       let autorizacion;
+       autorizacion=true;
+       //for (k=0;k<4;k++)
+        /*if((pieza.posiciones[0][1]+pieza.posicionActual[1]+1>maxX-1)||(pieza.posiciones[1][1]+pieza.posicionActual[1]+1>maxX-1)||(pieza.posiciones[2][1]+pieza.posicionActual[1]+1>maxX-1)||(pieza.posiciones[3][1]+pieza.posicionActual[1]+1>maxX-1))
+            autorizacion=false;
+        if(autorizacion)*/
+        if(tablero[pieza.posiciones[0][0]+pieza.posicionActual[0]][pieza.posiciones[0][1]+pieza.posicionActual[1]+1]==1||tablero[pieza.posiciones[1][0]+pieza.posicionActual[0]][pieza.posiciones[1][1]+pieza.posicionActual[1]+1]==1||tablero[pieza.posiciones[2][0]+pieza.posicionActual[0]][pieza.posiciones[2][1]+pieza.posicionActual[1]+1]==1||tablero[pieza.posiciones[3][0]+pieza.posicionActual[0]][pieza.posiciones[3][1]+pieza.posicionActual[1]+1]==1)
+            autorizacion=false;
+       if(autorizacion)
+       {
+        insertarPieza(pieza,"blue","black");
+        pieza.posicionActual[1]++;
+        insertarPieza(pieza,"black","blue");
+       }
+
+    }
+    function moverIzquierda()
+    {
+        let k;
+       let autorizacion;
+       autorizacion=true;
+       //for (k=0;k<4;k++)
+        /*if((pieza.posiciones[0][1]+pieza.posicionActual[1]-1<1)||(pieza.posiciones[1][1]+pieza.posicionActual[1]<1)||(pieza.posiciones[2][1]+pieza.posicionActual[1]<1)||(pieza.posiciones[3][1]+pieza.posicionActual[1]<1))
+            autorizacion=false;
+        if(autorizacion)*/
+        if(tablero[pieza.posiciones[0][0]+pieza.posicionActual[0]][pieza.posiciones[0][1]+pieza.posicionActual[1]-1]==1||tablero[pieza.posiciones[1][0]+pieza.posicionActual[0]][pieza.posiciones[1][1]+pieza.posicionActual[1]-1]==1||tablero[pieza.posiciones[2][0]+pieza.posicionActual[0]][pieza.posiciones[2][1]+pieza.posicionActual[1]-1]==1||tablero[pieza.posiciones[3][0]+pieza.posicionActual[0]][pieza.posiciones[3][1]+pieza.posicionActual[1]-1]==1)
+            autorizacion=false;
+       if(autorizacion)
+       {
+        insertarPieza(pieza,"blue","black");
+        pieza.posicionActual[1]--;
+        insertarPieza(pieza,"black","blue");
+       }
+    }
+    function pruebaRotacion(PosicionFinal,Rotacion,PosAct)
+    {
+        let aceptar=true;
+        let corrimiento=0
+        let abajo;
+
+        aceptar=true
+        //Comprobar que los cuadros de abajo no esté ocupado...
+
+ /*       //Buscar la posicion de mas abajo
+        abajo=Rotacion[0][0];
+        for (i=1;i<4;i++)
+        if(Rotacion[i][0]>abajo)
+        abajo=Rotacion[i][0];
+
+        //Comprobar todas las posiciones de mas abajo
+        for (i=0;i<4;i++)
+        if(Rotacion[i][0]==abajo)
+        if(0<Rotacion[i][1]+PosAct[1]&&Rotacion[i][1]+PosAct[1]<maxX)
+        if(tablero[Rotacion[i][0]+PosAct[0]][Rotacion[i][1]+PosAct[1]]==1)
+        aceptar=false;
+*/
+
+        if(aceptar==true)
+        {
+            //Comprobar que se pueda rotar
+            for (i=0;i<4;i++)
+            if(1>Rotacion[i][1]+PosAct[1]||Rotacion[i][1]+PosAct[1]>maxX-1) aceptar=false;
+
+            if(aceptar)
+            if(tablero[Rotacion[0][0]+PosAct[0]][Rotacion[0][1]+PosAct[1]]==1||tablero[Rotacion[1][0]+PosAct[0]][Rotacion[1][1]+PosAct[1]]==1||tablero[Rotacion[2][0]+PosAct[0]][Rotacion[2][1]+PosAct[1]]==1||tablero[Rotacion[3][0]+PosAct[0]][Rotacion[3][1]+PosAct[1]]==1)
+                aceptar=false;
+            
+            if(aceptar==false)
+            {
+                //Tratando de correr un cuadro a la izquierda
+                aceptar=true;
+                corrimiento=-1;
+                if((Rotacion[0][1]+PosAct[1]+corrimiento<1)||(Rotacion[1][1]+PosAct[1]+corrimiento<1)||(Rotacion[2][1]+PosAct[1]+corrimiento<1)||(Rotacion[3][1]+PosAct[1]+corrimiento<1))
+                aceptar=false;
+                
+                if(aceptar==true)
+                if(tablero[Rotacion[0][0]+PosAct[0]][Rotacion[0][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[1][0]+PosAct[0]][Rotacion[1][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[2][0]+PosAct[0]][Rotacion[2][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[3][0]+PosAct[0]][Rotacion[3][1]+PosAct[1]+corrimiento]==1)
+                aceptar=false;
+                else aceptar=true;
+                if(aceptar==false)
+                {//tratando de correr otro cuadro a la izquierda
+                    aceptar=true;
+                    corrimiento=-2;
+                    if((Rotacion[0][1]+PosAct[1]+corrimiento<1)||(Rotacion[1][1]+PosAct[1]+corrimiento<1)||(Rotacion[2][1]+PosAct[1]+corrimiento<1)||(Rotacion[3][1]+PosAct[1]+corrimiento<1))
+                    aceptar=false;
+                    if(aceptar==true)
+                    if(tablero[Rotacion[0][0]+PosAct[0]][Rotacion[0][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[1][0]+PosAct[0]][Rotacion[1][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[2][0]+PosAct[0]][Rotacion[2][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[3][0]+PosAct[0]][Rotacion[3][1]+PosAct[1]+corrimiento]==1)
+                    aceptar=false;
+                    else aceptar=true;
+                }
+            }
+                
+            if(aceptar==false)
+            {
+                //Tratando de correr un cuadro a la derecha
+                aceptar=true;
+                corrimiento=1;
+                if((Rotacion[0][1]+PosAct[1]+corrimiento>maxX-1)||(Rotacion[1][1]+PosAct[1]+corrimiento>maxX-1)||(Rotacion[2][1]+PosAct[1]+corrimiento>maxX-1)||(Rotacion[3][1]+PosAct[1]+corrimiento>maxX-1))
+                aceptar=false;
+                
+                if(aceptar==true)
+                if(tablero[Rotacion[0][0]+PosAct[0]][Rotacion[0][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[1][0]+PosAct[0]][Rotacion[1][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[2][0]+PosAct[0]][Rotacion[2][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[3][0]+PosAct[0]][Rotacion[3][1]+PosAct[1]+corrimiento]==1)
+                aceptar=false;
+                else aceptar=true;
+                if(aceptar==false)
+                {//tratando de correr otro cuadro a la derecha
+                    aceptar=true;
+                    corrimiento=2;
+                    if((Rotacion[0][1]+PosAct[1]+corrimiento>maxX-1)||(Rotacion[1][1]+PosAct[1]+corrimiento>maxX-1)||(Rotacion[2][1]+PosAct[1]+corrimiento>maxX-1)||(Rotacion[3][1]+PosAct[1]+corrimiento>maxX-1))
+                    aceptar=false;
+                    if(aceptar==true)
+                    if(tablero[Rotacion[0][0]+PosAct[0]][Rotacion[0][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[1][0]+PosAct[0]][Rotacion[1][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[2][0]+PosAct[0]][Rotacion[2][1]+PosAct[1]+corrimiento]==1||tablero[Rotacion[3][0]+PosAct[0]][Rotacion[3][1]+PosAct[1]+corrimiento]==1)
+                    aceptar=false;
+                    else aceptar=true;
+                }
+            }
+
+
+
+    
+        }
+
+
+        PosicionFinal[0]=PosAct[0];
+        PosicionFinal[1]=PosAct[1]+corrimiento;
+        return aceptar;
+    }
+
+    function rotarPieza()
+    {
+        let aceptar=true;
+        let posicionfinal=[0,0];
+      switch(pieza.tipo){
+        case ese1:
+            if(pieza.rotacion==1)
+            {
+                ese1Rotacion2(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ese1Rotacion2(pieza.posiciones);
+                    pieza.rotacion=2;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==2)
+            {
+                ese1Rotacion1(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ese1Rotacion1(pieza.posiciones);
+                    pieza.rotacion=1;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+        
+            break;
+        case ese2:
+            if(pieza.rotacion==1)
+            {
+                ese2Rotacion2(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ese2Rotacion2(pieza.posiciones);
+                    pieza.rotacion=2;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==2)
+            {
+                ese2Rotacion1(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ese2Rotacion1(pieza.posiciones);
+                    pieza.rotacion=1;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+        
+            break;
+        case palo:
+            if(pieza.rotacion==1)
+            {
+                PaloRotacion2(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    PaloRotacion2(pieza.posiciones);
+                    pieza.rotacion=2;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==2)
+            {
+                PaloRotacion1(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    PaloRotacion1(pieza.posiciones);
+                    pieza.rotacion=1;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+        
+            break;
+        case ele1:
+            if(pieza.rotacion==1)
+            {
+                ele1Rotacion2(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ele1Rotacion2(pieza.posiciones);
+                    pieza.rotacion=2;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==2)
+            {
+                ele1Rotacion3(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ele1Rotacion3(pieza.posiciones);
+                    pieza.rotacion=3;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==3)
+            {
+                ele1Rotacion4(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ele1Rotacion4(pieza.posiciones);
+                    pieza.rotacion=4;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==4)
+            {
+                ele1Rotacion1(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ele1Rotacion1(pieza.posiciones);
+                    pieza.rotacion=1;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            break;
+        case ele2:
+            if(pieza.rotacion==1)
+            {
+                ele2Rotacion2(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ele2Rotacion2(pieza.posiciones);
+                    pieza.rotacion=2;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==2)
+            {
+                ele2Rotacion3(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ele2Rotacion3(pieza.posiciones);
+                    pieza.rotacion=3;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==3)
+            {
+                ele2Rotacion4(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ele2Rotacion4(pieza.posiciones);
+                    pieza.rotacion=4;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==4)
+            {
+                ele2Rotacion1(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    ele2Rotacion1(pieza.posiciones);
+                    pieza.rotacion=1;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            break;
+        case te:
+            if(pieza.rotacion==1)
+            {
+                teRotacion2(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    teRotacion2(pieza.posiciones);
+                    pieza.rotacion=2;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==2)
+            {
+                teRotacion3(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    teRotacion3(pieza.posiciones);
+                    pieza.rotacion=3;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==3)
+            {
+                teRotacion4(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    teRotacion4(pieza.posiciones);
+                    pieza.rotacion=4;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            else if(pieza.rotacion==4)
+            {
+                teRotacion1(RotPos);
+                aceptar=pruebaRotacion(posicionfinal,RotPos,pieza.posicionActual);
+                if(aceptar==true)
+                {
+                    insertarPieza(pieza,"blue","black");
+                    pieza.posicionActual[0]=posicionfinal[0];
+                    pieza.posicionActual[1]=posicionfinal[1];
+                    teRotacion1(pieza.posiciones);
+                    pieza.rotacion=1;
+                    insertarPieza(pieza,"black","blue");
+                }
+
+            }
+            break;
+      }
+      
+        
+    }
+
+    function cambiar1()
+    {
+        let bloquebuscado;
+        bloquebuscado=document.getElementById("cuadro11");
+        bloquebuscado.classList.remove("black");
+        bloquebuscado.classList.add("blue");
+    }
+    function cambiar2()
+    {
+        let bloquebuscado;
+        bloquebuscado=document.getElementById("cuadro12");
+        bloquebuscado.classList.remove("black");
+        bloquebuscado.classList.add("blue");
+    }
+    function cambiar3()
+    {
+        let bloquebuscado;
+        bloquebuscado=document.getElementById("cuadro13");
+        bloquebuscado.classList.remove("black");
+        bloquebuscado.classList.add("blue");
+    }
+
+
+    function chequearLineas()
+    {
+        let retorno=false;
+        let haycero=false;
+        retorno=false;
+        for(i=0;i<maxY;i++)
+        { haycero=false
+            for(j=1;j<maxX;j++)
+                if(tablero[i][j]==0)
+                haycero=true;
+            if(haycero==false)
+            {
+                tablero[i][1]=2;
+                retorno=true;
+                for(j=1;j<maxX;j++)
+                cambiarcolor("cuadro"+String(i)+String(j-1),"red","green");
+                
+            }
+
+
+        }
+        return retorno;
+    }
+    function bajarLineas(numerodelinea)
+    {
+
+     
+     for(i=numerodelinea;i>0;i--)
+     {
+     for(j=1;j<maxX;j++)
+     {
+        tablero[i][j]=tablero[i-1][j];
+  
+     }
+    }
+
+    }
+
+    function deTableroATabla(color)
+    {
+        let colorActual;
+        let bloquebuscado;
+        for(i=0;i<maxY;i++)
+        for(j=1;j<maxX;j++)
+        if(tablero[i][j]==0)
+        {
+            bloquebuscado=document.getElementById("cuadro"+String(i)+String(j-1));
+            colorActual=bloquebuscado.className;
+
+
+            if(colorActual!=null&&colorActual!="black")bloquebuscado.classList.remove(colorActual);
+            if(colorActual!="black")bloquebuscado.classList.add("black");
+        }
+        else if(tablero[i][j]==1)
+        {
+            bloquebuscado=document.getElementById("cuadro"+String(i)+String(j-1));
+            colorActual=bloquebuscado.className
+
+
+            if(colorActual!=null&&colorActual!=color)bloquebuscado.classList.remove(colorActual);
+            if(colorActual!=color)bloquebuscado.classList.add(color);
+
+        }
+
+        
+    }
+
+    function comerLineas()
+    {
+        let puntajefinal;
+        for(i=0;i<maxY;i++)
+        if(tablero[i][1]==2)
+        {bajarLineas(i);
+         lineas++;}
+
+        deTableroATabla("red");
+
+                piezaactual=proximapieza;
+                proximapieza=getRandomInt(7);
+                proximaPiezaMostrar(proximapieza);
+                insertarPiezaElegida(piezaactual);
+        puntajefinal=document.getElementById("puntaje");
+        puntajefinal.innerHTML="Líneas:"+String(lineas);
+        
+
+    }
+
+
+    function empezar()
+    {
+        gameover=false;
+        reset=false;
+        insertarPiezaElegida(piezaactual);
+        setTimeout("lighting()",tiempo);
+    }
+  
+    function resetearJuego()
+    {
+
+        gameover=true;
+        if(reset==false)
+        {
+        lineas=0;
+        puntajefinal=document.getElementById("puntaje");
+        puntajefinal.innerHTML="Líneas:0";
+        for(i=0;i<maxY;i++)
+          for(j=1;j<maxX;j++)
+             tablero[i][j]=0;
+  
+        for(i=0;i<maxY;i++)
+        {
+            tablero[i][0]=1;
+            tablero[i][maxX]=1;
+        }
+        for(j=0;j<maxX+1;j++)
+            tablero[maxY][j]=1;
+
+        deTableroATabla("red");
+        pieza.posicionActual[0]=maxX;
+        pieza.posicionActual[1]=maxY;
+        
+                piezaactual=getRandomInt(7);
+                proximapieza=getRandomInt(7);
+                proximaPiezaMostrar(proximapieza);
+                
+                setTimeout("empezar()",tiempo+tiempo);
+        reset=true;
+        }
+
+    }
+
+    function bajarConTodo()
+    {
+        let devolucion;
+        devolucion=false;
+        if(gameover==false)
+        {
+
+        while (devolucion==false)
+        devolucion=bajarBloque();
+        
+        }
+    }
+    function lighting()
+    {
+        let devolucion;
+        let numeroaleatorio;
+
+        if(gameover==false)
+        {
+        devolucion=bajarBloque();
+        if(devolucion)
+        {
+            if(chequearLineas())
+            {setTimeout("comerLineas()",tiempo);
+            if(gameover==false)setTimeout("lighting()",tiempo+tiempo);}
+            else
+            {
+                piezaactual=proximapieza;
+                proximapieza=getRandomInt(7);
+                proximaPiezaMostrar(proximapieza);
+                insertarPiezaElegida(piezaactual);
+                if(gameover==false)setTimeout("lighting()",tiempo);
+            }
+        }
+        else{
+            if(gameover==false)setTimeout("lighting()",tiempo);
+        }
+
+        }
+
+    }
+
+
+document.addEventListener('keydown', (event) => {
+  var keyValue = event.key;
+  var codeValue = event.code;
+  switch (keyValue)
+  {
+    //izquierda
+    case "ArrowLeft":moverIzquierda();
+    break;
+    //derecha
+    case "ArrowRight":moverDerecha();
+    break;
+    //abajo
+    case "ArrowDown":bajarConTodo();
+    break;
+    //arriba
+    case "ArrowUp":rotarPieza();
+    break;
+    //Enter
+    case "Enter":resetearJuego();
+    break;
+  }
+})
+</script>
+<style>
+
+table{
+    margin:0;
+    padding:0;
+    border:none;
+    border-collapse: collapse;
+}
+tr {
+margin:0;
+padding:0;
+border:none;
+
+}
+th {
+ 
+border:solid black 1px;
+
+width: 20px;
+height: 20px;
+margin:0;
+padding:0;
+
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.black{
+    background-color: black;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.gray{
+    background-color: gray;
+}
+.laterales{
+
+    width: 200px;
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+<section>
+<div style="float:left">
+
+<table>
+<tr>
+    <th id="cuadro00" class="black"></th>
+    <th id="cuadro01" class="black"></th>
+    <th id="cuadro02" class="black"></th>
+    <th id="cuadro03" class="black"></th>
+    <th id="cuadro04" class="black"></th>
+    <th id="cuadro05" class="black"></th>
+    <th id="cuadro06" class="black"></th>
+    <th id="cuadro07" class="black"></th>
+    <th id="cuadro08" class="black"></th>
+    <th id="cuadro09" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro10" class="black"></th>
+    <th id="cuadro11" class="black"></th>
+    <th id="cuadro12" class="black"></th>
+    <th id="cuadro13" class="black"></th>
+    <th id="cuadro14" class="black"></th>
+    <th id="cuadro15" class="black"></th>
+    <th id="cuadro16" class="black"></th>
+    <th id="cuadro17" class="black"></th>
+    <th id="cuadro18" class="black"></th>
+    <th id="cuadro19" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro20" class="black"></th>
+    <th id="cuadro21" class="black"></th>
+    <th id="cuadro22" class="black"></th>
+    <th id="cuadro23" class="black"></th>
+    <th id="cuadro24" class="black"></th>
+    <th id="cuadro25" class="black"></th>
+    <th id="cuadro26" class="black"></th>
+    <th id="cuadro27" class="black"></th>
+    <th id="cuadro28" class="black"></th>
+    <th id="cuadro29" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro30" class="black"></th>
+    <th id="cuadro31" class="black"></th>
+    <th id="cuadro32" class="black"></th>
+    <th id="cuadro33" class="black"></th>
+    <th id="cuadro34" class="black"></th>
+    <th id="cuadro35" class="black"></th>
+    <th id="cuadro36" class="black"></th>
+    <th id="cuadro37" class="black"></th>
+    <th id="cuadro38" class="black"></th>
+    <th id="cuadro39" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro40" class="black"></th>
+    <th id="cuadro41" class="black"></th>
+    <th id="cuadro42" class="black"></th>
+    <th id="cuadro43" class="black"></th>
+    <th id="cuadro44" class="black"></th>
+    <th id="cuadro45" class="black"></th>
+    <th id="cuadro46" class="black"></th>
+    <th id="cuadro47" class="black"></th>
+    <th id="cuadro48" class="black"></th>
+    <th id="cuadro49" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro50" class="black"></th>
+    <th id="cuadro51" class="black"></th>
+    <th id="cuadro52" class="black"></th>
+    <th id="cuadro53" class="black"></th>
+    <th id="cuadro54" class="black"></th>
+    <th id="cuadro55" class="black"></th>
+    <th id="cuadro56" class="black"></th>
+    <th id="cuadro57" class="black"></th>
+    <th id="cuadro58" class="black"></th>
+    <th id="cuadro59" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro60" class="black"></th>
+    <th id="cuadro61" class="black"></th>
+    <th id="cuadro62" class="black"></th>
+    <th id="cuadro63" class="black"></th>
+    <th id="cuadro64" class="black"></th>
+    <th id="cuadro65" class="black"></th>
+    <th id="cuadro66" class="black"></th>
+    <th id="cuadro67" class="black"></th>
+    <th id="cuadro68" class="black"></th>
+    <th id="cuadro69" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro70" class="black"></th>
+    <th id="cuadro71" class="black"></th>
+    <th id="cuadro72" class="black"></th>
+    <th id="cuadro73" class="black"></th>
+    <th id="cuadro74" class="black"></th>
+    <th id="cuadro75" class="black"></th>
+    <th id="cuadro76" class="black"></th>
+    <th id="cuadro77" class="black"></th>
+    <th id="cuadro78" class="black"></th>
+    <th id="cuadro79" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro80" class="black"></th>
+    <th id="cuadro81" class="black"></th>
+    <th id="cuadro82" class="black"></th>
+    <th id="cuadro83" class="black"></th>
+    <th id="cuadro84" class="black"></th>
+    <th id="cuadro85" class="black"></th>
+    <th id="cuadro86" class="black"></th>
+    <th id="cuadro87" class="black"></th>
+    <th id="cuadro88" class="black"></th>
+    <th id="cuadro89" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro90" class="black"></th>
+    <th id="cuadro91" class="black"></th>
+    <th id="cuadro92" class="black"></th>
+    <th id="cuadro93" class="black"></th>
+    <th id="cuadro94" class="black"></th>
+    <th id="cuadro95" class="black"></th>
+    <th id="cuadro96" class="black"></th>
+    <th id="cuadro97" class="black"></th>
+    <th id="cuadro98" class="black"></th>
+    <th id="cuadro99" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro100" class="black"></th>
+    <th id="cuadro101" class="black"></th>
+    <th id="cuadro102" class="black"></th>
+    <th id="cuadro103" class="black"></th>
+    <th id="cuadro104" class="black"></th>
+    <th id="cuadro105" class="black"></th>
+    <th id="cuadro106" class="black"></th>
+    <th id="cuadro107" class="black"></th>
+    <th id="cuadro108" class="black"></th>
+    <th id="cuadro109" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro110" class="black"></th>
+    <th id="cuadro111" class="black"></th>
+    <th id="cuadro112" class="black"></th>
+    <th id="cuadro113" class="black"></th>
+    <th id="cuadro114" class="black"></th>
+    <th id="cuadro115" class="black"></th>
+    <th id="cuadro116" class="black"></th>
+    <th id="cuadro117" class="black"></th>
+    <th id="cuadro118" class="black"></th>
+    <th id="cuadro119" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro120" class="black"></th>
+    <th id="cuadro121" class="black"></th>
+    <th id="cuadro122" class="black"></th>
+    <th id="cuadro123" class="black"></th>
+    <th id="cuadro124" class="black"></th>
+    <th id="cuadro125" class="black"></th>
+    <th id="cuadro126" class="black"></th>
+    <th id="cuadro127" class="black"></th>
+    <th id="cuadro128" class="black"></th>
+    <th id="cuadro129" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro130" class="black"></th>
+    <th id="cuadro131" class="black"></th>
+    <th id="cuadro132" class="black"></th>
+    <th id="cuadro133" class="black"></th>
+    <th id="cuadro134" class="black"></th>
+    <th id="cuadro135" class="black"></th>
+    <th id="cuadro136" class="black"></th>
+    <th id="cuadro137" class="black"></th>
+    <th id="cuadro138" class="black"></th>
+    <th id="cuadro139" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro140" class="black"></th>
+    <th id="cuadro141" class="black"></th>
+    <th id="cuadro142" class="black"></th>
+    <th id="cuadro143" class="black"></th>
+    <th id="cuadro144" class="black"></th>
+    <th id="cuadro145" class="black"></th>
+    <th id="cuadro146" class="black"></th>
+    <th id="cuadro147" class="black"></th>
+    <th id="cuadro148" class="black"></th>
+    <th id="cuadro149" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro150" class="black"></th>
+    <th id="cuadro151" class="black"></th>
+    <th id="cuadro152" class="black"></th>
+    <th id="cuadro153" class="black"></th>
+    <th id="cuadro154" class="black"></th>
+    <th id="cuadro155" class="black"></th>
+    <th id="cuadro156" class="black"></th>
+    <th id="cuadro157" class="black"></th>
+    <th id="cuadro158" class="black"></th>
+    <th id="cuadro159" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro160" class="black"></th>
+    <th id="cuadro161" class="black"></th>
+    <th id="cuadro162" class="black"></th>
+    <th id="cuadro163" class="black"></th>
+    <th id="cuadro164" class="black"></th>
+    <th id="cuadro165" class="black"></th>
+    <th id="cuadro166" class="black"></th>
+    <th id="cuadro167" class="black"></th>
+    <th id="cuadro168" class="black"></th>
+    <th id="cuadro169" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro170" class="black"></th>
+    <th id="cuadro171" class="black"></th>
+    <th id="cuadro172" class="black"></th>
+    <th id="cuadro173" class="black"></th>
+    <th id="cuadro174" class="black"></th>
+    <th id="cuadro175" class="black"></th>
+    <th id="cuadro176" class="black"></th>
+    <th id="cuadro177" class="black"></th>
+    <th id="cuadro178" class="black"></th>
+    <th id="cuadro179" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro180" class="black"></th>
+    <th id="cuadro181" class="black"></th>
+    <th id="cuadro182" class="black"></th>
+    <th id="cuadro183" class="black"></th>
+    <th id="cuadro184" class="black"></th>
+    <th id="cuadro185" class="black"></th>
+    <th id="cuadro186" class="black"></th>
+    <th id="cuadro187" class="black"></th>
+    <th id="cuadro188" class="black"></th>
+    <th id="cuadro189" class="black"></th>
+</tr>
+<tr>
+    <th id="cuadro190" class="black"></th>
+    <th id="cuadro191" class="black"></th>
+    <th id="cuadro192" class="black"></th>
+    <th id="cuadro193" class="black"></th>
+    <th id="cuadro194" class="black"></th>
+    <th id="cuadro195" class="black"></th>
+    <th id="cuadro196" class="black"></th>
+    <th id="cuadro197" class="black"></th>
+    <th id="cuadro198" class="black"></th>
+    <th id="cuadro199" class="black"></th>
+</tr>
+</table>
+</div>
+<div class="laterales" style="float:right">
+    <h3>Siguiente:</h3>
+<table >
+    <tr>
+        <th id="muestra00" class="black"></th>
+        <th id="muestra01" class="black"></th>
+        <th id="muestra02" class="black"></th>
+        <th id="muestra03" class="black"></th>
+    </tr>
+    <tr>
+        <th id="muestra10" class="black"></th>
+        <th id="muestra11" class="black"></th>
+        <th id="muestra12" class="black"></th>
+        <th id="muestra13" class="black"></th>
+    </tr>
+    <tr>
+        <th id="muestra20" class="black"></th>
+        <th id="muestra21" class="black"></th>
+        <th id="muestra22" class="black"></th>
+        <th id="muestra23" class="black"></th>
+    </tr>
+    <tr>
+        <th id="muestra30" class="black"></th>
+        <th id="muestra31" class="black"></th>
+        <th id="muestra32" class="black"></th>
+        <th id="muestra33" class="black"></th>
+    </tr>
+</table>
+
+<p id="puntaje">Líneas:0</p>
+<!----
+<button id="boton1" onclick="crearPalo()">Palo</button>
+<button id="boton2" onclick="crearEle1()">Ele1</button>
+<button id="boton3" onclick="crearEle2()">Ele2</button>
+<button id="boton3" onclick="crearTe()">te</button>
+<button id="boton3" onclick="crearEse1()">ese1</button>
+<button id="boton3" onclick="crearEse2()">ese2</button>
+<button id="boton3" onclick="crearCubo()">cubo</button>
+<button id="boton3" onclick="isertarPiezaAlAzar()">azar</button>
+--->
+<br>
+<button id="Reset" onclick="resetearJuego()" style="height: 40px;font-size: 15px;">Reset</button>
+<br>
+<br>
+<button id="ROTAR" onclick="rotarPieza()" style="height: 50px;font-size: 15px;position:relative;left:15px;width:120px;">Rotar</button>
+
+<br>
+<button id="botonizq" onclick="moverIzquierda()" style="height: 50px;font-size: 15px;">izquierda</button>
+<button id="botonder" onclick="moverDerecha()"  style="height: 50px;font-size: 15px;">derecha</button>
+<br>
+<button id="boton" onclick="bajarConTodo()" style="height: 50px;font-size: 15px;position:relative;left:15px;width:120px;">BajarConTodo</button>
+
+
+
+
+</div>
+</section>
+<footer >
+<p>Tetris desarrollado 100% por Andrés Hugo Bernárdez 23/04/2023</p>
+<a href="../index.html">volver</a>
+</footer>
+
+
+
+
+</body>
+</html>
