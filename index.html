@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 
@@ -16,10 +15,30 @@
      height:100%;
      margin:0;
      padding:0;
-    /* color:white;
-     background-color: rgb(12, 12, 63);*/
+    background-color: rgb(206, 222, 236);
+     
 }
 
+    .presentacion
+    {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        
+
+        min-height: 55%;
+        background-color:rgb(206, 222, 236);
+
+    }
+
+    table,tr,td{
+        margin:0;
+        padding:0;
+       
+        border:none;
+        border-collapse: collapse;
+        
+    }
 
     h1{
         font-size: 4.7vw;
@@ -27,15 +46,22 @@
 
     footer{
         position:relative;
+        /*bottom: 0;*/
         background-color: blue;
         background: linear-gradient(to bottom, rgb(54, 141, 240),rgb(9, 9, 167));
         bottom:0px;
-        width: 100%;
-        min-height: 15%;
+
+        /*height:60px;*/
         /*min-width: 600px;*/
+        padding:20px;
 
         
         
+    }
+    footer *{
+        padding:0;
+        margin:0;
+    padding-left: 40px;
     }
 
     .divShowroom{
@@ -67,15 +93,15 @@
     header{
         
       
-        
+       
     
         background-color: blue;
         background: /*darkslateblue;*/ linear-gradient(to bottom, rgb(8, 8, 167), rgb(54, 140, 240));
         min-height: 15%;
         
         color:white;
+        padding:20px;
         
-        padding:10px 10px 10px 10px;
         
         
     }
@@ -178,10 +204,10 @@
 
 <header>
 
-<h1 id="EtiquetaCurriculumAB"> Curriculum de Andrés Hugo Bernárdez</h1>
+<h1 id="EtiquetaCurriculumAB" style=" text-align: center;"> Curriculum de Andrés Hugo Bernárdez</h1>
 <br>
 <br>
-<div style="height: 0px;">
+<div style="height: 0px;" class="presentacion">
 <div class="SLIDEDOWN" style="transform: translateY(-100%);" >
     <button class="Dropbutton">MENU</button><div class="menuprincipal">
         <form id="formularioMostrar">
@@ -240,7 +266,7 @@
 
 </header>
 
-<div style="min-height: 55%;background-color:rgb(206, 222, 236);">
+<div class="presentacion" >
 
 <div id="carta" style="width:40%;min-width: 200px; max-width: 350px; margin-left: auto;margin-right: auto;padding-top: 4vw;padding-bottom: 4vw; "> <img src="photosAB/carta.png"  style="object-fit:contain;width: 100%;"></div>
 <div id="errorSquare" class="divError" style="display:none"></div>
@@ -248,14 +274,14 @@
 
 
 
-
- <table style="width:100%;" id="tablaDatos"> 
+<div id="tablaDatos" class="divShowroom" tabindex=1>
+ <table style="width:100%;" > 
     <tr style="width: 100%;">
 
 
         <td  style="width:80%;vertical-align: top;">
             
-            <div id="elemDatos" class="divShowroom" ></div>
+            <div id="elemDatos"   ></div>
     
         </td>
         <td style="min-width:200px;max-height:400;width:20%;vertical-align: top;">
@@ -264,17 +290,17 @@
         </td>
     </tr>
 </table> 
+</div>
 
 
 
-
-            <div id="elemExperiencia" class="divShowroom" ></div>
-            <div id="elemEstudios" class="divShowroom" ></div>
-            <div id="elemInformatica" class="divShowroom" ></div>
-            <div id="elemIdiomas" class="divShowroom" ></div>
-            <div id="elemVirtudes" class="divShowroom"></div>
-            <div id="elemComplementarios" class="divShowroom" ></div>
-            <div id="elemPortafolio" class="divShowroom" >
+            <div id="elemExperiencia" class="divShowroom" tabindex=2></div>
+            <div id="elemEstudios" class="divShowroom" tabindex=3></div>
+            <div id="elemInformatica" class="divShowroom" tabindex=4></div>
+            <div id="elemIdiomas" class="divShowroom" tabindex=5></div>
+            <div id="elemVirtudes" class="divShowroom" tabindex=6></div>
+            <div id="elemComplementarios" class="divShowroom" tabindex=7></div>
+            <div id="elemPortafolio" class="divShowroom" tabindex=8>
                 <h1 style="margin-left: 10px;">Portfolio:</h1>
                 <a href="./portfolioAB/Calculadora.html" style="margin-left: 20px;">CALCULADORA</a><br><br>
                 <a href="./portfolioAB/Tetris.html" style="margin-left: 20px;">TETRIS</a><br><br>
@@ -282,12 +308,13 @@
                 <br>
                 <br>
             </div>
-
+        
 </div>
 
 <footer>
     <a href="https://www.linkedin.com/in/andr%C3%A9s-hugo-bern%C3%A1rdez-245760188/" id="etiquetaLinkedin" style="font-weight: bold;color:yellow" >Visite mi LINKEDIN haciendo click aquí</a>
-    <p id="etiquetaPaginaEnContruccion2" style="color:white" >* Última actualización: 23 de abril del 2023</p>
+    <p id="etiquetaPaginaEnContruccion2" style="color:white" >* Última actualización: 9 de junio del 2023</p>
+    <br>
 </footer>
 </body>
 </html>
