@@ -64,7 +64,7 @@ function spanishVersion()
     if(posts&&posts2)
     appendALL(posts,posts2);
 
-
+    document.documentElement.setAttribute("lang", "es");
 
     EtiquetaCurriculumAB.innerHTML=" Curriculum de Andrés Hugo Bernárdez";        
     etiquetaDescargarCV.innerHTML="Descargar CV";    
@@ -79,7 +79,7 @@ function spanishVersion()
     etiquetaMostrarTodo.innerHTML="Mostrar Todo";         
     etiquetaOcultarTodo.innerHTML="Ocultar Todo";         
     etiquetaLinkedin.innerHTML="Visite mi Linkedin haciendo click aquí";            
-    etiquetaPaginaEnContruccion2.innerHTML="* Última actualización: 23 de abril del 2023";
+    etiquetaPaginaEnContruccion2.innerHTML="* Última actualización: 9 de junio del 2023";
 
     IdiomaActual="Spanish";
 
@@ -106,6 +106,10 @@ function englishVersion()
 
         BorrarShowroom();
     if(postsEnglish&&posts2English)appendALL(postsEnglish,posts2English);
+
+
+
+    document.documentElement.setAttribute("lang", "en");
     EtiquetaCurriculumAB.innerHTML="Andrés Hugo Bernárdez's CV";        
     etiquetaDescargarCV.innerHTML="Download CV"; 
   
@@ -120,7 +124,7 @@ function englishVersion()
     etiquetaMostrarTodo.innerHTML="Show All";         
     etiquetaOcultarTodo.innerHTML="Hide All";         
     etiquetaLinkedin.innerHTML="Visit my Linkedin Profile by clicking here";            
-    etiquetaPaginaEnContruccion2.innerHTML="* Last updated: April 23th, 2023";
+    etiquetaPaginaEnContruccion2.innerHTML="* Last updated: June 9th, 2023";
 
     IdiomaActual="English"
     }
