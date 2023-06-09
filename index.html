@@ -16,18 +16,19 @@
      margin:0;
      padding:0;
     background-color: rgb(206, 222, 236);
-     
+     min-width: 520px;
 }
 
     .presentacion
     {
         max-width: 1100px;
+        
         margin-left: auto;
         margin-right: auto;
         
 
-        min-height: 55%;
-        background-color:rgb(206, 222, 236);
+        
+       
 
     }
 
@@ -58,10 +59,12 @@
         
         
     }
-    footer *{
-        padding:0;
-        margin:0;
-    padding-left: 40px;
+   
+    .margenminimo{
+        box-sizing: border-box ;
+        padding-left: 15px;
+        padding-right: 15px;
+
     }
 
     .divShowroom{
@@ -69,6 +72,9 @@
         border-top-style: solid;
         border-top-width: solid 3px;
         border-top-color: blue;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
         
         
     }
@@ -208,6 +214,7 @@
 <br>
 <br>
 <div style="height: 0px;" class="presentacion">
+<div class="margenminimo">
 <div class="SLIDEDOWN" style="transform: translateY(-100%);" >
     <button class="Dropbutton">MENU</button><div class="menuprincipal">
         <form id="formularioMostrar">
@@ -263,10 +270,11 @@
 <button onclick="englishVersion()" style="font-size: 12px;margin-right: 10px;float:right;transform: translateY(-100%);">English</button>
 <button onclick="spanishVersion()" style="font-size: 12px;margin-right: 10px;float:right;transform: translateY(-100%);">Español</button>
 </div>
+</div>
 
 </header>
 
-<div class="presentacion" >
+<div class="presentacion" style="min-height: 55%; background-color:rgb(206, 222, 236);">
 
 <div id="carta" style="width:40%;min-width: 200px; max-width: 350px; margin-left: auto;margin-right: auto;padding-top: 4vw;padding-bottom: 4vw; "> <img src="photosAB/carta.png"  style="object-fit:contain;width: 100%;"></div>
 <div id="errorSquare" class="divError" style="display:none"></div>
@@ -311,10 +319,14 @@
         
 </div>
 
-<footer>
+<footer >
+    <div class="presentacion">
+    <div class="margenminimo">
     <a href="https://www.linkedin.com/in/andr%C3%A9s-hugo-bern%C3%A1rdez-245760188/" id="etiquetaLinkedin" style="font-weight: bold;color:yellow" >Visite mi LINKEDIN haciendo click aquí</a>
     <p id="etiquetaPaginaEnContruccion2" style="color:white" >* Última actualización: 9 de junio del 2023</p>
     <br>
+    </div>
+    </div>
 </footer>
 </body>
 </html>
