@@ -5,7 +5,8 @@
     padding:0;
     position:relative;
     display: inline-block;
-    height:80vh;
+    height:70vh;
+   max-height:500px;
     width:90vw;
     left:50vw;
     transform:translateX(-50%);
