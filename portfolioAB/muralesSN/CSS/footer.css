@@ -1,0 +1,12 @@
+.footIZQ{
+    display:inline-block;width:fit-content;margin:0;margin-right: 10vw; margin-bottom: 0.5em;
+}
+.footDER{
+    display:inline-block;width:fit-content;margin:0;margin-bottom: 0.5em;
+}
+.footABAJO{
+text-align: center;
+}
+footer a{
+    color:white;text-shadow: 1px 1px black;
+}

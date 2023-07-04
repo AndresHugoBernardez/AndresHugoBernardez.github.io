@@ -1,0 +1,48 @@
+/* ESTILO DEL MENU */
+.Menu{
+    margin-left: 3vw;
+}
+
+.Menu a{
+    text-decoration-line: none;
+    color:black;
+}
+.Menu button{
+    padding:10px;
+    border:none;
+    background: none;
+    border-radius: 5px;
+    font-size:medium;
+    position:inline;
+    font-weight: bold;
+}
+.Menu button:hover{
+    background-color: aqua;
+}
+
+.Menu li{
+    padding:15px;
+    color:black;
+}
+.Menu .contenidoMenu *{
+    background-color: aqua;
+
+}
+.Menu .contenidoMenu li:hover,.Menu .contenidoMenu li:hover >a{
+    background-color: blue;
+    color: white;
+    
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    
+
+    .Menu{
+        margin-left: 0;
+    }
+}
+
+/* FIN ESTILO DEL MENU*/
