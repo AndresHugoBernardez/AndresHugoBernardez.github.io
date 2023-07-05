@@ -4,7 +4,7 @@
     
     padding:0;
     position:relative;
-    display: block;
+    display: inline-block;
     height:70vh;
     max-height:500px;
     width:90vw;
