@@ -317,6 +317,7 @@ window.addEventListener('load',(event)=>{
 
 function CambiarFoto()
         {
+            showRoom.src="";
             showRoom.src=Fotos[numeroDeFoto].src;
             showRoom.alt=Fotos[numeroDeFoto].nombre;
             direccion.innerHTML=Fotos[numeroDeFoto].direccion;
