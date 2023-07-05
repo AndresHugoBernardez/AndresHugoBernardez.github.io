@@ -6,10 +6,10 @@
     position:relative;
     display: inline-block;
     height:70vh;
-    max-height:500px;
-    width:90vw;
-    /*left:50vw;
-    transform:translateX(-50%);*/
+    max-height:450px;
+    width:94vw;
+    margin-left:3vw;
+   /* transform:translateX(-50%);*/
 }
 .imagen{
         position:relative;
