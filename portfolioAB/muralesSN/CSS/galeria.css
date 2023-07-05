@@ -6,7 +6,7 @@
     position:relative;
     display: inline-block;
     height:70vh;
-   max-height:500px;
+    max-height:500px;
     width:90vw;
     left:50vw;
     transform:translateX(-50%);
@@ -14,10 +14,14 @@
 .imagen{
         position:relative;
         display:block;
-        left:50%;
-    transform:translateX(-50%);
+        
         max-height:100%;
         max-width: 100%;
+        left:50%;
+        transform:translateX(-50%);
+       top:50%;
+      transform:translateY(-50%);
+
     }
 .botonIZQ,.botonDER{
     border: 0ch;
