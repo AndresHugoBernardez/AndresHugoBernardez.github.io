@@ -25,10 +25,8 @@
         
         margin-left: auto;
         margin-right: auto;
-        
-
-        
-       
+        display:block;
+    
 
     }
 
@@ -46,15 +44,15 @@
     }
 
     footer{
-        position:relative;
-        /*bottom: 0;*/
+        position:static;
+        display:inline-block;
+        width: 100%;
+
         background-color: blue;
         background: linear-gradient(to bottom, rgb(54, 141, 240),rgb(9, 9, 167));
-        bottom:0px;
 
-        /*height:60px;*/
-        /*min-width: 600px;*/
-        padding:20px;
+        padding-top:20px;
+        padding-bottom: 20px;
 
         
         
@@ -75,6 +73,9 @@
         box-sizing: border-box;
         padding-left: 15px;
         padding-right: 15px;
+        /*position:relative;*/
+ 
+       
         
         
     }
@@ -99,7 +100,7 @@
     header{
         
       
-       
+ 
     
         background-color: blue;
         background: /*darkslateblue;*/ linear-gradient(to bottom, rgb(8, 8, 167), rgb(54, 140, 240));
@@ -149,14 +150,18 @@
         padding:0;
         border:none;
         margin-right: 10px;
+        z-index:1;
     }
     .menuprincipal{
         background-color: darkcyan;
         width:260px;
         display:none;
         position:absolute;
-        z-index: 1;
+        z-index: 100;
         margin:0;
+        /*position:relative;*/
+        
+        
     }
     .SLIDEDOWN:hover .menuprincipal
     {
@@ -216,7 +221,8 @@
 <div style="height: 0px;" class="presentacion">
 <div class="margenminimo">
 <div class="SLIDEDOWN" style="transform: translateY(-100%);" >
-    <button class="Dropbutton">MENU</button><div class="menuprincipal">
+    <button class="Dropbutton">MENU</button>
+    <div class="menuprincipal">
         <form id="formularioMostrar">
         <input type="checkbox" checked="true" id="BotonDatos">
         <label for="BotonDatos"><div id="etiquetaDatos">Datos</div></label>
@@ -274,22 +280,22 @@
 
 </header>
 
-<div class="presentacion" style="min-height: 55%; background-color:rgb(206, 222, 236);">
+<div class="presentacion" style="display: block;min-height: 80vh; background-color:rgb(206, 222, 236);">
 
-<div id="carta" style="width:40%;min-width: 200px; max-width: 350px; margin-left: auto;margin-right: auto;padding-top: 4vw;padding-bottom: 4vw; "> <img src="photosAB/carta.png"  style="object-fit:contain;width: 100%;"></div>
+<div id="carta" style="display:none;min-width: 200px; height: 60vh; margin-left: auto;margin-right: auto;padding-top: 4vw;padding-bottom: 4vw; "> <img src="photosAB/carta.png"  style="object-fit:contain;width: 100%;height:100%"></div>
 <div id="errorSquare" class="divError" style="display:none"></div>
 
 
 
 
-<div id="tablaDatos" class="divShowroom" tabindex=1>
- <table style="width:100%;" > 
-    <tr style="width: 100%;">
+<div id="tablaDatos" class="divShowroom" >
+ <table style="width:100%;"   > 
+    <tr style="width: 100%;" style="z-index: 1;">
 
 
-        <td  style="width:80%;vertical-align: top;">
+        <td  style="width:80%;vertical-align: top;" style="z-index: 1;">
             
-            <div id="elemDatos"   ></div>
+            <div id="elemDatos"  style="z-index: 1;" ></div>
     
         </td>
         <td style="min-width:200px;max-height:400;width:20%;vertical-align: top;">
@@ -324,7 +330,7 @@
     <div class="presentacion">
     <div class="margenminimo">
     <a href="https://www.linkedin.com/in/andr%C3%A9s-hugo-bern%C3%A1rdez-245760188/" id="etiquetaLinkedin" style="font-weight: bold;color:yellow" >Visite mi LINKEDIN haciendo click aquí</a>
-    <p id="etiquetaPaginaEnContruccion2" style="color:white" >* Última actualización: 9 de junio del 2023</p>
+    <p id="etiquetaPaginaEnContruccion2" style="color:white" >* Última actualización: 6 de julio del 2023</p>
     <br>
     </div>
     </div>
