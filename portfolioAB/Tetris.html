@@ -1033,10 +1033,17 @@
         setTimeout("lighting()",tiempo);
     }
   
+    
+    var ReseteadoFlag=0;
     function resetearJuego()
     {
 
         gameover=true;
+        if(!ReseteadoFlag)
+        {
+        ReseteadoFlag=1;            
+        document.getElementById("Reset").innerHTML="Reset";
+        }
         if(reset==false)
         {
         lineas=0;
@@ -1136,10 +1143,6 @@ document.addEventListener('keydown', (event) => {
 </script>
 <style>
 
-  * {
-      touch-action: manipulation;
-  }
-
 table{
     margin:0;
     padding:0;
@@ -1156,12 +1159,15 @@ th {
  
 border:solid black 1px;
 
-width: 25px;
-height: 25px;
+width: 3.7vh;
+height: 3.7vh;
 
 margin:0;
 padding:0;
 
+}
+*{
+    font-size:1em;
 }
 
 section::after {
@@ -1173,7 +1179,7 @@ section::after {
     background-color: black;
 }
 .blue{
-    background-color: blue;
+    background-color: rgb(123, 123, 243);
 }
 .red{
     background-color: red;
@@ -1189,6 +1195,14 @@ section::after {
     width: 200px;
 }
 
+.botones{
+    height: 5vh;
+    font-size: 0.8em;
+    min-width: 20px;
+    min-height: 20px;
+    
+}
+
 
 </style>
 
@@ -1196,7 +1210,7 @@ section::after {
 
 
 <body>
-<section>
+<section style="width:fit-content;margin:auto;">
 <div style="float:left">
 
 <table>
@@ -1483,24 +1497,27 @@ section::after {
 <button id="boton3" onclick="isertarPiezaAlAzar()">azar</button>
 --->
 <br>
-<button id="Reset" onclick="resetearJuego()" style="height: 5vh;font-size: 2vh;">Reset</button>
+<div style="width: fit-content;margin:auto">
+<button id="Reset" onclick="resetearJuego()" class="botones">Start</button>
+</div>
 <br>
 <br>
-<button id="ROTAR" onclick="rotarPieza()" style="height: 5vh;width: 16vh;font-size: 2vh;position:relative;left:15px;">Rotar</button>
-
+<div style="width: fit-content;margin:auto">
+<button id="ROTAR" onclick="rotarPieza()" class="botones" style="width:14vh ">Rotar</button>
+</div>
+<button id="botonizq" onclick="moverIzquierda()" class="botones">izquierda</button>
+<button id="botonder" onclick="moverDerecha()"  class="botones">derecha</button>
 <br>
-<button id="botonizq" onclick="moverIzquierda()" style="height: 5vh;font-size: 2vh;">izquierda</button>
-<button id="botonder" onclick="moverDerecha()"  style="height: 5vh;font-size: 2vh;">derecha</button>
-<br>
-<button id="boton" onclick="bajarConTodo()" style="height: 5vh;font-size: 2vh;position:relative;left:15px;">BajarConTodo</button>
-
+<div style="width: fit-content;margin:auto">
+<button id="boton" onclick="bajarConTodo()" class="botones">BajarConTodo</button>
+</div>
 
 
 
 </div>
 </section>
-<footer >
-<p>Tetris desarrollado 100% por Andrés Hugo Bernárdez 23/04/2023</p>
+<footer style="width:fit-content;margin:auto;" >
+<p>Tetris desarrollado 100% por Andrés Hugo Bernárdez 23/04/2023 (actualizado 06/07/2023)</p>
 <a href="../index.html">volver</a>
 </footer>
 
