@@ -18,7 +18,7 @@ var Fotos=[
             },
             {
                 "nombre":"Niña en Edificio 2",
-                "src650":"./Images/Fotos/ninia2.jpg",
+                "src650":"../Images/Fotos/ninia2.jpg",
                 "src":"https://scontent.fros2-2.fna.fbcdn.net/v/t39.30808-6/350132309_3394776167505508_5055866830186949649_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=TcUY-B3mhKAAX97DEfE&_nc_ht=scontent.fros2-2.fna&oh=00_AfDyWfNjbrzEXp-DaR754oFeA0zKVGaOOwUOS5bhhvKPMA&oe=64AA3D92",
                 "direccion":"Mitre y Sarmiento"
                 
