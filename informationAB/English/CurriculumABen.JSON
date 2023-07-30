@@ -259,6 +259,10 @@
                 "level":"essential"
             },
             {
+                "name":"PHP",
+                "level":"essential"
+            },
+            {
                 "name":"Assembler",
                 "level":"essential"
             }
@@ -267,6 +271,10 @@
         [
             {
                 "name":"Sybase SQL",
+                "level":"essential"
+            },
+            {
+                "name":"mySQL",
                 "level":"essential"
             }
         ],
