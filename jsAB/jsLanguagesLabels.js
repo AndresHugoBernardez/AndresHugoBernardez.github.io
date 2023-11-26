@@ -79,7 +79,7 @@ function spanishVersion()
     etiquetaMostrarTodo.innerHTML="Mostrar Todo";         
     etiquetaOcultarTodo.innerHTML="Ocultar Todo";         
     etiquetaLinkedin.innerHTML="Visite mi Linkedin haciendo click aquí";            
-    etiquetaPaginaEnContruccion2.innerHTML="* Última actualización: 21 de septiembre del 2023";
+    etiquetaPaginaEnContruccion2.innerHTML="* Última actualización: 26 de noviembre del 2023";
 
     IdiomaActual="Spanish";
 
@@ -124,7 +124,7 @@ function englishVersion()
     etiquetaMostrarTodo.innerHTML="Show All";         
     etiquetaOcultarTodo.innerHTML="Hide All";         
     etiquetaLinkedin.innerHTML="Visit my Linkedin Profile by clicking here";            
-    etiquetaPaginaEnContruccion2.innerHTML="* Last updated: September 21st, 2023";
+    etiquetaPaginaEnContruccion2.innerHTML="* Last updated: November 26th, 2023";
 
     IdiomaActual="English"
     }
