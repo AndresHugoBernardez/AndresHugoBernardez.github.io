@@ -25,18 +25,19 @@ border-bottom: 20px rgb(9, 14, 78) solid;
 
 
 .titulo{
-     /*display: inline-block;*/
+     
      position: sticky;
 
     background-color: brown;
     bottom:20vh;
 
-    /*transform: translateY(20px);*/
+    
     text-align: center;
 
     
     
 }
+
 
 h1{
     display: inline;
@@ -46,8 +47,8 @@ h1{
 
 #cajita
 {
-  
-    padding: 1px;
+    
+    padding:1px;
 }
 
 /*---------poema-----------*/
@@ -65,6 +66,7 @@ h1{
 .espacio{
     height: 60vh;
     width: 100%;
+    max-height: 60vw;
     
 }
 
@@ -140,16 +142,26 @@ width: 100%;
 }
 .carta{
     height: 70vh;
-    width: 68%;
-    overflow: auto;
+    width: 70%;
+    
     background-color: sandybrown;
     border: 2px black solid;
-    padding: 20px;
+    
+    
     left:15%;
-    top:10vh;
+    top:15vh;
     position: fixed;
     z-index: 100;
 
+}
+.nota{
+    position:relative;
+    margin: 5vh 5vh 0vh 5vh;
+    overflow: auto;
+    
+    max-height: 53vh;
+    
+    
 }
 .carta h2,.carta p{
     margin-left: 20px;
@@ -157,23 +169,41 @@ width: 100%;
     color: black;
     text-align: left;
 }
-.carta div{
+.boton{
     width: 100%;
-    height: 80px;
-    position: relative;
+    height: 12vh;
+ 
+ 
 
     display:flex;
-    justify-content:center;
+
 }
-.carta div button{
+.boton button{
     font-size: 18px;
-    padding: 15px;
+   top:50%;
+    transform: translateY(50%);
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    max-height: 50%;
+    min-height: 25px;
 
     width: 200px;
 
 }
 
+/*------------RESPONSIVE-------------*/
+@media screen and (max-width: 800px) {
 
+    .obra{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
 
 </style>
 <script>
@@ -193,14 +223,22 @@ width: 100%;
 
 
 <div class="carta" id="carta">
+<div class="nota">
 <h2>Nota:</h2>
 <p>La siguiente página web es una iterpretación subjetiva personal de las obras de Van Gogh y el poema 20 de Neruda.</p>
 <p>Esta página solo es una representación artística y no va a dedicada a nadie en especial.</p>
 <p>Es posible que existan otras obras que se adapten mejor a cada verso.</p>
 <h2>Vicent Van Gogh</h2>
 <p>Existe la teoría de que los misterios relacionados a su oreja o su fallecimiento se deban simplemente a riñas que el pintor tuvo. Se dice que nunca delató a las autoridades a quienes lo atacaron y prefirió asumir la etiqueta de "loco", aunque es cierto que ya tenía ciertos problemas mentales.</p>
-<div>
-<button onclick="ocultarCarta()">Aceptar</button>
+
+<h2>Pablo Neruda</h2>
+<p>A diferencia de Vicent, el chileno, Pablo Neruda, sí tuvo reconocimiento en vida, conmemorado con un premio Nobel de Literatura. Llegó a ser embajador chileno de Francia.</p>
+<br>
+<p> Esta mezcla de personajes históricos trata de unir dos mundos alejados por tiempo y espacio que se conectan por el amar a una mujer. </p>
+<p> Espero lo disfrute...</p>
+</div>
+<div class="boton">
+<button onclick="ocultarCarta()">Empezar</button>
 </div>
 </div>
 
