@@ -25,7 +25,7 @@
         
         margin-left: auto;
         margin-right: auto;
-        display:block;
+        
     
 
     }
@@ -45,6 +45,8 @@
 
     footer{
         position:static;
+        display:fixed;
+        bottom:0px;
         display:inline-block;
         width: 100%;
 
@@ -142,15 +144,23 @@
         /*border-color: blue;*/
         
     }
+    .botonlenguaje
+    {
+        font-size: 1vw;
+        margin-right: 10px;
+
+    }
 
     .SLIDEDOWN
     {
-        display: inline-block;
+        display: inline;
         margin:0;
         padding:0;
         border:none;
         margin-right: 10px;
         z-index:1;
+        height: 3.8vw;
+        float:left;
     }
     .menuprincipal{
         background-color: darkcyan;
@@ -191,6 +201,12 @@
     input,label,h2,button{
         font-size:3.7vw;
     }
+    .botonlenguaje
+    {
+        font-size: 2vw;
+        margin-right: 4px;
+
+    }
     p,li,dd,a{
         font-size: 3vw;
     }
@@ -222,71 +238,83 @@
 <body >
 
 <header>
+    
+<h1 id="EtiquetaCurriculumAB" style=" text-align: center;margin-bottom: 0px;"> Curriculum de Andrés Hugo Bernárdez</h1>
 
-<h1 id="EtiquetaCurriculumAB" style=" text-align: center;"> Curriculum de Andrés Hugo Bernárdez</h1>
-<br>
-<br>
-<div style="height: 0px;" class="presentacion">
-<div class="margenminimo">
-<div class="SLIDEDOWN" style="transform: translateY(-100%);" >
-    <button class="Dropbutton">MENU</button>
-    <div class="menuprincipal">
-        <form id="formularioMostrar">
-        <input type="checkbox" checked="true" id="BotonDatos">
-        <label for="BotonDatos"><div id="etiquetaDatos">Datos</div></label>
-        <br>
-        <input type="checkbox" checked="true" id="BotonExperiencia">
-        <label for="BotonExperiencia"><div id="etiquetaExperiencia">Experiencia</div></label>
-        <br>
-        
-        
-        <input type="checkbox" checked="true" id="BotonEstudios">
-        <label for="BotonEstudios"><div id="etiquetaEstudios">Estudios</div></label>
-        <br>
-        
-        
-        <input type="checkbox" checked="true" id="BotonInformatica">
-        <label for="BotonInformatica"><div id="etiquetaInformatica">Informática</div></label>
-        <br>
-        
-        
-        <input type="checkbox" checked="true" id="BotonIdiomas">
-        <label for="BotonIdiomas"><div id="etiquetaIdiomas">Idiomas</div></label>
-        <br>
-        
-        
-        <input type="checkbox" checked="true" id="BotonVirtudes">
-        <label for="BotonVirtudes"><div id="etiquetaVirtudes">Virtudes</div></label>
-        <br>
-        
-        
-        <input type="checkbox" checked="true" id="BotonComplementario">
-        <label for="BotonComplementario"><div id="etiquetaDatosComplementarios">Datos Complementarios</div></label>
-        <br>
-        
-        <input type="checkbox" checked="true" id="Portfolio">
-        <label for="Portfolio"><div id="etiquetaPortfolio">Portfolio</div></label>
-        <br>
-        
-        </form>
-        
-        <form>
-        <div id="botonMostrar" style="padding-left: 2vw;"><label id="etiquetaMostrarTodo">Mostrar Todo</label></div>
-        
-        <div id="botonOcultar" style="padding-left: 2vw;"><label id="etiquetaOcultarTodo">Ocultar Todo</label></div>
-        
-        <!-- <a href="mailto:andreshugobernardez@gmail.com?Subject=Interesado%20en%20contratar%20sus%20servicios">andreshugobernardez@gmail.com.ar</a>-->
-        </form>
-    </div>
-
-</div>
-<button style="float:right;transform: translateY(-100%);" id="etiquetaDescargarCV">Descargar CV</button>
-<button onclick="englishVersion()" style="font-size: 12px;margin-right: 10px;float:right;transform: translateY(-100%);">English</button>
-<button onclick="spanishVersion()" style="font-size: 12px;margin-right: 10px;float:right;transform: translateY(-100%);">Español</button>
-</div>
-</div>
 
 </header>
+<div style="position :sticky;top:0;width: 100%; background-color: rgb(54, 140, 240)">
+    
+    <div style="width: 100%;display:flex" class="presentacion">
+        <div class="margenminimo" style="width: 100%;">
+    
+        
+        <div class="SLIDEDOWN" >
+            <button  style="margin-right: 0;">MENU</button>
+                <div class="menuprincipal">
+                <form id="formularioMostrar">
+                <input type="checkbox" checked="true" id="BotonDatos">
+                <label for="BotonDatos"><div id="etiquetaDatos">Datos</div></label>
+                <br>
+                <input type="checkbox" checked="true" id="BotonExperiencia">
+                <label for="BotonExperiencia"><div id="etiquetaExperiencia">Experiencia</div></label>
+                <br>
+                
+                
+                <input type="checkbox" checked="true" id="BotonEstudios">
+                <label for="BotonEstudios"><div id="etiquetaEstudios">Estudios</div></label>
+                <br>
+                
+                
+                <input type="checkbox" checked="true" id="BotonInformatica">
+                <label for="BotonInformatica"><div id="etiquetaInformatica">Informática</div></label>
+                <br>
+                
+                
+                <input type="checkbox" checked="true" id="BotonIdiomas">
+                <label for="BotonIdiomas"><div id="etiquetaIdiomas">Idiomas</div></label>
+                <br>
+                
+                
+                <input type="checkbox" checked="true" id="BotonVirtudes">
+                <label for="BotonVirtudes"><div id="etiquetaVirtudes">Virtudes</div></label>
+                <br>
+                
+                
+                <input type="checkbox" checked="true" id="BotonComplementario">
+                <label for="BotonComplementario"><div id="etiquetaDatosComplementarios">Datos Complementarios</div></label>
+                <br>
+                
+                <input type="checkbox" checked="true" id="Portfolio">
+                <label for="Portfolio"><div id="etiquetaPortfolio">Portfolio</div></label>
+                <br>
+                
+                </form>
+                
+                <form >
+                <div id="botonMostrar" style="padding-left: 2vw;"><label id="etiquetaMostrarTodo">Mostrar Todo</label></div>
+                
+                <div id="botonOcultar" style="padding-left: 2vw;"><label id="etiquetaOcultarTodo">Ocultar Todo</label></div>
+                
+                <!-- <a href="mailto:andreshugobernardez@gmail.com?Subject=Interesado%20en%20contratar%20sus%20servicios">andreshugobernardez@gmail.com.ar</a>-->
+                </form>
+                </div>
+    
+        </div>
+        <button  id="etiquetaDescargarCV" style="float:right">Descargar CV</button>
+      
+        <div style="float:right;margin: 0;margin-top: 1vw;padding-left: 200px;">
+            <button onclick="spanishVersion()" class="botonlenguaje" >Español</button>
+            <button onclick="englishVersion()" class="botonlenguaje">English</button>
+        </div>    
+            
+        
+    
+    </div>
+    </div>
+    </div>
+
+<!---   ***********************************************************************      -->
 
 <div class="presentacion" style="display: block;min-height: 80vh; background-color:rgb(206, 222, 236);">
 
