@@ -297,7 +297,7 @@ function appendDatos(padre,objetivo,nombresDeEtiquetas)
     cadena="<b>"+nombresDeEtiquetas["address"]+"</b>"+objetivo["address"];
     appendString(padre,cadena,2,"dt");
     cadena="<b>E-mail: </b><a href='mailto:andreshugobernardez@gmail.com?Subject=Interesado%20en%20contratar%20sus%20servicios'>andreshugobernardez@gmail.com.ar</a>"
-    appendString(padre,cadena,2,"dt");
+    appendString(padre,cadena,1,"dt");
   
 
 
