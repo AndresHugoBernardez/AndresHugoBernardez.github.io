@@ -193,10 +193,18 @@
         color:white
        
     }
+
+    .celdaDatos{
+        width:80%;vertical-align: top;
+        z-index: 1;
+    }
  
     @media screen and (max-width: 800px) {
     h1{
         font-size:5.8vw;
+    }
+    .celdaDatos{
+        width:65%;
     }
     input,label,h2,button{
         font-size:3.7vw;
@@ -330,7 +338,7 @@
     <tr style="width: 100%;" style="z-index: 1;">
 
 
-        <td  style="width:80%;vertical-align: top;" style="z-index: 1;">
+        <td  class="celdaDatos">
             
             <div id="elemDatos"  style="z-index: 1;" ></div>
     
