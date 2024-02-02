@@ -79,7 +79,7 @@ function spanishVersion()
     etiquetaMostrarTodo.innerHTML="Mostrar Todo";         
     etiquetaOcultarTodo.innerHTML="Ocultar Todo";         
     etiquetaLinkedin.innerHTML="Visite mi Linkedin haciendo click aquí";            
-    etiquetaPaginaEnContruccion2.innerHTML="* Última actualización: 1 de febrero de 2024";
+    etiquetaPaginaEnContruccion2.innerHTML="* Última actualización: 2 de febrero de 2024";
 
     IdiomaActual="Spanish";
 
