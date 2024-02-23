@@ -101,6 +101,7 @@ function fillList(){
 
 /**
  * Sirve para agregar un feriado en la lista inputs type="radio"
+ * Si el parámetro es "" (string vacío) toma como parámetro el valor de newDateFeriado
  */
 function newHoliday(stringFecha){
     let newElement;
@@ -390,7 +391,8 @@ if(dateInicioCiclo!=""){
     .box{
       display:inline-block;
       vertical-align: top;
-      margin:15px
+      margin:15px;
+      width:100%;
     }
     .step{
       width: fit-content;
