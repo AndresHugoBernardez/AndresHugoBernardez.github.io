@@ -1,0 +1,351 @@
+
+<!---   Página de item -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+<script>
+
+var buttonAnterior;
+var buttonHome;
+var buttonSiguiente;
+var itemTitle;
+var definition;
+var utility;
+var using;
+var itemImages;
+var itemVideos;
+
+
+
+var dataJson=null;
+
+    window.addEventListener('load',(event)=>{
+
+        buttonAnterior=document.getElementById("buttonAnterior");
+        buttonHome=document.getElementById("buttonHome");
+        buttonSiguiente=document.getElementById("buttonSiguiente");
+
+        
+
+        itemTitle=document.getElementById("itemTitle");
+        definition=document.getElementById("definition");
+        utility=document.getElementById("utility");
+        using=document.getElementById("using");
+        itemImages=document.getElementById("itemImages");
+        itemVideos=document.getElementById("itemVideos");
+
+        fetch("https://andreshugobernardez.github.io/portfolioAB/wikitech/herramientas.json")
+        .then(response => {
+            
+            return response.json();
+            
+            })
+        .then(jsondata => {
+            
+            
+            let newElement;
+            let newDivElement;
+            dataJson=jsondata;
+
+            //cargando información en la página
+
+            newElement= document.createElement("h2");
+            newElement.innerHTML=dataJson.herramientas[0].name;
+            itemTitle.appendChild(newElement);
+
+            //descripción
+          
+            for(i=0;i<dataJson.herramientas[0].description.length;i++){
+                newElement= document.createElement("p");
+                newElement.innerHTML=dataJson.herramientas[0].description[i];
+                definition.appendChild(newElement);
+
+
+            }
+
+
+
+            //utility
+          
+            for(i=0;i<dataJson.herramientas[0].utility.length;i++){
+                newElement= document.createElement("p");
+                newElement.innerHTML=dataJson.herramientas[0].utility[i];
+                utility.appendChild(newElement);
+
+
+            }
+            
+            //using
+          
+            for(i=0;i<dataJson.herramientas[0].using.length;i++){
+                newElement= document.createElement("p");
+                newElement.innerHTML=dataJson.herramientas[0].using[i];
+                using.appendChild(newElement);
+
+
+            }
+
+                /*
+                <div id="itemImages">
+                <div class="itemImage"> <img src="../wikiImages/serrucho_de_costilla.jpg">
+                <p class="imageText">foto de serrucho</p>
+                </div>*/
+
+            //imágenes...
+
+            for(i=0;i<dataJson.herramientas[0].images.length;i++){
+
+
+                newDivElement=document.createElement("div");
+                newDivElement.className="itemVideo";
+
+
+
+                newElement= document.createElement("img");
+                newElement.src=dataJson.herramientas[0].images[i].src;
+                newDivElement.appendChild(newElement);
+
+
+
+                newElement= document.createElement("p");
+                newElement.className="imageText";
+                newElement.innerHTML=dataJson.herramientas[0].images[i].epigraph;
+                newDivElement.appendChild(newElement);
+
+                itemImages.appendChild(newDivElement);
+
+            }
+
+
+
+        /*
+         <div class="itemVideo">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/UwCG9Y21_2M" 
+                    title="TWICE “SCIENTIST” M/V" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                    <p class="videoText"> video de </p>
+                </div>
+        */
+            //videos...
+
+            for(i=0;i<dataJson.herramientas[0].videos.length;i++){
+
+
+            newDivElement=document.createElement("div");
+            newDivElement.className="itemVideo";
+
+
+
+            newElement= document.createElement("iframe");
+            newElement.width="300px";
+            newElement.height="200px";
+            newElement.src=dataJson.herramientas[0].videos[i].src;
+            newElement.title=dataJson.herramientas[0].videos[i].title;
+            newElement.frameBorder=0;
+            newElement.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+            newElement.allowFullscreen=true;
+            newDivElement.appendChild(newElement);
+
+
+
+            newElement= document.createElement("p");
+            newElement.className="videoText";
+            newElement.innerHTML=dataJson.herramientas[0].videos[i].epigraph;
+            newDivElement.appendChild(newElement);
+
+            itemVideos.appendChild(newDivElement);
+
+            }
+
+
+
+            })
+        .catch(err =>{  
+      
+            console.log('Solicitud fallida 1', err);
+
+
+               
+      
+  
+            }) ;  
+
+    });
+
+</script>
+
+<style>
+
+    body{
+        margin:0;
+        padding:0;
+        border:0;
+        
+    }
+    header{
+        text-align: center;
+        background-color: lightblue;
+    }
+    footer{
+        
+        text-align: center;
+        background-color: lightblue;
+        bottom:0;
+    }
+
+    .base{
+        min-height: 80vh;
+        width: 80vw;
+        margin:auto;
+        max-width: 900px;
+    }
+
+    .menuBase{
+        background-color:honeydew;
+        position:sticky;
+        top:0;
+    }
+ 
+    #menu{
+        max-width: 900px;
+        width:80vw;
+        margin:auto;
+        display: grid;
+        grid-template-columns:  120px auto 120px;
+        
+      
+      
+    }
+    button{
+        width:100px;
+        background-color: transparent;
+        border-radius: 15px;
+        padding:10px;
+        margin:5px auto 5px auto;
+        border:none;
+        background-color: rgb(179, 201, 207);
+
+
+    }
+    button:hover{
+        background-color: aquamarine;
+    }
+
+
+    img{
+        max-width: 270px;
+       
+    }
+    .itemImage{
+        display: inline-block;
+        max-width: 270px;
+        
+        
+        
+
+    }
+    .itemVideo{
+        display: inline-block;
+        max-width: 300px;
+        vertical-align: top;
+    
+        
+    }
+    #itemImages,#itemVideos{
+        width: 100%;
+        display: block;
+   
+    }
+    
+    
+    </style>
+
+</head>
+
+<body>
+
+<header>
+<br>
+<H1> <a href="https://www.google.com">Wiki-Tech</a></H1>
+<br>
+
+
+</header>
+<div>
+    <div class="menuBase">
+        <div id="menu">
+
+            <button id="buttonAnterior" >Anterior</button>
+            <button id="buttonHome"     >Home</button>
+            <button id="buttonSiguiente">Siguiente</button>
+
+
+        </div>
+    </div>
+    <div class="base">
+
+      
+
+        <div id="itemDescription">
+
+            <div id="itemTitle">
+            
+            </div>
+            <div id="itemText">
+                <h3>Definición:</h3>
+                <div id="definition">
+                    
+                </div>
+                <h3>Utilidad:</h3>
+                <div id="utility">
+                    
+                </div>
+                <h3>Modo de uso:</h3>
+                <div id="using">
+                    
+                </div>
+            
+            </div>
+            
+            <div id="itemImages">
+               
+                
+            </div>
+            <div id="itemVideos">
+                
+                
+
+            </div>
+
+            
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<footer>
+<br>
+<p> ♦Andy's Softwares♦</p>
+<p> 2024</p>
+<br>
+</footer>
+
+</body>
+
+
+
+
+
+</html>
