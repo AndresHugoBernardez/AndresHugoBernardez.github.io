@@ -1,0 +1,37 @@
+
+{
+"name":"herramientas",
+"group":"carpinteria",
+"herramientas":
+[
+    {
+        "name":"Serrucho de Costilla",
+        "description":
+            ["Hoja rectangular alargada recta con dientes triangulares y trabados en la parte inferior y un nervio (costilla) en la parte superior.",
+             "Posee un mango en un extremo.",
+            "Es rígida. Permite cortar tanto hacia adelante como hacia atrás."],
+        "utility":
+            ["Es usada para realizar cortes finos. La maderas a cortar deben tener una altura máxima ya que la cotilla no permite el paso de la hoja."],
+        "using":
+            ["Debe poner el pie opuesto a la mano a usar hacia adelante."],
+        "images":
+            [
+                
+                {"src":"./wikiImages/serrucho_de_costilla.j,pg",
+                 "epigraph":"Imágen de un serrucho de costilla."
+                }
+            ],
+        "videos":
+            [
+                {
+                    "src":"https://www.youtube.com/embed/UwCG9Y21_2M",
+                    "title":"",
+                    "epigraph":""
+                }
+            ]
+    },
+    {
+
+    }
+]
+}
