@@ -17,7 +17,10 @@
         "images":
             [
                 
-                {"src":"./wikiImages/serrucho_de_costilla.j,pg",
+                {"src":"./wikiImages/serrucho_de_costilla.jpg",
+                 "epigraph":"Imágen de un serrucho de costilla."
+                },
+                {"src":"./wikiImages/serrucho_de_costilla2.png",
                  "epigraph":"Imágen de un serrucho de costilla."
                 }
             ],
@@ -25,13 +28,15 @@
             [
                 {
                     "src":"https://www.youtube.com/embed/UwCG9Y21_2M",
-                    "title":"",
-                    "epigraph":""
+                    "title":"Para que sirve un serrucho costilla",
+                    "epigraph":"Para que sirve un serrucho costilla"
+                },
+                {
+                    "src":"https://www.youtube.com/embed/QOYYFQFYJyo",
+                    "title":"AFILADO Y TRABADO DE SERRUCHO DE COSTILLA",
+                    "epigraph":"AFILADO Y TRABADO DE SERRUCHO DE COSTILLA"
                 }
             ]
-    },
-    {
-
     }
 ]
 }
