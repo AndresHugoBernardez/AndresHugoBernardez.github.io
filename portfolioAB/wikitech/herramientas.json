@@ -37,6 +37,41 @@
                     "epigraph":"AFILADO Y TRABADO DE SERRUCHO DE COSTILLA"
                 }
             ]
+    },
+    {
+        "name":"Formón",
+        "description":
+            ["Es un hierro acerado con mango de madera (o plástico) y filo horizontal.",
+             "Su anchura varía entre 4 a 40 mm.",
+            "El ángulo del filo oscila entre los 25-40° dependiendo del tipo de madera a trabaqjar. Madera blanda, menor ángulo; madera dura, mayor ángulo."],
+        "utility":
+            ["Sirve para hacer oquedades en la madera.","No debe hacerse palanca con él, por tener una hoja muy delgada."],
+        "using":
+            ["Como todo elemento punsante y de corte su filo debe usarse en dirección alejada de cualquier parte del cuerpo.","Puede golpearse con una maceta de madera o de goma.","Debe usarse en dirección de la fibra de la madera para evitar que se arranque más madera que la deseada."],
+        "images":
+            [
+                
+                {"src":"./wikiImages/formones.jpeg",
+                 "epigraph":"Formones"
+                },
+                {"src":"./wikiImages/formon.jpg",
+                 "epigraph":"Formón"
+                }
+            ],
+        "videos":
+            [
+                {
+                    "src":"https://www.youtube.com/embed/Y0MF8i_a3MQ",
+                    "title":"Escuela de bricolaje 8: usar bien los formones (Bricocrack)",
+                    "epigraph":"Escuela de bricolaje 8: usar bien los formones (Bricocrack)"
+                },
+                {
+                    "src":"https://www.youtube.com/embed/e6UZfHBy1_w",
+                    "title":"como usar los FORMONES para madera y CINCELES (formones STANLEY)",
+                    "epigraph":"como usar los FORMONES para madera y CINCELES (formones STANLEY)"
+                }
+            ]
     }
+
 ]
 }
