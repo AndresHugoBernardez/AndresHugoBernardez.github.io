@@ -171,8 +171,8 @@ function deleteHoliday(){
       
         if(actualElement.checked==true){
 
-          currentDate=actualElement.value;
-          index=listFeriados.indexOf(currentDate);
+          
+          index=listFeriados.indexOf(nombre);
           listFeriados.splice(index,1);
 
           console.log("borrando:"+nombre);
