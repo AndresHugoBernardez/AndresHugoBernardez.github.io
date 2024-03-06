@@ -1,0 +1,251 @@
+<!---   Página de item -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+    <script>
+
+        var buttonAnterior;
+        var buttonHome;
+        var buttonSiguiente;
+      
+        var itemsImages;
+        
+        
+        
+        
+        var dataJson=null;
+        
+            window.addEventListener('load',(event)=>{
+        
+                buttonAnterior=document.getElementById("buttonAnterior");
+                buttonHome=document.getElementById("buttonHome");
+                buttonSiguiente=document.getElementById("buttonSiguiente");
+        
+                
+        
+               
+                itemsImages=document.getElementById("itemsImages");
+              
+        
+                fetch("https://andreshugobernardez.github.io/portfolioAB/wikitech/herramientas.json")
+                .then(response => {
+                    
+                    return response.json();
+                    
+                    })
+                .then(jsondata => {
+                    
+                    
+                    let newElement;
+                    let newDivElement;
+                   
+                    dataJson=jsondata;
+        
+        
+                    for(k=0;k<dataJson.herramientas.length;k++){
+                        
+        
+                        
+                    
+                        //imágenes...
+                        
+                        
+                        
+                        if(dataJson.herramientas[k].images.length>0){
+                            i=0;
+        
+                            newDivElement=document.createElement("div");
+                            newDivElement.className="itemImage";
+        
+        
+        
+                            newElement= document.createElement("img");
+                            newElement.src=dataJson.herramientas[k].images[i].src;
+                            newDivElement.appendChild(newElement);
+        
+        
+                            //newElement= document.createElement("br");
+                            //newDivElement.appendChild(newElement);
+        
+                            newElement= document.createElement("p");
+                            
+                            newElement.innerHTML=dataJson.herramientas[k].name;
+                            newDivElement.value=k;
+                            newDivElement.addEventListener('click',(event)=>{getWiki(event.currentTarget.value);});
+                            newDivElement.appendChild(newElement);
+        
+                            itemsImages.appendChild(newDivElement);
+        
+                        }
+        
+        
+        
+        
+                    }
+        
+                    })
+                .catch(err =>{  
+              
+                    console.log('Solicitud fallida 1', err);
+        
+        
+                       
+              
+          
+                    }) ;  
+        
+            });
+
+
+            function getWiki(k)
+            {
+                window.location.assign("./wikiEjemplo.html"+"?p="+k.toString());
+                
+            }
+        
+    </script>
+    <style>
+
+        body{
+            margin:0;
+            padding:0;
+            border:0;
+            
+        }
+        header{
+            text-align: center;
+            background-color: lightblue;
+        }
+        footer{
+            
+            text-align: center;
+            background-color: lightblue;
+            bottom:0;
+        }
+    
+        .base{
+            min-height: 80vh;
+            width: 80vw;
+            margin:auto;
+            max-width: 900px;
+        }
+    
+        .menuBase{
+            background-color:honeydew;
+            position:sticky;
+            top:0;
+        }
+     
+        #menu{
+            max-width: 900px;
+            width:80vw;
+            margin:auto;
+            display: grid;
+            grid-template-columns:  120px auto 120px;
+            
+          
+          
+        }
+        button{
+            
+            width:100px;
+            background-color: transparent;
+            border-radius: 15px;
+            padding:10px;
+            margin:5px auto 5px auto;
+            border:none;
+            background-color: rgb(179, 201, 207);
+    
+    
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+    
+    
+        img{
+            max-width: 270px;
+           
+        }
+        .itemImage{
+            display: inline-block;
+            max-width: 270px;
+            
+            
+            
+    
+        }
+   
+        #itemsImages{
+            width: 100%;
+            display: block;
+       
+        }
+        
+        
+        </style>
+    
+    </head>
+    
+    <body>
+    
+    <header>
+    <br>
+    <H1> <a href="https://www.google.com">Wiki-Tech</a></H1>
+    <br>
+    
+    
+    </header>
+    <div>
+        <!--<div class="menuBase">
+            <div id="menu">
+    
+                <button id="buttonAnterior" >Anterior</button>
+                <button id="buttonHome"     >Home</button>
+                <button id="buttonSiguiente">Siguiente</button>
+    
+    
+            </div>
+        </div>-->
+        <div class="base">
+    
+          
+    
+            
+                
+                <div id="itemsImages">
+                   
+                    
+                </div>
+      
+    
+                
+            
+    
+    
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    <footer>
+    <br>
+    <p> ♦Andy's Softwares♦</p>
+    <p> 2024</p>
+    <br>
+    </footer>
+    
+    </body>
+    
+    
+    
+    
+    
+    </html>

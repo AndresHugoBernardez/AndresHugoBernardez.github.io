@@ -37,6 +37,10 @@ var dataJson=null;
         itemImages=document.getElementById("itemImages");
         itemVideos=document.getElementById("itemVideos");
 
+
+        buttonHome.addEventListener('click',(event)=>{window.location.assign("./wikiIndex.html");});
+
+
         fetch("https://andreshugobernardez.github.io/portfolioAB/wikitech/herramientas.json")
         .then(response => {
             
@@ -48,55 +52,104 @@ var dataJson=null;
             
             let newElement;
             let newDivElement;
+            let k;
+            let pageNumber;
             dataJson=jsondata;
 
-            //cargando información en la página
 
-            newElement= document.createElement("h2");
-            newElement.innerHTML=dataJson.herramientas[0].name;
-            itemTitle.appendChild(newElement);
-
-            //descripción
-          
-            for(i=0;i<dataJson.herramientas[0].description.length;i++){
-                newElement= document.createElement("p");
-                newElement.innerHTML=dataJson.herramientas[0].description[i];
-                definition.appendChild(newElement);
-
-
-            }
-
-
-
-            //utility
-          
-            for(i=0;i<dataJson.herramientas[0].utility.length;i++){
-                newElement= document.createElement("p");
-                newElement.innerHTML=dataJson.herramientas[0].utility[i];
-                utility.appendChild(newElement);
-
-
-            }
+            pageNumber=document.location.href.slice(document.location.href.lastIndexOf("?p=")+3);
             
-            //using
-          
-            for(i=0;i<dataJson.herramientas[0].using.length;i++){
-                newElement= document.createElement("p");
-                newElement.innerHTML=dataJson.herramientas[0].using[i];
-                using.appendChild(newElement);
+            
+            if(pageNumber!="" && pageNumber.length<6)k=parseInt(pageNumber);else k=0;
+            
+            
+            if(k>=0 && k<dataJson.herramientas.length){
+                //cargando información en la página
+                buttonSiguiente.addEventListener('click',(event)=>{window.location.assign("./wikiEjemplo.html"+"?p="+(k+1).toString());});
+                buttonAnterior.addEventListener('click',(event)=>{window.location.assign("./wikiEjemplo.html"+"?p="+(k-1).toString());});
+
+                newElement= document.createElement("h2");
+                newElement.innerHTML=dataJson.herramientas[k].name;
+                itemTitle.appendChild(newElement);
+
+                //descripción
+            
+                for(i=0;i<dataJson.herramientas[0].description.length;i++){
+                    newElement= document.createElement("p");
+                    newElement.innerHTML=dataJson.herramientas[k].description[i];
+                    definition.appendChild(newElement);
 
 
-            }
+                }
+
+
+
+                //utility
+            
+                for(i=0;i<dataJson.herramientas[k].utility.length;i++){
+                    newElement= document.createElement("p");
+                    newElement.innerHTML=dataJson.herramientas[k].utility[i];
+                    utility.appendChild(newElement);
+
+
+                }
+                
+                //using
+            
+                for(i=0;i<dataJson.herramientas[k].using.length;i++){
+                    newElement= document.createElement("p");
+                    newElement.innerHTML=dataJson.herramientas[k].using[i];
+                    using.appendChild(newElement);
+
+
+                }
+
+                    /*
+                    <div id="itemImages">
+                    <div class="itemImage"> <img src="../wikiImages/serrucho_de_costilla.jpg">
+                    <p class="imageText">foto de serrucho</p>
+                    </div>*/
+
+                //imágenes...
+
+                for(i=0;i<dataJson.herramientas[k].images.length;i++){
+
+
+                    newDivElement=document.createElement("div");
+                    newDivElement.className="itemVideo";
+
+
+
+                    newElement= document.createElement("img");
+                    newElement.src=dataJson.herramientas[k].images[i].src;
+                    newDivElement.appendChild(newElement);
+
+
+
+                    newElement= document.createElement("p");
+                    newElement.className="imageText";
+                    newElement.innerHTML=dataJson.herramientas[k].images[i].epigraph;
+                    newDivElement.appendChild(newElement);
+
+                    itemImages.appendChild(newDivElement);
+
+                }
+
+
 
                 /*
-                <div id="itemImages">
-                <div class="itemImage"> <img src="../wikiImages/serrucho_de_costilla.jpg">
-                <p class="imageText">foto de serrucho</p>
-                </div>*/
+                <div class="itemVideo">
+                            <iframe width="300" height="200" src="https://www.youtube.com/embed/UwCG9Y21_2M" 
+                            title="TWICE “SCIENTIST” M/V" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                            <p class="videoText"> video de </p>
+                        </div>
+                */
+                    //videos...
 
-            //imágenes...
-
-            for(i=0;i<dataJson.herramientas[0].images.length;i++){
+                for(i=0;i<dataJson.herramientas[k].videos.length;i++){
 
 
                 newDivElement=document.createElement("div");
@@ -104,65 +157,28 @@ var dataJson=null;
 
 
 
-                newElement= document.createElement("img");
-                newElement.src=dataJson.herramientas[0].images[i].src;
+                newElement= document.createElement("iframe");
+                newElement.width="300px";
+                newElement.height="200px";
+                newElement.src=dataJson.herramientas[k].videos[i].src;
+                newElement.title=dataJson.herramientas[k].videos[i].title;
+                newElement.frameBorder=0;
+                newElement.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                newElement.allowFullscreen=true;
                 newDivElement.appendChild(newElement);
 
 
 
                 newElement= document.createElement("p");
-                newElement.className="imageText";
-                newElement.innerHTML=dataJson.herramientas[0].images[i].epigraph;
+                newElement.className="videoText";
+                newElement.innerHTML=dataJson.herramientas[k].videos[i].epigraph;
                 newDivElement.appendChild(newElement);
 
-                itemImages.appendChild(newDivElement);
+                itemVideos.appendChild(newDivElement);
+
+                }
 
             }
-
-
-
-        /*
-         <div class="itemVideo">
-                    <iframe width="300" height="200" src="https://www.youtube.com/embed/UwCG9Y21_2M" 
-                    title="TWICE “SCIENTIST” M/V" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
-                    <p class="videoText"> video de </p>
-                </div>
-        */
-            //videos...
-
-            for(i=0;i<dataJson.herramientas[0].videos.length;i++){
-
-
-            newDivElement=document.createElement("div");
-            newDivElement.className="itemVideo";
-
-
-
-            newElement= document.createElement("iframe");
-            newElement.width="300px";
-            newElement.height="200px";
-            newElement.src=dataJson.herramientas[0].videos[i].src;
-            newElement.title=dataJson.herramientas[0].videos[i].title;
-            newElement.frameBorder=0;
-            newElement.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-            newElement.allowFullscreen=true;
-            newDivElement.appendChild(newElement);
-
-
-
-            newElement= document.createElement("p");
-            newElement.className="videoText";
-            newElement.innerHTML=dataJson.herramientas[0].videos[i].epigraph;
-            newDivElement.appendChild(newElement);
-
-            itemVideos.appendChild(newDivElement);
-
-            }
-
-
 
             })
         .catch(err =>{  
