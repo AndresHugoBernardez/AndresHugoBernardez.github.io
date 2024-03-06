@@ -20,6 +20,10 @@ var dateInicioCiclo;
 var dateFinCiclo;
 var boxFeriados;
 var newDateFeriado;
+var newDateFeriadoInitial;
+var newDateFeriadoFinal;
+var buttonAgregarPeriodo;
+        
 var buttonGenerarCalendario;
 var dlResultado;
 
@@ -48,6 +52,9 @@ window.addEventListener('load',(event)=>{
         newDateFeriado=document.getElementById("newDateFeriado");
         dateInicioCiclo=document.getElementById("dateInicioCiclo");
         dateFinCiclo=document.getElementById("dateFinCiclo");
+        newDateFeriadoInitial=document.getElementById("newDateFeriadoInitial");
+        newDateFeriadoFinal=document.getElementById("newDateFeriadoFinal");
+        buttonAgregarPeriodo=document.getElementById("buttonAgregarPeriodo");
 
 
         
@@ -76,28 +83,86 @@ function fillList(){
   let dateAuxiliar;
   let iYear;
   let cadena;
+
+  if(dateInicioCiclo.value!=""&&dateFinCiclo.value!=""){
+
+           //extraer año inicial
+          dateAuxiliar=dateInicioCiclo.value;
+          initialyear=parseInt(dateAuxiliar.substring(0,4));
+          //extraer año final
+          dateAuxiliar=dateFinCiclo.value;
+          finalyear=parseInt(dateAuxiliar.substring(0,4));
+        
+          for(k=initialyear;k<=finalyear;k++){
+            for(i=0;i<listPredefinidos.length;i++){
+              cadena=k.toString()+"-"+listPredefinidos[i];
+              newHoliday(cadena);
+            }
+          }
   
-
-   //extraer año inicial
-  dateAuxiliar=dateInicioCiclo.value;
-  initialyear=parseInt(dateAuxiliar.substring(0,4));
-  //extraer año final
-  dateAuxiliar=dateFinCiclo.value;
-  finalyear=parseInt(dateAuxiliar.substring(0,4));
-
-  for(k=initialyear;k<=finalyear;k++){
-    for(i=0;i<listPredefinidos.length;i++){
-      cadena=k.toString()+"-"+listPredefinidos[i];
-      newHoliday(cadena);
-    }
   }
-  
-  
 
 
 }
 
 
+
+ /**
+   *  Esta función agrega el período de días laborables indicados por newDateFeriadoInitial y por 
+   *  newDateFeriadoFinal a la lista de feriados.
+  */
+  function newPeriod(){
+
+    let initialDate;
+    let finalDate;
+    let currentDate;
+    let day;
+    let month;
+    let year;
+    let dateAuxiliar;
+    let cadena;
+    let monthString;
+    let dayString;
+
+    if(newDateFeriadoInitial.value!="")
+      if(newDateFeriadoFinal.value!=""){
+        dateAuxiliar=newDateFeriadoInitial.value;
+        year=dateAuxiliar.substring(0,4);
+        month=dateAuxiliar.substring(5,7);
+        day=dateAuxiliar.substring(8,10);
+        currentDate=new Date(parseInt(year),parseInt(month)-1,parseInt(day) );
+
+        dateAuxiliar=newDateFeriadoFinal.value;
+        year=dateAuxiliar.substring(0,4);
+        month=dateAuxiliar.substring(5,7);
+        day=dateAuxiliar.substring(8,10);
+        finalDate=new Date(parseInt(year),parseInt(month)-1,parseInt(day) );
+
+
+        while(currentDate.getTime()<=finalDate.getTime()){
+          
+          if(currentDate.getMonth()+1>9)monthString=(currentDate.getMonth()+1).toString();
+          else monthString="0"+(currentDate.getMonth()+1).toString();
+
+          if(currentDate.getDate()>9)dayString=(currentDate.getDate()).toString();
+          else dayString="0"+(currentDate.getDate()).toString();
+
+          cadena=currentDate.getFullYear()+"-"+monthString+"-"+dayString;
+
+          newHoliday(cadena);
+
+          currentDate.setDate(currentDate.getDate() + 1);
+
+        }
+
+      }
+
+
+
+
+
+
+}
 
 /**
  * Sirve para agregar un feriado en la lista inputs type="radio"
@@ -267,7 +332,7 @@ todayTime= new Date();
 cadena="";
 allowed=false;
 
-if(dateInicioCiclo!=""){
+if(dateInicioCiclo.value!=""){
 
   dateAuxiliar=dateInicioCiclo.value;
   year=dateAuxiliar.substring(0,4);
@@ -276,7 +341,7 @@ if(dateInicioCiclo!=""){
   currentDate=new Date(parseInt(year),parseInt(month)-1,parseInt(day) );
   
   
-  if(dateFinCiclo!=""){
+  if(dateFinCiclo.value!=""){
     dateAuxiliar=dateFinCiclo.value;
     year=dateAuxiliar.substring(0,4);
     month=dateAuxiliar.substring(5,7);
@@ -455,6 +520,14 @@ if(dateInicioCiclo!=""){
       width: 80%;
       margin: auto;
     }
+
+    section{
+      border: 1px black solid;
+      padding:5px;
+      margin-top:5px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
     @media screen and (max-width: 845px)
     {
       .box{
@@ -500,10 +573,20 @@ if(dateInicioCiclo!=""){
       <div class="box">
         <div class="step">
           <H2> Indique los feriados:</H2>
+          <section>
           <p>Nuevo Feriado:</p> <input type="date" id="newDateFeriado">
 
-          <input type="button" value="Agregar Feriado" id="buttonAgregarFeriado"><br>
+          <input type="button" value="Agregar Feriado" id="buttonAgregarFeriado">
+          </section>
+          <section>
+          <p>Nuevo Período no laboral:</p> 
+          <p>desde:<input type="date" id="newDateFeriadoInitial"> hasta:<input type="date" id="newDateFeriadoFinal"></p>
+          <input type="button" value="Agregar Período no laboral" id="buttonAgregarPeriodo"><br>
+          </section>
+          <section>
+          <p>Feridados típicos:</p>
           <input type="button" value="Agregar Feriados Típicos en Argentina" id="buttonAgregarFeriadoArgentino"><br>
+          </section>
           <h3>Feriados:</h3>
           <form id="boxFeriados" > 
             
