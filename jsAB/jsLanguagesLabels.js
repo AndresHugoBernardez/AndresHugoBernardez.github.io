@@ -124,7 +124,7 @@ function englishVersion()
     etiquetaMostrarTodo.innerHTML="Show All";         
     etiquetaOcultarTodo.innerHTML="Hide All";         
     etiquetaLinkedin.innerHTML="Visit my Linkedin Profile by clicking here";            
-    etiquetaPaginaEnContruccion2.innerHTML="* Last updated: May 21st, 2024";
+    etiquetaPaginaEnContruccion2.innerHTML="* Last updated: May 31st, 2024";
 
     IdiomaActual="English"
     }
