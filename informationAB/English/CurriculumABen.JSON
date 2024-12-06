@@ -137,23 +137,6 @@
             "until":"September 2015"
         },
         
-        {
-            "name":"Programmer",
-            "company":"Tesis Automation & IT",
-            "category":"IT",
-            "tasks performed":
-                [
-                     "Database Review",
-                     "Download of information",
-                     "Programming programs in C to manage database",
-                     "Programming of applications aimed at company users",
-                     "User Assistance"
-                    
-
-                ],
-            "from":"April 2013",
-            "until":"February 2014"
-        },
         
         {
             "name":"Seller",
@@ -205,21 +188,7 @@
             "until":"June 2009"
         },
         
-        {
-            "name":"Technical Intern",
-            "company":"Ecofrío",
-            "category":"Cooling and heating services",
-            "tasks performed":
-                [
-                    "Technical assistance",
-                    "Help in the installation of air conditioning"
-
-                    
-
-                ],
-            "from":"July 2003",
-            "until":"February 2004"
-        },
+    
         
         {
             "name":"Warehouse's Helper",
