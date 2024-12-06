@@ -138,24 +138,6 @@
             "until":"septiembre 2015"
         },
         
-        {
-            "name":"Programador",
-            "company":"Tesis Automation & IT",
-            "category":"IT",
-            "tasks performed":
-                [
-                    "Revisión de Base de Datos",
-                    "Bajada de información",
-                    "Programación de programas en C para administrar base de datos",
-                    "Programación de aplicaciones dirigidas a usuarios de la empresa",
-                    "Asistencia a usuarios"
-                    
-                    
-
-                ],
-            "from":"abril 2013",
-            "until":"febrero 2014"
-        },
         
         {
             "name":"Vendedor",
@@ -207,21 +189,6 @@
             "until":"junio de 2009"
         },
         
-        {
-            "name":"Pasante de técnico",
-            "company":"Ecofrío",
-            "category":"Refrigeración y calefacción",
-            "tasks performed":
-                [
-                    "Asistencia técnica",
-                    "Ayuda en la instalación de aire acondicionado"
-
-                    
-
-                ],
-            "from":"julio 2003",
-            "until":"febrero 2004"
-        },
         
         {
             "name":"Ayudante de depósito",
