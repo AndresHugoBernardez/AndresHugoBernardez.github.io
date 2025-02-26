@@ -36,7 +36,7 @@ etiquetaPortfolio            =document.getElementById("etiquetaPortfolio");
 etiquetaMostrarTodo          =document.getElementById("etiquetaMostrarTodo");
 etiquetaOcultarTodo          =document.getElementById("etiquetaOcultarTodo");
 etiquetaLinkedin             =document.getElementById("etiquetaLinkedin");
-etiquetaPaginaEnContruccion2 =document.getElementById("etiquetaPaginaEnContruccion2");
+//etiquetaPaginaEnContruccion2 =document.getElementById("etiquetaPaginaEnContruccion2");
 
 etiquetaDescargarCV.addEventListener("click", function(){
     window.location.href='informationAB/Spanish/cv Bernardez Andres Hugo.pdf';
