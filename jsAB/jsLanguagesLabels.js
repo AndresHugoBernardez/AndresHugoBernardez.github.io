@@ -123,7 +123,7 @@ function englishVersion()
     etiquetaPortfolio.innerHTML="Portfolio";           
     etiquetaMostrarTodo.innerHTML="Show All";         
     etiquetaOcultarTodo.innerHTML="Hide All";         
-    etiquetaLinkedin.innerHTML="Visit my Linkedin Profile by clicking here";            
+   // etiquetaLinkedin.innerHTML="Visit my Linkedin Profile by clicking here";            
    // etiquetaPaginaEnContruccion2.innerHTML="* Last updated: November 16th, 2024";
 
     IdiomaActual="English"
