@@ -1,7 +1,7 @@
 "use strict"
 
 var EtiquetaCurriculumAB;
-var EtiquetaPaginaEnConstruccion;
+// var EtiquetaPaginaEnConstruccion;
 var etiquetaDescargarCV;
 var etiquetaDatos;
 var etiquetaExperiencia;
@@ -13,8 +13,8 @@ var etiquetaDatosComplementarios;
 var etiquetaPortfolio;
 var etiquetaMostrarTodo;
 var etiquetaOcultarTodo;
-var etiquetaLinkedin;
-var etiquetaPaginaEnContruccion2;
+//var etiquetaLinkedin;
+//var etiquetaPaginaEnContruccion2;
 var IdiomaActual="Spanish";
 
 
@@ -35,7 +35,7 @@ etiquetaDatosComplementarios =document.getElementById("etiquetaDatosComplementar
 etiquetaPortfolio            =document.getElementById("etiquetaPortfolio");
 etiquetaMostrarTodo          =document.getElementById("etiquetaMostrarTodo");
 etiquetaOcultarTodo          =document.getElementById("etiquetaOcultarTodo");
-etiquetaLinkedin             =document.getElementById("etiquetaLinkedin");
+// etiquetaLinkedin             =document.getElementById("etiquetaLinkedin");
 //etiquetaPaginaEnContruccion2 =document.getElementById("etiquetaPaginaEnContruccion2");
 
 etiquetaDescargarCV.addEventListener("click", function(){
@@ -78,7 +78,7 @@ function spanishVersion()
     etiquetaPortfolio.innerHTML="Portfolio";           
     etiquetaMostrarTodo.innerHTML="Mostrar Todo";         
     etiquetaOcultarTodo.innerHTML="Ocultar Todo";         
-    etiquetaLinkedin.innerHTML="Visite mi Linkedin haciendo click aquí";            
+    //etiquetaLinkedin.innerHTML="Visite mi Linkedin haciendo click aquí";            
     //etiquetaPaginaEnContruccion2.innerHTML="* Última actualización: 16 de noviembre de 2024";
 
     IdiomaActual="Spanish";
