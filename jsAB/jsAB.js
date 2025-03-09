@@ -89,10 +89,12 @@ window.addEventListener('load',(event)=>{
     Music = document.getElementById("Music");
   
     Player = document.getElementById("Player");
-    PlayStatus=Player.src;
+    PlayStatus=Player.src.slice(0, -11);;
 
     Music.style.backgroundColor ='blue';
     MusicFlag=1;
+    triggerMusic();
+    triggerMusic();
 
         
     getEtiquetasID();
