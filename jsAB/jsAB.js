@@ -93,9 +93,7 @@ window.addEventListener('load',(event)=>{
 
 
 
-        Player.src = PlayStatus+ '?autoplay=1';
-        Music.style.backgroundColor ='blue';
-        MusicFlag=1;
+        
     getEtiquetasID();
 
 
@@ -223,7 +221,9 @@ fetch("./informationAB/English/CurriculumABen.JSON")
 
     Player.src = PlayStatus+ '?autoplay=1';
         
-
+        Player.src = PlayStatus+ '?autoplay=1';
+        Music.style.backgroundColor ='blue';
+        MusicFlag=1;
        // mostrarExperiencia(posts);
        
        
