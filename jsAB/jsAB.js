@@ -105,7 +105,7 @@ window.addEventListener('load',(event)=>{
             
         }
       
-    }
+    });
 
         
     getEtiquetasID();
