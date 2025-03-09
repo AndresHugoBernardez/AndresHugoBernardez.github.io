@@ -113,8 +113,7 @@ window.addEventListener('load',(event)=>{
     botonMostrar.addEventListener('click',()=>checkAll());
     verificarCheckBoxes();
 
-    Player.src =PlayStatus;
-     Player.src += '?autoplay=1';
+   
      Music.style.backgroundColor ='blue';
      MusicFlag=1;
   
