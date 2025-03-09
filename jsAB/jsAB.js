@@ -100,7 +100,7 @@ window.addEventListener('load',(event)=>{
     Player.addEventListener('load',(event)=>{
         if(PulsoPlay==0){
             PulsoPlay=1;
-            setTimeout({triggerMusic();triggerMusic();}, 1500);
+            setTimeout(function(){triggerMusic();triggerMusic();}, 1500);
            
             
         }
