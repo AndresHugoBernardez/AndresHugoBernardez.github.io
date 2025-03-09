@@ -113,10 +113,10 @@ window.addEventListener('load',(event)=>{
     botonMostrar.addEventListener('click',()=>checkAll());
     verificarCheckBoxes();
 
-    Player.addEventListener('load',(event)=>{
+    Player.load();
      Player.src = PlayStatus+ '?autoplay=1';
      Music.style.backgroundColor ='blue';
-     MusicFlag=1;});
+     MusicFlag=1;
   
     
         });
