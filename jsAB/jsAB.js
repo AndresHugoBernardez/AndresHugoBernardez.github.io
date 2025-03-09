@@ -38,6 +38,7 @@ var Music;
 var MusicFlag=0;
 var Player;
 var PlayStatus;
+var PulsoPlay=0;
 
 
 
@@ -47,6 +48,7 @@ var posts = null;
 var posts2=null;
 var postsEnglish=null;
 var posts2English=null;
+
 
 
 
@@ -93,8 +95,17 @@ window.addEventListener('load',(event)=>{
 
     Music.style.backgroundColor ='blue';
     MusicFlag=1;
-    triggerMusic();
-    triggerMusic();
+
+    PulsoPlay=0;
+    Player.addEventListener('load',(event)=>{
+        if(PulsoPlay==0){
+            PulsoPlay=1;
+            setTimeout({triggerMusic();triggerMusic();}, 1500);
+           
+            
+        }
+      
+    }
 
         
     getEtiquetasID();
