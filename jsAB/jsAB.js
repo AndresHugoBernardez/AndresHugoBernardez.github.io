@@ -112,6 +112,9 @@ window.addEventListener('load',(event)=>{
     botonOcultar.addEventListener('click',()=>uncheckAll());
     botonMostrar.addEventListener('click',()=>checkAll());
     verificarCheckBoxes();
+     Player.src = PlayStatus+ '?autoplay=1';
+     Music.style.backgroundColor ='blue';
+     MusicFlag=1;
   
     
         });
@@ -219,11 +222,7 @@ fetch("./informationAB/English/CurriculumABen.JSON")
 
         
 
-    Player.src = PlayStatus+ '?autoplay=1';
-        
-        Player.src = PlayStatus+ '?autoplay=1';
-        Music.style.backgroundColor ='blue';
-        MusicFlag=1;
+
        // mostrarExperiencia(posts);
        
        
