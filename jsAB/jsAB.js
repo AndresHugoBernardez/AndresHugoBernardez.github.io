@@ -37,6 +37,7 @@ var errorShow;
 var Music;
 var MusicFlag=0;
 var Player;
+var PlayStatus;
 
 
 
@@ -88,7 +89,13 @@ window.addEventListener('load',(event)=>{
     Music = document.getElementById("Music");
   
     Player = document.getElementById("Player");
-    
+    PlayStatus=Player.src;
+
+
+
+        Player.src = PlayStatus+ '?autoplay=1';
+        Music.style.backgroundColor ='blue';
+        MusicFlag=1;
     getEtiquetasID();
 
 
@@ -156,9 +163,7 @@ fetch("./informationAB/Spanish/CurriculumAB.JSON")
 
         appendALL(posts,posts2);
     
-        Player.playVideo();
-        Music.style.backgroundColor ='blue';
-        MusicFlag=1;
+ 
        // mostrarExperiencia(posts);
        
        
@@ -216,7 +221,8 @@ fetch("./informationAB/English/CurriculumABen.JSON")
 
         
 
-    
+    Player.src = PlayStatus+ '?autoplay=1';
+        
 
        // mostrarExperiencia(posts);
        
@@ -496,13 +502,14 @@ function verificarCheckBoxes()
 
 //-----------------Activa o desactiva la música.
 function triggerMusic(){
+  
     if(MusicFlag==0){
-        Player.playVideo();
+        Player.src = PlayStatus+ '?autoplay=1';
         MusicFlag=1;
         Music.style.backgroundColor = 'blue';
     }
     else {
-        Player.pauseVideo();
+        Player.src = PlayStatus
         MusicFlag=0;
          Music.style.backgroundColor = 'transparent';
     }
