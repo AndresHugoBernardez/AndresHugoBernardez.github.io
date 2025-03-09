@@ -91,7 +91,8 @@ window.addEventListener('load',(event)=>{
     Player = document.getElementById("Player");
     PlayStatus=Player.src;
 
-
+    Music.style.backgroundColor ='blue';
+    MusicFlag=1;
 
         
     getEtiquetasID();
@@ -114,8 +115,7 @@ window.addEventListener('load',(event)=>{
     verificarCheckBoxes();
 
    
-     Music.style.backgroundColor ='blue';
-     MusicFlag=1;
+     
   
     
         });
