@@ -34,6 +34,11 @@ var elemCarta;
 var errorShow;
 
 
+var Music;
+var MusicFlag=0;
+var Player;
+
+
 
 
 
@@ -79,6 +84,10 @@ window.addEventListener('load',(event)=>{
 
     errorElement = document.getElementById("errorSquare");
     elemCarta= document.getElementById("carta");
+
+    Music = document.getElementById("Music");
+  
+    Player = document.getElementById("Player");
     
     getEtiquetasID();
 
@@ -147,7 +156,9 @@ fetch("./informationAB/Spanish/CurriculumAB.JSON")
 
         appendALL(posts,posts2);
     
-
+        Player.playVideo();
+        Music.style.backgroundColor ='blue';
+        MusicFlag=1;
        // mostrarExperiencia(posts);
        
        
@@ -478,6 +489,23 @@ function verificarCheckBoxes()
     else elemCarta.style.display='none';
     
 
+}
+
+
+
+
+//-----------------Activa o desactiva la música.
+function triggerMusic(){
+    if(MusicFlag==0){
+        Player.playVideo();
+        MusicFlag=1;
+        Music.style.backgroundColor = 'blue';
+    }
+    else {
+        Player.pauseVideo();
+        MusicFlag=0;
+         Music.style.backgroundColor = 'transparent';
+    }
 }
 
 
