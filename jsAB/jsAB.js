@@ -93,11 +93,11 @@ window.addEventListener('load',(event)=>{
     Player = document.getElementById("Player");
     PlayStatus=Player.src.slice(0, -11);;
 
-    Music.style.backgroundColor ='blue';
-    MusicFlag=1;
+    //Music.style.backgroundColor ='blue';
+    MusicFlag=0;
 
    
-    setTimeout(function(){triggerMusic();triggerMusic();setTimeout(function(){Player.style.position='static';},5000);}, 3000);
+    //setTimeout(function(){Player.style.position='fixed';triggerMusic();triggerMusic();setTimeout(function(){Player.style.position='static';},5000);}, 3000);
            
             
         
