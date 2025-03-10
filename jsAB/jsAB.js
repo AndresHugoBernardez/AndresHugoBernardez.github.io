@@ -96,16 +96,13 @@ window.addEventListener('load',(event)=>{
     Music.style.backgroundColor ='blue';
     MusicFlag=1;
 
-    PulsoPlay=0;
-    Player.addEventListener('load',(event)=>{
-        if(PulsoPlay==0){
-            PulsoPlay=1;
-            setTimeout(function(){triggerMusic();triggerMusic();}, 11000);
+   
+    setTimeout(function(){triggerMusic();triggerMusic();}, 11000);
            
             
         }
       
-    });
+   
 
         
     getEtiquetasID();
