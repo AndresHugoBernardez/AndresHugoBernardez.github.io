@@ -97,7 +97,7 @@ window.addEventListener('load',(event)=>{
     MusicFlag=1;
 
    
-    setTimeout(function(){Player.style.position='fixed';triggerMusic();triggerMusic();setTimeout(function(){Player.style.position='static';},1000);}, 3000);
+    setTimeout(function(){triggerMusic();triggerMusic();setTimeout(function(){Player.style.position='static';},2500);}, 3000);
            
             
         
