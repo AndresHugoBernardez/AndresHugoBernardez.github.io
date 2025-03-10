@@ -97,7 +97,7 @@ window.addEventListener('load',(event)=>{
     MusicFlag=1;
 
    
-    setTimeout(function(){triggerMusic();triggerMusic();}, 11000);
+    setTimeout(function(){Player.focus();triggerMusic();triggerMusic();document.getElementById("EtiquetaCurriculumAB").focus();}, 2000);
            
             
         
