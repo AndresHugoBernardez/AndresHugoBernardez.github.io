@@ -100,7 +100,7 @@ window.addEventListener('load',(event)=>{
     setTimeout(function(){triggerMusic();triggerMusic();}, 11000);
            
             
-        }
+        
       
    
 
