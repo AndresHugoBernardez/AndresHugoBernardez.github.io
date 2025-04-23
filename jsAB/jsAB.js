@@ -183,7 +183,7 @@ fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
     .catch(err =>{  
         let bugcito;
         let textito;
-        errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err+". Esto no es un bug, es un Easter Egg  ";
+        errorShow="ERROR: VUELVA A CARGAR LA PÁGINA No cargó el FETCH"+". Esto no es un bug, es un Easter Egg  ";
         console.log('Solicitud fallida 1', err);
 
                  errorElement.style.display='';
@@ -208,7 +208,7 @@ fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
 .catch(err =>{  
     let textito;
     let bugcito;
-    errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err+". Esto no es un bug, es un Easter Egg ;)";
+    errorShow="ERROR: VUELVA A CARGAR LA PÁGINA No cargó el FETCH"+". Esto no es un bug, es un Easter Egg ;)";
     console.log('Solicitud fallida 2', err);
    
 
