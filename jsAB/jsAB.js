@@ -153,7 +153,7 @@ function FetchCall()
 {
 
     errorShow="";
-    fetch("./informationAB/Spanish/CurriculumIndexAB.JSON")
+    fetch("./informationAB/Spanish/CurrpppiculumIndexAB.JSON")
     .then(response => {
             return response.json();
             })
@@ -164,7 +164,7 @@ function FetchCall()
     
 
 
-fetch("./informationAB/Spanish/CurriculumAB.JSON")
+fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
     .then(response => {
             return response.json();
             })
@@ -181,12 +181,16 @@ fetch("./informationAB/Spanish/CurriculumAB.JSON")
        
     })
     .catch(err =>{  
-      
-        errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err+". Esto no es un bug, es un Easter Egg ;) <a href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG'> Clickee Aqui</a>";
+        let bugcito;
+        errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err+". Esto no es un bug, es un Easter Egg ;) ";
         console.log('Solicitud fallida 1', err);
 
                  errorElement.style.display='';
                  errorElement.innerHTML = errorShow;
+                 bugcito=document.createElement("a");
+                 bugcito.href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG'
+                 bugcito.innerHTML="Clickee Aquí";
+                 errorElement.appendChild(bugcito);
                  setTimeout(() => errorElement.style.display='none', 15000);
  
                  
@@ -197,14 +201,20 @@ fetch("./informationAB/Spanish/CurriculumAB.JSON")
 
 })
 .catch(err =>{  
-   
-    errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err+". Esto no es un bug, es un Easter Egg ;) <a href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG'> Clickee Aqui</a>";
-    
-
+    let bugcito;
+    errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err+". Esto no es un bug, es un Easter Egg ;)";
     console.log('Solicitud fallida 2', err);
    
+
+        BorrarTodoElContenido(errorElement)
+
         errorElement.style.display='';
         errorElement.innerHTML = errorShow;
+        
+        bugcito=document.createElement("a");
+        bugcito.href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG'
+        bugcito.innerHTML="Clickee Aquí";
+        errorElement.appendChild(bugcito);
          setTimeout(() => errorElement.style.display='none', 15000);
 
 
