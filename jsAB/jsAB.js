@@ -153,7 +153,7 @@ function FetchCall()
 {
 
     errorShow="";
-    fetch("./informationAB/Spanish/CurrpppiculumIndexAB.JSON")
+    fetch("./informationAB/Spanish/CurriculumIndexAB.JSON")
     .then(response => {
             return response.json();
             })
@@ -164,7 +164,7 @@ function FetchCall()
     
 
 
-fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
+fetch("./informationAB/Spanish/CurriculumAB.JSON")
     .then(response => {
             return response.json();
             })
@@ -183,7 +183,7 @@ fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
     .catch(err =>{  
         let bugcito;
         let textito;
-        errorShow="ERROR: VUELVA A CARGAR LA PÁGINA No cargó el FETCH"+". Esto no es un bug, es un Easter Egg  ";
+        errorShow="ERROR: VUELVA A CARGAR LA PÁGINA No cargó el FETCH"+". Esto no es un bug, es un Easter Egg  ;)";
         console.log('Solicitud fallida 1', err);
 
                  errorElement.style.display='';
