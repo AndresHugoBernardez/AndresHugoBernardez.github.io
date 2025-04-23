@@ -173,7 +173,7 @@ fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
 
         
 
-      if(posts!=NULL)  appendALL(posts,posts2);
+       appendALL(posts,posts2);
     
  
        // mostrarExperiencia(posts);
@@ -206,6 +206,7 @@ fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
 
 })
 .catch(err =>{  
+    let textito;
     let bugcito;
     errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err+". Esto no es un bug, es un Easter Egg ;)";
     console.log('Solicitud fallida 2', err);
