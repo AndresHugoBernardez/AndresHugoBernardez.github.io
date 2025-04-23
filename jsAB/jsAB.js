@@ -153,7 +153,7 @@ function FetchCall()
 {
 
     errorShow="";
-    fetch("./informationAB/Spanish/CurriculumIndexAB.JSON")
+    fetch("./informationAB/Spanish/CupprriculumIndexAB.JSON")
     .then(response => {
             return response.json();
             })
@@ -164,7 +164,7 @@ function FetchCall()
     
 
 
-fetch("./informationAB/Spanish/CurriculumAB.JSON")
+fetch("./informationAB/Spanish/CurppriculumAB.JSON")
     .then(response => {
             return response.json();
             })
@@ -182,12 +182,12 @@ fetch("./informationAB/Spanish/CurriculumAB.JSON")
     })
     .catch(err =>{  
       
-        errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err;
+        errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err+". Esto no es un bug, es un Easter Egg ;) <a href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG'> Clickee Aqui</a>";
         console.log('Solicitud fallida 1', err);
 
                  errorElement.style.display='';
                  errorElement.innerHTML = errorShow;
-                 setTimeout(() => errorElement.style.display='none', 8000);
+                 setTimeout(() => errorElement.style.display='none', 15000);
  
                  
         
@@ -198,13 +198,14 @@ fetch("./informationAB/Spanish/CurriculumAB.JSON")
 })
 .catch(err =>{  
    
-    errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err;
+    errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err+". Esto no es un bug, es un Easter Egg ;) <a href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG'> Clickee Aqui</a>";
+    
 
     console.log('Solicitud fallida 2', err);
    
         errorElement.style.display='';
         errorElement.innerHTML = errorShow;
-         setTimeout(() => errorElement.style.display='none', 8000);
+         setTimeout(() => errorElement.style.display='none', 15000);
 
 
 }) ;
