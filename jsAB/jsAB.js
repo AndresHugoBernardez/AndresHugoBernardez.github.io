@@ -212,7 +212,7 @@ fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
     console.log('Solicitud fallida 2', err);
    
 
-        BorrarTodoElContenido(errorElement);
+        //BorrarTodoElContenido(errorElement);
     errorElement.style.display='';
 
       textito=document.createElement("p"); 
@@ -471,13 +471,13 @@ function BorrarTodoElContenido(Padre)
 
 function BorrarShowroom()
 {
-   BorrarTodoElContenido(elemDatos)
-   BorrarTodoElContenido(elemExperiencia)
-   BorrarTodoElContenido(elemEstudios)
-   BorrarTodoElContenido(elemInformatica)
-   BorrarTodoElContenido(elemIdiomas)
-   BorrarTodoElContenido(elemVirtudes)
-   BorrarTodoElContenido(elemComplementarios)
+   BorrarTodoElContenido(elemDatos);
+   BorrarTodoElContenido(elemExperiencia);
+   BorrarTodoElContenido(elemEstudios);
+   BorrarTodoElContenido(elemInformatica);
+   BorrarTodoElContenido(elemIdiomas);
+   BorrarTodoElContenido(elemVirtudes);
+   BorrarTodoElContenido(elemComplementarios);
 }
 
 //-----------------------------------------------------------------
