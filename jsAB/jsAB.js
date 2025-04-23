@@ -173,7 +173,7 @@ fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
 
         
 
-        appendALL(posts,posts2);
+      if(posts!=NULL)  appendALL(posts,posts2);
     
  
        // mostrarExperiencia(posts);
