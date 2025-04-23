@@ -191,7 +191,7 @@ fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
                  textito=document.createElement("p"); 
                 textito.innerHTML = errorShow;
                 bugcito=document.createElement("a");
-                 bugcito.href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG'
+                 bugcito.href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG';
                  bugcito.innerHTML="Clickee Aquí";
                  errorElement.appendChild(textito);
 
@@ -218,7 +218,7 @@ fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
       textito=document.createElement("p"); 
                 textito.innerHTML = errorShow;
                 bugcito=document.createElement("a");
-                 bugcito.href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG'
+                 bugcito.href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG';
                  bugcito.innerHTML="Clickee Aquí";
                  errorElement.appendChild(textito);
 
