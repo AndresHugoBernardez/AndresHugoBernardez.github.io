@@ -153,7 +153,7 @@ function FetchCall()
 {
 
     errorShow="";
-    fetch("./informationAB/Spanish/CupprriculumIndexAB.JSON")
+    fetch("./informationAB/Spanish/CurriculumIndexAB.JSON")
     .then(response => {
             return response.json();
             })
@@ -164,7 +164,7 @@ function FetchCall()
     
 
 
-fetch("./informationAB/Spanish/CurppriculumAB.JSON")
+fetch("./informationAB/Spanish/CurriculumAB.JSON")
     .then(response => {
             return response.json();
             })
