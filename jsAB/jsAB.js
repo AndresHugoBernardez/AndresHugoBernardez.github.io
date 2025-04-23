@@ -182,14 +182,19 @@ fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
     })
     .catch(err =>{  
         let bugcito;
-        errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err+". Esto no es un bug, es un Easter Egg ;) ";
+        let textito;
+        errorShow="ERROR: VUELVA A CARGAR LA PÁGINA "+err+". Esto no es un bug, es un Easter Egg  ";
         console.log('Solicitud fallida 1', err);
 
                  errorElement.style.display='';
-                 errorElement.innerHTML = errorShow;
-                 bugcito=document.createElement("a");
+                 
+                 textito=document.createElement("p"); 
+                textito.innerHTML = errorShow;
+                bugcito=document.createElement("a");
                  bugcito.href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG'
                  bugcito.innerHTML="Clickee Aquí";
+                 errorElement.appendChild(textito);
+
                  errorElement.appendChild(bugcito);
                  setTimeout(() => errorElement.style.display='none', 15000);
  
@@ -206,15 +211,23 @@ fetch("./informationAB/Spanish/CurrpppiculumAB.JSON")
     console.log('Solicitud fallida 2', err);
    
 
-        BorrarTodoElContenido(errorElement)
+        BorrarTodoElContenido(errorElement);
+    errorElement.style.display='';
 
-        errorElement.style.display='';
-        errorElement.innerHTML = errorShow;
+      textito=document.createElement("p"); 
+                textito.innerHTML = errorShow;
+                bugcito=document.createElement("a");
+                 bugcito.href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG'
+                 bugcito.innerHTML="Clickee Aquí";
+                 errorElement.appendChild(textito);
+
+                 errorElement.appendChild(bugcito);  
+    
+
         
-        bugcito=document.createElement("a");
-        bugcito.href='./portfolioAB/Matemática/Teorema de Bernárdez.PNG'
-        bugcito.innerHTML="Clickee Aquí";
-        errorElement.appendChild(bugcito);
+        
+        
+        
          setTimeout(() => errorElement.style.display='none', 15000);
 
 
