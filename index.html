@@ -208,6 +208,37 @@
         width:73%;vertical-align: top;
         z-index: 1;
     }
+
+
+
+
+    #ZoomOut,#ZoomIn{
+
+    margin-top:7px;width:100%;
+}
+
+#PhotoId{
+
+     #ZoomOut{
+        
+        display:inline-block;
+     }
+     #ZoomIn{
+        display:none;
+     }
+
+}
+#PhotoId:hover{
+
+
+    #ZoomIn{
+       display:inline-block;
+    }
+    #ZoomOut{
+       display:none;
+    }
+
+}
  
     @media screen and (max-width: 800px) {
     h1{
@@ -355,7 +386,9 @@
     
         </td>
         <td style="min-width:125px;max-height:800;width:37%;vertical-align: top;">
-            <img src="photosAB/perfil3.jpg" style="margin-top:7px;width:100%;">
+            
+             <img id="ZoomOut" src="photosAB/perfil3mini.jpg" >
+            <img id="ZoomIn" src="photosAB/perfil3zoom.jpg" >
             
         </td>
     </tr>
