@@ -5,7 +5,9 @@
 
 
 <!---  Oh! Hola, estimado programador Web, ¡me ha sorprendido con su presencia aquí! Bienvenido a mi "super-página".¡Bien!, Como podrá apreciar esta página fue creada sin usar flexbox
-    o Grid. Es una pequeña práctica. Claro que debería mejorarla. No es el mejor trabajo pero es un trabajo honesto.
+    o Grid. Es una pequeña práctica. Claro que debería mejorarla. No es el mejor trabajo pero es un trabajo honesto. 
+    historial:
+    5/5/2025 se empieza a usar display:flex.
 
     Espero lo disfrute!
     
@@ -280,6 +282,21 @@
         margin-top: 10px;
         display: inline-block;
     }
+
+
+    #videos p{
+        width:fit-content;
+        display:block-inline;
+        height:50px;
+        margin:10px;
+    }
+    #videos:{
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+        
+    }
     
 </style>
 </head>
@@ -449,7 +466,8 @@
                     <p>Foto: </p>
                     <p><a href="./photosAB/arduino/chasis1.jpg">Foto resultado final</a> (el diseño 3d actual fue mejorado levemente)</p>
                 <p>Videos: </p> 
-                    <p></p><a href="https://drive.google.com/file/d/1QcSZoVUc1FZDifNC0t1R8U7YjRPUZMpG/view?usp=drivesdk">Grúa</a> </p>
+                <div id="videos">
+                    <p><a href="https://drive.google.com/file/d/1QcSZoVUc1FZDifNC0t1R8U7YjRPUZMpG/view?usp=drivesdk">Grúa</a> </p>
                     <p><a href="https://drive.google.com/file/d/1ep-_iddT046j1CXklWhVOtmXkK1Ven4C/view?usp=drivesdk">Brazo robotico</a> </p>
                     <p><a href="https://drive.google.com/file/d/1uZCaNRXRG-gjztepPrjG-kCNAjJ2z9dn/view?usp=sharing"> Reflector móvil </a> </p>
                     <p><a href="https://drive.google.com/file/d/1ucqcKFQKsju0D6tKCG9njJG6oc4Ie6xV/view?usp=sharing"> Cortadora de pasto</a> </p>
@@ -462,6 +480,9 @@
                     <p><a href="https://drive.google.com/file/d/13mI85XA3uEXzNp1QQfZ8HM_Tjo5dtkmy/view?usp=sharing"> Ruleta</a></p>
                     <p><a href="https://drive.google.com/file/d/13q4irNiJJCqBON3tXsCpVCYiL0-i3JaS/view?usp=sharing"> Bocina</a> </p>
                     <p><a href="https://drive.google.com/file/d/13r4GHkiL9rqC9Jnd6KWRa063pHvTWZcw/view?usp=sharing"> Tacho Inteligente </a></p>
+
+
+                <div>
                 <p>Código:</p>
                     <p><a href="https://www.tinkercad.com/things/5rEUQ4L27jh-robot-multiuso">click aquí</a></p>                
                 <h2>Youtube:</h2>
