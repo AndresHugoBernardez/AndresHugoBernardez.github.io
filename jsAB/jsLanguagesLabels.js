@@ -9,6 +9,7 @@ var etiquetaEstudios;
 var etiquetaInformatica;
 var etiquetaIdiomas;
 var etiquetaVirtudes;
+var etiquetaWeaknesses;
 var etiquetaDatosComplementarios;
 var etiquetaPortfolio;
 var etiquetaMostrarTodo;
@@ -31,6 +32,7 @@ etiquetaEstudios             =document.getElementById("etiquetaEstudios");
 etiquetaInformatica          =document.getElementById("etiquetaInformatica")
 etiquetaIdiomas              =document.getElementById("etiquetaIdiomas");
 etiquetaVirtudes             =document.getElementById("etiquetaVirtudes");
+etiquetaWeaknesses            =document.getElementById("etiquetaWeaknesses");
 etiquetaDatosComplementarios =document.getElementById("etiquetaDatosComplementarios");
 etiquetaPortfolio            =document.getElementById("etiquetaPortfolio");
 etiquetaMostrarTodo          =document.getElementById("etiquetaMostrarTodo");
@@ -73,7 +75,8 @@ function spanishVersion()
     etiquetaEstudios.innerHTML="Estudios";            
     etiquetaInformatica.innerHTML="Informática";        
     etiquetaIdiomas.innerHTML="Idiomas";             
-    etiquetaVirtudes.innerHTML="Virtudes";            
+    etiquetaVirtudes.innerHTML="Virtudes";     
+    etiquetaWeaknesses.innerHTML="Debilidades";          
     etiquetaDatosComplementarios.innerHTML="Datos Complementarios";
     etiquetaPortfolio.innerHTML="Portfolio";           
     etiquetaMostrarTodo.innerHTML="Mostrar Todo";         
@@ -118,7 +121,8 @@ function englishVersion()
     etiquetaEstudios.innerHTML="Education";            
     etiquetaInformatica.innerHTML="Computing";        
     etiquetaIdiomas.innerHTML="Languajes";             
-    etiquetaVirtudes.innerHTML="Virtues";            
+    etiquetaVirtudes.innerHTML="Virtues";    
+    etiquetaWeaknesses.innerHTML="Weaknesses";      
     etiquetaDatosComplementarios.innerHTML="Supplementary Data";
     etiquetaPortfolio.innerHTML="Portfolio";           
     etiquetaMostrarTodo.innerHTML="Show All";         
