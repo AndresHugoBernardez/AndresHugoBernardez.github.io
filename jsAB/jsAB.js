@@ -21,6 +21,7 @@ var elemEstudios;
 var elemInformatica;
 var elemIdiomas;
 var elemVirtudes;
+var elemWeaknesses
 var elemComplementarios;
 var elemPortafolio;
 var tablaDatos;
@@ -60,6 +61,7 @@ window.addEventListener('load',(event)=>{
     elemInformatica= document.getElementById("elemInformatica");
     elemIdiomas= document.getElementById("elemIdiomas");
     elemVirtudes= document.getElementById("elemVirtudes");
+    elemWeaknesses= document.getElementById("elemWeaknesses");
     elemComplementarios= document.getElementById("elemComplementarios");
 
     tablaDatos= document.getElementById("tablaDatos");
@@ -75,6 +77,7 @@ window.addEventListener('load',(event)=>{
     BotonEstudios= document.getElementById("BotonEstudios");
     BotonInformatica= document.getElementById("BotonInformatica");
     BotonVirtudes= document.getElementById("BotonVirtudes");
+    BotonWeaknesses= document.getElementById("BotonWeaknesses");
     BotonIdiomas= document.getElementById("BotonIdiomas");
     BotonComplementarios= document.getElementById("BotonComplementario");
     BotonPortfolio= document.getElementById("Portfolio");
@@ -143,6 +146,7 @@ function appendALL(postsData,postsIndex)
        appendContenido(elemInformatica,postsData["computing"],postsIndex,0,postsIndex["computing"]);
        appendContenido(elemIdiomas,postsData["languages"],postsIndex,0,postsIndex["languages"]);
        appendContenido(elemVirtudes,postsData["virtues"],postsIndex,1,postsIndex["virtues"]);
+    appendContenido(elemWeaknesses,postsData["weaknesses"],postsIndex,1,postsIndex["weaknesses"]);
        appendContenido(elemComplementarios,postsData["supplementary data"],postsIndex,1,postsIndex["supplementary data"]);
 
 }
@@ -477,6 +481,7 @@ function BorrarShowroom()
    BorrarTodoElContenido(elemInformatica);
    BorrarTodoElContenido(elemIdiomas);
    BorrarTodoElContenido(elemVirtudes);
+   BorrarTodoElContenido(elemWeaknesses);
    BorrarTodoElContenido(elemComplementarios);
 }
 
@@ -496,6 +501,7 @@ function checkAll()
     BotonInformatica.checked=true;
     BotonIdiomas.checked=true;
     BotonVirtudes.checked=true;
+    BotonWeaknesses.checked=true;
     BotonComplementarios.checked=true;
     BotonPortfolio.checked=true;
     verificarCheckBoxes()
@@ -508,6 +514,7 @@ function uncheckAll()
     BotonInformatica.checked=false;
     BotonIdiomas.checked=false;
     BotonVirtudes.checked=false;
+    BotonWeaknesses.checked=false;
     BotonComplementarios.checked=false;
     BotonPortfolio.checked=false;
     verificarCheckBoxes()
@@ -523,6 +530,7 @@ function verificarCheckBoxes()
     CantidadOn+= verificarCheckBox(BotonInformatica,elemInformatica);
     CantidadOn+= verificarCheckBox(BotonIdiomas,elemIdiomas);
     CantidadOn+= verificarCheckBox(BotonVirtudes,elemVirtudes);
+    CantidadOn+= verificarCheckBox(BotonWeaknesses,elemWeaknesses);
     CantidadOn+= verificarCheckBox(BotonComplementarios,elemComplementarios);
     CantidadOn+= verificarCheckBox(BotonPortfolio,elemPortafolio);
     
