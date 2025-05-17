@@ -6,6 +6,7 @@ var BotonEstudios;
 var BotonExperiencia;
 var BotonInformatica;
 var BotonVirtudes;
+var BotonWeaknesses;
 var BotonIdiomas;
 var BotonComplementarios;
 var BotonPortfolio;
