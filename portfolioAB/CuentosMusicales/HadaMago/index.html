@@ -143,7 +143,7 @@ button{
 <br><a href="https://www.youtube.com/watch?v=bsiTZO3xc5k">Rata Blanca - Tormenta Eléctrica (Video Lyric)</a>
 <p  class="capital" >El báculo empieza a brillar y Raugan apunta al dragón. Desde el cielo cae un rayo rojo intenso que ilumina la noche. Este rayo golpea justo sobre el dragón. El dragón cae. Ha muerto. </p>
  <p>La batalla se detiene por un momento, todos están perplejos. Empieza a caer lluvia. La luna vuelve a aparecer de entre las nubes con un halo de arcoíris.</p>
-<img style="width: 100%;" src="./imag/halo.png">
+<img style="width: 100%;" src="./imag/halo.png" alt="Imagen de la luna con un halo de arcoíris">
 <p>Arthimest le grita a sus soldados: “El dragón ha caído, ustedes ahora son los Guerreros del Arcoíris!!!”. Los soldados festejan a los gritos. Arthimest dice “Ahora ayúdenme a derrotar a este ejército, ¡Por Balbalún!”, los soldados responden “¡Por Balbalún!”</p>
 <iframe width="100%" height="500px" src="https://www.youtube.com/embed/_bYRXCnTeYw" title="Rata blanca - Guerrero del Arco Iris" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><a href="https://www.youtube.com/watch?v=_bYRXCnTeYw">Rata blanca - Guerrero del Arco Iris</a>
@@ -410,7 +410,7 @@ button{
 
 
 
-<button id="botonFinal"> VER FINAL ALTERTIVO</button>
+<button id="botonFinal" alt="Leer el final alternativo"> VER FINAL ALTERTIVO</button>
 <br>
 </div>
 
@@ -428,8 +428,12 @@ button{
     <br>
     <br>
     <h2> FINAL:</h2>
-    <p class="capital">Zumitis y Raugan se enfrentan, Raugan derrota a Zumitis, Zumitis se rinde y dice que abandonará Balbalún, pero cuando Raugan lo perdona Zumitis comienza a abrir el “circulo de fuego oscuro” para llevar a Raugan a la oscuridad (canción Círculo de fuego de rata blanca). Pero el círculo no absorberá a Raugan ya que para ser absorbido se requiere poseer miedo, dolor y furia y él sin su amada ya no siente nada. En cambio Raugan le hace entender a Zumitis que el que siente miedo, dolor y furia es él ya que ha dedicado estos años a vivir en riquezas, abundancia y maltrato hacia los demás, y perder el poder implicaría quedar desprotegido. Cuando Zumitis se da cuenta que es cierto trata de huir pero ya es tarde el círculo se ha abierto y es absorbido por la oscuridad. Raugan rompe el sello y rescata a su amada. Arthimest se convierte en el nuevo Rey de Balbalún ya que siempre fue un gran líder. </p>
     <p>FIN</p>
+    <p class="capital">Zumitis y Raugan se enfrentan, Raugan derrota a Zumitis, Zumitis se rinde y dice que abandonará Balbalún, pero cuando Raugan lo perdona Zumitis comienza a abrir el “circulo de fuego oscuro” para llevar a Raugan a la oscuridad.</p>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/IH9WUpTztfg" title="Círculo de fuego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><a href="https://www.youtube.com/watch?v=IH9WUpTztfg">Rata Blanca - El circulo de fuego (AUDIO)</a> 
+    
+    <p>Pero el círculo no absorberá a Raugan ya que para ser absorbido se requiere poseer miedo, dolor y furia y él sin su amada ya no siente nada. En cambio Raugan le hace entender a Zumitis que el que siente miedo, dolor y furia es él ya que ha dedicado estos años a vivir en riquezas, abundancia y maltrato hacia los demás, y perder el poder implicaría quedar desprotegido. Cuando Zumitis se da cuenta que es cierto trata de huir pero ya es tarde el círculo se ha abierto y es absorbido por la oscuridad. Raugan rompe el sello y rescata a su amada. Arthimest se convierte en el nuevo Rey de Balbalún ya que siempre fue un gran líder. </p>
 
 
     <iframe width="100%" height="500" src="https://www.youtube.com/embed/QQuDT1uaXj4" title="Heroes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -455,6 +459,7 @@ button{
     botonFINAL.addEventListener('click',(event)=>{
         if(onoff==0){
             divFinal.style.display="unset";
+            divFinal.focus();
             onoff=1;
         }
         else{
