@@ -3,7 +3,8 @@
     
     <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    
     
     <title>La Leyenda del Hada y el Mago</title>
 
@@ -99,6 +100,7 @@ ul{
   margin:5%;
   border: solid 2px black;
   
+  
   text-shadow: none;
   display:flex;
   flex-direction: column;
@@ -117,6 +119,30 @@ button{
     font-size: x-large;
     align-self: center;
     
+}
+
+#mesa{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+#juego{
+        display:flex;
+        background-color: rgba(172, 255, 47, 0.198);
+        
+        
+        flex-direction: column;
+        justify-content: center;
+        margin:10px;
+        padding:10px;
+        border: solid black 2px;
+        border-radius: 10px;
+        box-shadow: 2px 2px white,2px -2px white,-2px 2px white,-2px -2px white;
+
+}
+.dado{
+    max-width: 30%;
 }
 
 </style>
@@ -402,17 +428,35 @@ button{
 <br>
 
 <br>
+
+
+
+
+<div id="juego">
+    <br>
+    <br>
+    <button id="dados">Tirar Dados</button>
+    <div id="mesa">
+        <img alt="Primer dado en 1" id="dado1" class="dado" src="./imag/dado1.png">
+        <img alt="Segundo dado en 1" id="dado2" class="dado" src="./imag/dado1.png">
+    </div>
+    <br>
+    <br>
+</div>
 <br>
-<br>
-
-
-
-
-
-
-<button id="botonFinal" alt="Leer el final alternativo"> VER FINAL ALTERTIVO</button>
 <br>
 </div>
+<br>
+<br>
+<br>
+
+
+
+<div class="game">
+<button id="botonFinal" alt="Leer el final alternativo"> VER FINAL ALTERTIVO</button>
+</div>
+<br>
+<br>
 
 
 
@@ -459,7 +503,7 @@ button{
     botonFINAL.addEventListener('click',(event)=>{
         if(onoff==0){
             divFinal.style.display="unset";
-            window.scrollTo(0,divFinal.offsetTop);
+            window.scrollTo(0,botonFINAL.offsetTop);
             onoff=1;
         }
         else{
@@ -470,6 +514,114 @@ button{
         
 
     });
+
+
+    var dado1;
+    var dado2;
+    var tirarDados;
+    var juego;
+
+
+    const str1="./imag/dado";
+    const str2=".png";
+
+    const altstr1="Primer dado en ";
+    const altstr2="Segundo dado en ";
+    const alrstrP="En espera";
+    var tiempo;
+    var variable;
+    var disponible;
+    disponible=1;
+
+
+    tirarDados=document.getElementById("dados");
+    dado1=document.getElementById("dado1");
+    dado2=document.getElementById("dado2");
+    juego=document.getElementById("juego");
+
+     tirarDados.addEventListener('click',(event)=>{
+
+
+        if(disponible){
+
+
+        disponible=0;
+            
+        juego.style.borderColor="red";
+        
+      
+
+        dado1.alt=alrstrP;
+        dado2.alt=alrstrP;
+
+        
+        
+        tiempo=Date.now();
+        variable=tiempo%6+1;
+        variable=(variable+Math.floor(Math.random() * 10))%6+1;
+        dado1.src=str1+variable.toString()+str2;
+        
+        variable=(variable+Math.floor(Math.random() * 10))%6+1;
+        dado2.src=str1+variable.toString()+str2;
+
+        setTimeout(function(){
+                 tiempo=Date.now();
+        variable=tiempo%6+1;
+        variable=(variable+Math.floor(Math.random() * 10))%6+1;
+        dado1.src=str1+variable.toString()+str2;
+        
+        variable=(variable+Math.floor(Math.random() * 10))%6+1;
+        dado2.src=str1+variable.toString()+str2;
+    
+        }, 333);
+        setTimeout(function(){
+                 tiempo=Date.now();
+        variable=tiempo%6+1;
+        variable=(variable+Math.floor(Math.random() * 10))%6+1;
+        dado1.src=str1+variable.toString()+str2;
+        
+        variable=(variable+Math.floor(Math.random() * 10))%6+1;
+        dado2.src=str1+variable.toString()+str2;
+    
+        }, 666);
+        setTimeout(function(){
+                 tiempo=Date.now();
+        variable=tiempo%6+1;
+        variable=(variable+Math.floor(Math.random() * 10))%6+1;
+        dado1.src=str1+variable.toString()+str2;
+        
+        variable=(variable+Math.floor(Math.random() * 10))%6+1;
+        dado2.src=str1+variable.toString()+str2;
+    
+        }, 999);
+        setTimeout(function(){
+            tiempo=Date.now();
+        variable=tiempo%6+1;
+        variable=(variable+Math.floor(Math.random() * 10))%6+1;
+        dado1.src=str1+variable.toString()+str2;
+        
+        variable=(variable+Math.floor(Math.random() * 10))%6+1;
+        dado2.src=str1+variable.toString()+str2;
+
+
+        dado1.alt=altstr1+variable.toString();
+        dado2.alt=altstr2+variable.toString();
+        
+
+        juego.style.borderColor="black";
+     
+
+        disponible=1;
+    
+        }, 1222);
+
+
+       
+
+        }
+
+
+     });
 
 
 </script>
