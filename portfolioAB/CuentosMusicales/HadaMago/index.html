@@ -459,7 +459,7 @@ button{
     botonFINAL.addEventListener('click',(event)=>{
         if(onoff==0){
             divFinal.style.display="unset";
-            divFinal.focus();
+            window.scrollTo(0,divFinal.offsetTop);
             onoff=1;
         }
         else{
