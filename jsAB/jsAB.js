@@ -346,6 +346,8 @@ function appendDatos(padre,objetivo,nombresDeEtiquetas)
 
     appendString(padre,objetivo["name"],0,"h1");
     cadena="<b>"+nombresDeEtiquetas["bornmonth"]+"</b>"+objetivo["bornmonth"];
+     appendString(padre,cadena,2,"p");
+    cadena="<b>"+nombresDeEtiquetas["favourite color"]+"</b>"+objetivo["favourite color"];
     appendString(padre,cadena,2,"p");
     cadena="<b>"+nombresDeEtiquetas["sign"]+"</b>"+objetivo["sign"];
     appendString(padre,cadena,2,"p");
