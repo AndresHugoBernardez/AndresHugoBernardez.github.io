@@ -32,7 +32,11 @@
     "weaknesses":"Debilidades: ",
     "leadership job":"Puesto de liderazgo: ",
     "supplementary data":"Datos Complementarios: ",
-    "teamwork":"Andreweb Industries"
+    "teamwork":"Andreweb Industries",
+    "birthmonth":"Mes de nacimiento: ",
+    "sign":"Signo de zodiaco: ",
+    "nationality":"Nacionalidad: "
+  
   
 
 }
