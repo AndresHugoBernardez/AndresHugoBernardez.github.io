@@ -32,7 +32,10 @@
     "virtues":"Virtues: ",
     "weaknesses":"Weaknesses: ",
     "supplementary data":"Supplementary Data: ",
-    "teamwork":"Andreweb Industries"
+    "teamwork":"Andreweb Industries",
+    "bornmonth":"Month of born: ",
+    "sign":"Zodiac sign: ",
+    "nationality":"Nationality: "
   
 
 }
