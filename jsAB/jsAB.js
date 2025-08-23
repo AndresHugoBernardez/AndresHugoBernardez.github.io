@@ -51,6 +51,9 @@ var posts2=null;
 var postsEnglish=null;
 var posts2English=null;
 
+var botonCloseContactMe ;
+var botonCloseContactMe2;
+var elemContactMe;
 
 
 
@@ -103,7 +106,15 @@ window.addEventListener('load',(event)=>{
    
     //setTimeout(function(){Player.style.position='fixed';triggerMusic();triggerMusic();setTimeout(function(){Player.style.position='static';},5000);}, 3000);
            
-            
+
+      elemContactMe=document.getElementById("contactMe");
+       
+        botonCloseContactMe =document.getElementById("closeContactMe");
+        botonCloseContactMe2=document.getElementById("closeContactMe2");
+        
+        
+        botonCloseContactMe.addEventListener('click',()=>{ elemContactMe.style.display="none";}); 
+        botonCloseContactMe2.addEventListener('click',()=>{ elemContactMe.style.display="none";});
         
       
    
@@ -361,10 +372,17 @@ function appendDatos(padre,objetivo,nombresDeEtiquetas)
     appendString(padre,cadena,2,"p");
     cadena="<b>"+nombresDeEtiquetas["address"]+"</b>"+objetivo["address"];
     appendString(padre,cadena,2,"p");
-    cadena="<b>E-mail: </b><a href='mailto:andreshugobernardez@gmail.com?Subject=Interesado%20en%20concretar%20una%20entrevista'>andreshugobernardez@gmail.com.ar</a>"
+     cadena="<b>Contácteme(contact me): </b><button id='botonContactMe' onclick='clickContactMe()'>Contact Me</button>";
     appendString(padre,cadena,1,"p");
   
 
+
+}
+
+
+function clickContactMe()
+{ 
+    elemContactMe.style.display="grid";
 
 }
 
@@ -566,5 +584,6 @@ function triggerMusic(){
          Music.style.backgroundColor = 'transparent';
     }
 }
+
 
 
