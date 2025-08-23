@@ -372,14 +372,14 @@ function appendDatos(padre,objetivo,nombresDeEtiquetas)
     appendString(padre,cadena,2,"p");
     cadena="<b>"+nombresDeEtiquetas["address"]+"</b>"+objetivo["address"];
     appendString(padre,cadena,2,"p");
-     cadena="<b>Contácteme(contact me): </b><button id='botonContactMe' onclick='clickContactMe()'>Contact Me</button>";
+     cadena="<b>Contácteme(contact me): </b><button id='botonContactMe' onclick='clickContactMe()' style='background-color: cadetblue;'>Contact Me</button>";
     appendString(padre,cadena,1,"p");
   
 
 
 }
 
-
+//----Mostrar formulario de contacto
 function clickContactMe()
 { 
     elemContactMe.style.display="grid";
@@ -584,6 +584,7 @@ function triggerMusic(){
          Music.style.backgroundColor = 'transparent';
     }
 }
+
 
 
 
