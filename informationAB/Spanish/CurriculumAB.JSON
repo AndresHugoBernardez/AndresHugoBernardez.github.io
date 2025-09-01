@@ -306,7 +306,7 @@
         "Comunicación directa: Ignoro intencionalmente cualquier tipo de manipulación, indirecta o ambiguedad.",
         "Poca capacidad para vender: No me interesa el área de ventas. No me pongan en compromiso de venderles nada.",
         "No me interesan los puestos de liderazgo.",
-        "Mi única filosfía es el <a href='https://www.youtube.com/watch?v=MMNYXVab_2s' style='color:black;text-decoration: none;cursor:default;'>estoicismo</a>, y lo estudio y aplico a mi manera."
+        "Mi única filosfía es el <a href='https://www.youtube.com/watch?v=MMNYXVab_2s' class="stlnivel2" style='color:black;text-decoration: none;cursor:default;'>estoicismo</a>, y lo estudio y aplico a mi manera."
 
     ],
     "supplementary data":
@@ -322,6 +322,7 @@
     ]
 
 }
+
 
 
 
