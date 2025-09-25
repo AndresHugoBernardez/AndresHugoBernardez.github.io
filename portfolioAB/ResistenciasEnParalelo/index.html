@@ -1,0 +1,457 @@
+<!DOCTYPE >
+<html lang="ES">
+
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Resistencias En Paralelo</title>
+
+
+<style>
+.body{
+    margin:0;
+    padding:0;
+    border:none;
+    width: 100%;
+    min-height: 100%;
+
+
+    
+
+}
+
+header{
+
+    min-height: 30%;
+    height: 30%;
+    min-height: 90px;
+    display:grid;
+    justify-items:center;
+    vertical-align:middle;
+    text-align: center;
+    position:relative;
+}
+footer{
+    min-height: 20%;
+    height: 20%;
+    min-height: 50px;
+    display:grid;
+    position:relative;
+    justify-items:center;
+    vertical-align:middle;
+    text-align: center;
+
+}
+
+
+
+.page{
+
+    min-height: 50%;
+    min-height: 300px;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    align-content:  center;
+    align-items: center;
+    flex-direction: column;
+       position:relative;
+    
+    
+
+}
+
+.controlTable{
+    width:70%;
+    min-width: 600px;
+    min-height: 150px;
+    height: max-content;
+    max-height: 30%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+
+}
+
+.box{
+    min-height: 30px;
+    max-width: 80%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    row-gap: 10px;
+ 
+     display: flex;
+    align-content:  center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.box div{
+    display:flex;
+
+}
+
+
+.graphics{
+
+width: 100%;
+min-height: 80px;
+display:grid;
+grid-column: auto auto auto;
+grid-row:auto;
+justify-items: center;
+
+
+
+}
+
+
+.resistancesImg{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+.resistanceImg{
+     height:auto;
+     width: 40px;
+
+ 
+}
+
+.wire{
+    width: 3px;
+}
+
+.invisible{
+    display:none;
+}
+.visible{
+    display:"";
+}
+
+
+.aButton{
+    width: max-content;
+    color:white;
+    background-color: darkblue;
+    padding:5px;
+    border-radius: 5px;
+
+}
+.aButton:hover{
+    color:yellow;
+    background-color:darkslateblue;
+}
+.aButton:link{
+    color:white;
+    background-color: darkblue;
+}
+.aButton:visited{
+    color:white;
+    background-color: darkblue;
+}
+
+
+.progress{
+    width: 30px;
+}
+
+#result{
+background-color: antiquewhite;
+
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<script>
+
+    var amount;
+    var button;
+    var stopButton;
+    var result;
+    var progress;
+    var pararelGraph;
+    var minimums;
+    var maximums;
+    var stopFlag=0;
+
+    
+
+
+    window.addEventListener('load',(event)=>{
+
+        amount=document.getElementById("amount");
+        minimums=document.getElementById("minimums");
+        maximums=document.getElementById("maximums");
+        button=document.getElementById("find");
+        result=document.getElementById("result");
+        stopButton=document.getElementById("stop");
+        progress=document.getElementById("progress");
+        pararelGraph=document.getElementById("pararel").children;
+
+        stopFlag=0;
+        stopButton.addEventListener('click',(event)=>{  stopFlag=1;});
+
+        button.addEventListener('click',(event)=>{
+            resistancesOut(amount.value);
+        });
+
+        amount.addEventListener('change',(event)=>{
+
+            ShowResistances(amount.value);
+
+        });
+        
+        ShowResistances(amount.value);
+
+    });
+
+
+
+    function ShowResistances(amount_in){
+        let i= 0,iLength;
+
+        iLength=amount_in-2;
+        for(i=0;i<amount_in-2;i++){
+            pararelGraph[i+1].style.display="";
+
+        }
+        i=amount_in-1;
+
+        while(i<9){
+            pararelGraph[i].style.display="none";
+            i++;
+        }
+
+
+
+    }
+
+
+    async function resistancesOut(amount_in){
+        let i,j,k;
+        let out_string;
+        let denominator;
+        let equivalentR;
+        let maxi=parseInt(maximums.value)+1;
+        let mini=parseInt(minimums.value);
+
+        
+        let resistances=[
+            mini,
+            mini,
+            mini,
+            mini,
+            mini,
+            mini,
+            mini,
+            mini,
+            mini,
+            mini
+            ];
+       
+        let constant=100.0/((1.0*maxi)-(1.0*mini));
+        let entero;
+        let fin=1;
+        let rLenght;
+            result.style.display="none";
+            button.classList.remove("visible");
+            button.classList.add("invisible");
+            stopButton.classList.remove("invisible");
+            stopButton.classList.add("visible");
+
+            
+       
+
+            while (result.firstChild) {
+            result.removeChild(result.firstChild);
+            }
+
+            rLenght=amount_in-1;
+             console.log("prueba:");
+         
+            while(resistances[rLenght]<maxi && stopFlag==0){
+
+                    denominator=0;
+                    for(i=0;i<amount_in;i++){
+                        denominator+=1.0/(resistances[i]);
+
+                    }
+                    equivalentR=1.0/denominator;
+                
+                    if( (equivalentR- parseInt(equivalentR)) ==0){
+
+                    // out_string=(equivalentR- parseInt(equivalentR))+":";
+                        out_string="";
+                        for(i=0;i<amount_in;i++){
+                            out_string+=resistances[i];
+                            if(i<rLenght)out_string+="//";
+                        }
+
+                        
+                        out_string+="="+equivalentR;
+                        let pp=document.createElement('p');
+                        pp.innerHTML=out_string;
+                        result.appendChild(pp);
+
+
+                    }
+                    
+                    resistances[0]++;
+
+                    console.log( resistances[0]);
+                    if(resistances[0]>=maxi)
+                        for(i=0;i<rLenght;i++){
+
+                        
+                            
+                            
+                            resistances[i+1]++;
+
+                            j=i;
+                            while(resistances[j+1]>=maxi&&j<rLenght){
+
+                            
+                            j++;
+                            }
+                            resistances[i]=resistances[j+1];
+
+                            if(i==rLenght-1){
+                            out_string="";
+                            out_string=(String(constant*(resistances[rLenght]-mini))).slice(0,5)+"%";
+                                progress.textContent=out_string;
+
+                                console.log(out_string);
+                                await new Promise(resolve => setTimeout(resolve, 0));
+                           
+                            }
+
+
+                            
+                           
+                            
+                          
+
+                        }
+        
+
+
+            }
+                
+            result.style.display="";
+            button.classList.remove("invisible");
+            button.classList.add("visible");
+            stopButton.classList.remove("visible");
+            stopButton.classList.add("invisible");
+            stopFlag=0;
+
+      
+                
+            
+    }
+
+
+
+</script>
+
+
+<body>
+
+
+<header>
+    <h1> Valores para ejercicios de  Resistencias en Paralelos con números enteros</h1>
+</header>
+
+
+
+<div class="page">
+    <div class="controlTable">
+        <div class="box">
+
+            <div>
+                <p>Declare la cantidad de resistencias en paralelo:</p>
+
+                <input id="amount" type="number" value="2" min="2" max="10">
+            </div>
+        
+            <div>
+                <p>Declare mínimo valor de las resistencias:</p>
+                <input id="minimums" type="number" value="1" min="1" max="99">
+            </div>
+
+            <div>
+                <p>Declare Máximo valor de las resistencias:</p>
+                <input id="maximums" type="number" value="100" min="2" max="100">
+            </div>
+
+        </div>
+
+        <div class="box">
+        <button id="find" class="visible">Generar</button>
+        <button id="stop" class="invisible">Stop</button>
+
+
+        </div>
+
+    </div>
+
+    <div class="graphics">
+
+        <img class="wire" src="img/wire.png">
+        <div class="resistancesImg" id="pararel">
+            <img id="r1" class="resistanceImg" src="img/resistanceLeft.png">
+            <img id="r2" class="resistanceImg"  src="img/resistance.png">
+            <img id="r3" class="resistanceImg"  src="img/resistance.png">
+            <img id="r4" class="resistanceImg"  src="img/resistance.png">
+            <img id="r5" class="resistanceImg"  src="img/resistance.png">
+            <img id="r6" class="resistanceImg"  src="img/resistance.png">
+            <img id="r7" class="resistanceImg"  src="img/resistance.png">
+            <img id="r8" class="resistanceImg"  src="img/resistance.png">
+            <img id="r9" class="resistanceImg"  src="img/resistance.png">
+            <img id="r10" class="resistanceImg" src="img/resistanceRight.png">
+            
+        </div>
+        <img  class="wire" src="img/wire.png">
+
+    </div>
+    <div id="percent" class="progress"><p id="progress"></p></div>
+    <div id="result">
+        
+
+
+
+
+
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+<footer>
+    <p> Hecho por Andrés Hugo Bernárdez</p>
+    <a class="aButton" href="/../../index.h"> volver </a>
+</footer>
+
+</body>
+
+</html>
