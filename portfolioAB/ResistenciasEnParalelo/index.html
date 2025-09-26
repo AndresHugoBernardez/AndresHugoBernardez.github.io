@@ -189,7 +189,17 @@ background-color: antiquewhite;
     var maximums;
     var stopFlag=0;
 
+    function verification(){
+    if(amount.value<2) amount.value=2;
+    else if(amount.value>10) amount.value=10;
+    if(maximums.value<minimums.value)maximums.value=minimums.value+1;
+    if(maximums.value>100)  maximums.value=100;
+    else if(maximums.value<2) maximums.value=2;
+    if(minimums.value>99) minimums.value=99;
+    else if(minimums value<1) minimums.value=1;
     
+    
+    }
 
 
     window.addEventListener('load',(event)=>{
@@ -207,11 +217,12 @@ background-color: antiquewhite;
         stopButton.addEventListener('click',(event)=>{  stopFlag=1;});
 
         button.addEventListener('click',(event)=>{
+            verification();
             resistancesOut(amount.value);
         });
 
         amount.addEventListener('change',(event)=>{
-
+            verification();
             ShowResistances(amount.value);
 
         });
@@ -481,5 +492,6 @@ background-color: antiquewhite;
 </footer>
 
 </body>
+
 
 </html>
