@@ -313,9 +313,9 @@ background-color: antiquewhite;
                     
                     resistances[0]++;
 
-                    console.log( resistances[0]);
-                    if(resistances[0]>=maxi)
-                        for(i=0;i<rLenght;i++){
+                    
+                    i=0;
+                    wile(i<rLenght-1 && resistances[i]>=maxi){
 
                         
                             
@@ -325,10 +325,10 @@ background-color: antiquewhite;
                             
                             if(resistances[i+1]>=maxi){
                             mini=resistances[rLenght];
-                            resistances[i]=mini;
+                            resistances[i+1]=mini;
                             
                             }
-                            
+                            i++;
 
                             if(i==rLenght-1){
                             out_string="";
@@ -456,6 +456,7 @@ background-color: antiquewhite;
 
 
 </html>
+
 
 
 
