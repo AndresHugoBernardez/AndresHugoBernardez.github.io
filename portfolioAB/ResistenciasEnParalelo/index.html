@@ -322,13 +322,13 @@ background-color: antiquewhite;
                             
                             resistances[i+1]++;
 
-                            j=i;
-                            while(resistances[j+1]>=maxi&&j<rLenght){
-
                             
-                            j++;
+                            if(resistances[i+1]>=maxi){
+                            mini++;
+                            resistances[i]=mini;
+                            
                             }
-                            resistances[i]=resistances[j+1];
+                            
 
                             if(i==rLenght-1){
                             out_string="";
@@ -456,6 +456,7 @@ background-color: antiquewhite;
 
 
 </html>
+
 
 
 
