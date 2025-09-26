@@ -318,19 +318,20 @@ background-color: antiquewhite;
                     while(i<rLenght-1 && resistances[i]>=maxi){
 
                         
-                            
-                            
+                             
+                            resistances[i]=mini;
                             resistances[i+1]++;
 
                             
                             if(resistances[i+1]>=maxi){
-                            mini=resistances[rLenght];
+                    
                             resistances[i+1]=mini;
                             
                             }
                             i++;
 
                             if(i==rLenght-1){
+                                mini=resistances[rLenght];
                             out_string="";
                             out_string=(String(constant*(resistances[rLenght]-mini))).slice(0,5)+"%";
                                 progress.textContent=out_string;
@@ -456,6 +457,7 @@ background-color: antiquewhite;
 
 
 </html>
+
 
 
 
