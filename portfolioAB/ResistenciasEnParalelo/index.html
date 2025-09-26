@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="es">
 
 
@@ -10,7 +10,7 @@
 
 
 <style>
-    body{
+body{
     margin:0;
     padding:0;
     border:none;
@@ -249,6 +249,7 @@ background-color: antiquewhite;
         let equivalentR;
         let maxi=parseInt(maximums.value)+1;
         let mini=parseInt(minimums.value);
+        let mini2=mini;
 
         
         let resistances=[
@@ -267,21 +268,26 @@ background-color: antiquewhite;
         let constant=100.0/((1.0*maxi)-(1.0*mini));
         let entero;
         let fin=1;
-        let rLenght;
+        let rLenght=amount_in-1;
+
             result.style.display="none";
             button.classList.remove("visible");
             button.classList.add("invisible");
             stopButton.classList.remove("invisible");
             stopButton.classList.add("visible");
 
-            
-       
+               out_string="";
+            out_string=(String(constant*(resistances[rLenght]-mini))).slice(0,5)+"%";
+                            progress.textContent=out_string;
+
+                            console.log(out_string); 
+                        
 
             while (result.firstChild) {
             result.removeChild(result.firstChild);
             }
 
-            rLenght=amount_in-1;
+            
              console.log("prueba:");
          
             while(resistances[rLenght]<maxi && stopFlag==0){
@@ -309,30 +315,55 @@ background-color: antiquewhite;
                         result.appendChild(pp);
 
 
+                    }
                     
-                    
+                    //console.log( resistances[0]+"::"+resistances[1]+":"+resistances[2]+":"+resistances[3]+":");
                     resistances[0]++;
 
                     
-                    i=0;
-                    while(i<rLenght-1 && resistances[i]>=maxi){
+                    if(resistances[0]>=maxi){
+                    
+                        
+               
 
                         
-                             // renegando: ultima vez que trato de encontrar un bug desde el celular XD  oh necesito mi visual studio code je. bueno ya fue.
-                            resistances[i]=mini;
-                            resistances[i+1]++;
+                            j=1;
+                           resistances[j]++;
+            
+                                while(resistances[j]>=maxi&&j<rLenght){
+                                
+                                   //console.log("***<<<<j:"+j+":"+resistances[0]+"::"+resistances[1]+":"+resistances[2]+":"+resistances[3]+":")
+                                    j++;
+                                    
+                                  
+                                    
+                                }
 
-                            
-                            i++;
+                                if(j>1){
+                                
+                               resistances[j]++;
+                                
+                                }
 
-                            if(i==rLenght-1){
-                                mini=resistances[rLenght];
+                                if(j>2) await new Promise(resolve => setTimeout(resolve, 0));
+                                k=j;
+                                
+
+                               
+                                    while(k>0){
+                                        //console.log("<<<<k:"+k+":"+"<<<<j:"+j+":"+resistances[0]+"::"+resistances[1]+":"+resistances[2]+":"+resistances[3]+":")
+                                        resistances[k-1]=resistances[j];
+                                        k--;
+                                    
+                                    }
+                              
+                            if(j==rLenght){
                             out_string="";
                             out_string=(String(constant*(resistances[rLenght]-mini))).slice(0,5)+"%";
                                 progress.textContent=out_string;
 
                                 console.log(out_string);
-                                await new Promise(resolve => setTimeout(resolve, 0));
+                               
                            
                             }
 
@@ -342,7 +373,8 @@ background-color: antiquewhite;
                             
                           
 
-                        }
+                        
+                    }
         
 
 
@@ -386,7 +418,7 @@ background-color: antiquewhite;
         
             <div>
                 <p>Declare mínimo valor de las resistencias:</p>
-                <input id="minimums" type="number" value="1" min="1" max="99">
+                <input id="minimums" type="number" value="1" min="1" max="99" >
             </div>
 
             <div>
@@ -445,22 +477,9 @@ background-color: antiquewhite;
 
 <footer>
     <p> Hecho por Andrés Hugo Bernárdez</p>
-    <a class="aButton" href="../../index.html"> volver </a>
+    <a class="aButton" href="../../index.h"> volver </a>
 </footer>
 
 </body>
 
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
