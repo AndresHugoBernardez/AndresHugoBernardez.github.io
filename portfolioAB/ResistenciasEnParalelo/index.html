@@ -189,14 +189,17 @@ background-color: antiquewhite;
     var maximums;
     var stopFlag=0;
 
+
+
+
     function verification(){
-    if(amount.value<2) amount.value=2;
-    else if(amount.value>10) amount.value=10;
-    if(maximums.value<minimums.value)maximums.value=minimums.value+1;
-    if(maximums.value>100)  maximums.value=100;
-    else if(maximums.value<2) maximums.value=2;
-    if(minimums.value>99) minimums.value=99;
-    else if(minimums.value<1) minimums.value=1;
+    if(parseInt(amount.value<2)) amount.value=2;
+    else if(parseInt(amount.value)>10) amount.value=10;
+    if(parseInt(maximums.value)<parseInt(minimums.value))maximums.value=minimums.value+1;
+    if(parseInt(maximums.value)>100)  maximums.value=100;
+    else if(parseInt(maximums.value)<2) maximums.value=2;
+    if(parseInt(minimums.value)>99) minimums.value=99;
+    else if(parseInt(minimums.value)<1) minimums.value=1;
     
     
     }
@@ -218,16 +221,16 @@ background-color: antiquewhite;
 
         button.addEventListener('click',(event)=>{
             verification();
-            resistancesOut(amount.value);
+            resistancesOut(parseInt(amount.value));
         });
 
         amount.addEventListener('change',(event)=>{
             verification();
-            ShowResistances(amount.value);
+            ShowResistances(parseInt(amount.value));
 
         });
         
-        ShowResistances(amount.value);
+        ShowResistances(parseInt(amount.value));
 
     });
 
@@ -495,6 +498,7 @@ background-color: antiquewhite;
 
 
 </html>
+
 
 
 
