@@ -193,7 +193,7 @@ background-color: antiquewhite;
 
 
     function verification(){
-    if(parseInt(amount.value<2)) amount.value=2;
+    if(parseInt(amount.value)<2) amount.value=2;
     else if(parseInt(amount.value)>10) amount.value=10;
     if(parseInt(maximums.value)<parseInt(minimums.value))maximums.value=minimums.value+1;
     if(parseInt(maximums.value)>100)  maximums.value=100;
@@ -498,6 +498,7 @@ background-color: antiquewhite;
 
 
 </html>
+
 
 
 
