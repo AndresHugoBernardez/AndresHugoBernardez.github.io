@@ -137,6 +137,10 @@ window.addEventListener('load',(event)=>{
     formularioMostrar.addEventListener('click',()=>verificarCheckBoxes()); 
     botonOcultar.addEventListener('click',()=>uncheckAll());
     botonMostrar.addEventListener('click',()=>checkAll());
+
+    uncheckAll();
+    BotonDatos.checked=true;
+    BotonPortfolio.checked=true;
     verificarCheckBoxes();
 
    
@@ -584,6 +588,7 @@ function triggerMusic(){
          Music.style.backgroundColor = 'transparent';
     }
 }
+
 
 
 
