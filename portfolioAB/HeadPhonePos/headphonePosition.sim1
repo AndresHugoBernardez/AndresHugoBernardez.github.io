@@ -350,6 +350,30 @@
 
 <item itemtype="TextComponent" CircId="TextComponent-1465" mainComp="false" Show_id="false" Show_Val="false" Pos="-724,-276" rotation="0" hflip="1" vflip="1" label="TextComponent-1465" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="10 _px" Fixed_Width="false" Text="RIGHT IN" />
 
+<item itemtype="Diode" CircId="Diode-1466" mainComp="false" Show_id="false" Show_Val="false" Pos="-144,272" rotation="-90" hflip="1" vflip="1" label="Diode-1466" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1467" mainComp="false" Show_id="false" Show_Val="false" Pos="-64,276" rotation="-90" hflip="1" vflip="1" label="Diode-1467" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1468" mainComp="false" Show_id="false" Show_Val="false" Pos="12,272" rotation="-90" hflip="1" vflip="1" label="Diode-1468" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1469" mainComp="false" Show_id="false" Show_Val="false" Pos="104,272" rotation="-90" hflip="1" vflip="1" label="Diode-1469" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1470" mainComp="false" Show_id="false" Show_Val="false" Pos="176,272" rotation="-90" hflip="1" vflip="1" label="Diode-1470" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1473" mainComp="false" Show_id="false" Show_Val="false" Pos="264,272" rotation="-90" hflip="1" vflip="1" label="Diode-1473" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1474" mainComp="false" Show_id="false" Show_Val="false" Pos="648,276" rotation="-90" hflip="1" vflip="1" label="Diode-1474" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1475" mainComp="false" Show_id="false" Show_Val="false" Pos="728,276" rotation="-90" hflip="1" vflip="1" label="Diode-1475" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1476" mainComp="false" Show_id="false" Show_Val="false" Pos="804,276" rotation="-90" hflip="1" vflip="1" label="Diode-1476" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1477" mainComp="false" Show_id="false" Show_Val="false" Pos="880,280" rotation="-90" hflip="1" vflip="1" label="Diode-1477" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1478" mainComp="false" Show_id="false" Show_Val="false" Pos="960,280" rotation="-90" hflip="1" vflip="1" label="Diode-1478" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1479" mainComp="false" Show_id="false" Show_Val="false" Pos="1036,280" rotation="-90" hflip="1" vflip="1" label="Diode-1479" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
 <item itemtype="Node" CircId="Node-38" mainComp="false" Pos="-784,-288" />
 
 <item itemtype="Node" CircId="Node-217" mainComp="false" Pos="324,136" />
@@ -533,6 +557,54 @@
 <item itemtype="Node" CircId="Node-1459" mainComp="false" Pos="-56,-472" />
 
 <item itemtype="Node" CircId="Node-1460" mainComp="false" Pos="-100,-604" />
+
+<item itemtype="Node" CircId="Node-1480" mainComp="false" Pos="-164,296" />
+
+<item itemtype="Node" CircId="Node-1481" mainComp="false" Pos="-164,240" />
+
+<item itemtype="Node" CircId="Node-1482" mainComp="false" Pos="-88,296" />
+
+<item itemtype="Node" CircId="Node-1483" mainComp="false" Pos="-88,236" />
+
+<item itemtype="Node" CircId="Node-1484" mainComp="false" Pos="-8,296" />
+
+<item itemtype="Node" CircId="Node-1485" mainComp="false" Pos="-8,232" />
+
+<item itemtype="Node" CircId="Node-1486" mainComp="false" Pos="84,296" />
+
+<item itemtype="Node" CircId="Node-1487" mainComp="false" Pos="84,232" />
+
+<item itemtype="Node" CircId="Node-1488" mainComp="false" Pos="160,296" />
+
+<item itemtype="Node" CircId="Node-1489" mainComp="false" Pos="160,232" />
+
+<item itemtype="Node" CircId="Node-1490" mainComp="false" Pos="244,296" />
+
+<item itemtype="Node" CircId="Node-1491" mainComp="false" Pos="244,240" />
+
+<item itemtype="Node" CircId="Node-1492" mainComp="false" Pos="628,300" />
+
+<item itemtype="Node" CircId="Node-1493" mainComp="false" Pos="628,244" />
+
+<item itemtype="Node" CircId="Node-1494" mainComp="false" Pos="708,300" />
+
+<item itemtype="Node" CircId="Node-1495" mainComp="false" Pos="708,236" />
+
+<item itemtype="Node" CircId="Node-1496" mainComp="false" Pos="784,300" />
+
+<item itemtype="Node" CircId="Node-1497" mainComp="false" Pos="784,240" />
+
+<item itemtype="Node" CircId="Node-1498" mainComp="false" Pos="860,304" />
+
+<item itemtype="Node" CircId="Node-1499" mainComp="false" Pos="860,244" />
+
+<item itemtype="Node" CircId="Node-1500" mainComp="false" Pos="940,304" />
+
+<item itemtype="Node" CircId="Node-1501" mainComp="false" Pos="940,244" />
+
+<item itemtype="Node" CircId="Node-1502" mainComp="false" Pos="1016,304" />
+
+<item itemtype="Node" CircId="Node-1503" mainComp="false" Pos="1016,244" />
 
 <item itemtype="Connector" uid="Connector-93" startpinid="Resistor-9-rPin" endpinid="Node-38-0" pointList="-796,-296,-784,-296,-784,-288" />
 
@@ -860,8 +932,6 @@
 
 <item itemtype="Connector" uid="Connector-2853" startpinid="Led-187-rPin" endpinid="Resistor-179-rPin" pointList="-88,104,-88,100" />
 
-<item itemtype="Connector" uid="Connector-2932" startpinid="BJT-1128-collector" endpinid="DcMotor-1042-lPin" pointList="-164,288,-164,296,-184,296" />
-
 <item itemtype="Connector" uid="Connector-2933" startpinid="Resistor-1129-lPin" endpinid="Node-1130-1" pointList="-192,236,-192,64,-160,64" />
 
 <item itemtype="Connector" uid="Connector-2934" startpinid="74XX45-172-0" endpinid="Node-1130-0" pointList="-352,-24,-160,-24,-160,64" />
@@ -874,23 +944,13 @@
 
 <item itemtype="Connector" uid="Connector-2945" startpinid="BJT-1136-base" endpinid="Resistor-1137-rPin" pointList="-112,272,-116,272,-116,268" />
 
-<item itemtype="Connector" uid="Connector-2946" startpinid="BJT-1136-collector" endpinid="DcMotor-1138-lPin" pointList="-88,288,-88,296,-108,296" />
-
 <item itemtype="Connector" uid="Connector-2948" startpinid="BJT-1140-base" endpinid="Resistor-1141-rPin" pointList="-32,272,-36,272,-36,268" />
-
-<item itemtype="Connector" uid="Connector-2949" startpinid="BJT-1140-collector" endpinid="DcMotor-1142-lPin" pointList="-8,288,-8,296,-28,296" />
 
 <item itemtype="Connector" uid="Connector-2951" startpinid="BJT-1144-base" endpinid="Resistor-1145-rPin" pointList="60,272,56,272,56,268" />
 
-<item itemtype="Connector" uid="Connector-2952" startpinid="BJT-1144-collector" endpinid="DcMotor-1146-lPin" pointList="84,288,84,296,64,296" />
-
 <item itemtype="Connector" uid="Connector-2954" startpinid="BJT-1148-base" endpinid="Resistor-1149-rPin" pointList="136,272,132,272,132,268" />
 
-<item itemtype="Connector" uid="Connector-2955" startpinid="BJT-1148-collector" endpinid="DcMotor-1150-lPin" pointList="160,288,160,296,140,296" />
-
 <item itemtype="Connector" uid="Connector-2957" startpinid="BJT-1152-base" endpinid="Resistor-1153-rPin" pointList="220,272,216,272,216,268" />
-
-<item itemtype="Connector" uid="Connector-2958" startpinid="BJT-1152-collector" endpinid="DcMotor-1154-lPin" pointList="244,288,244,296,224,296" />
 
 <item itemtype="Connector" uid="Connector-2990" startpinid="Resistor-1137-lPin" endpinid="Node-1196-1" pointList="-116,236,-116,64,-88,64" />
 
@@ -912,29 +972,19 @@
 
 <item itemtype="Connector" uid="Connector-3001" startpinid="Node-1199-2" endpinid="Resistor-182-lPin" pointList="160,52,160,68" />
 
-<item itemtype="Connector" uid="Connector-3002" startpinid="BJT-1148-emiter" endpinid="Node-1200-1" pointList="160,256,160,136,152,136" />
-
 <item itemtype="Connector" uid="Connector-3004" startpinid="Node-1200-2" endpinid="Node-219-1" pointList="152,136,160,136" />
-
-<item itemtype="Connector" uid="Connector-3005" startpinid="BJT-1144-emiter" endpinid="Node-1201-1" pointList="84,256,84,136,80,136" />
 
 <item itemtype="Connector" uid="Connector-3006" startpinid="Node-220-2" endpinid="Node-1201-0" pointList="76,136,80,136" />
 
 <item itemtype="Connector" uid="Connector-3007" startpinid="Node-1201-2" endpinid="Node-1200-0" pointList="80,136,152,136" />
 
-<item itemtype="Connector" uid="Connector-3008" startpinid="BJT-1140-emiter" endpinid="Node-1202-1" pointList="-8,256,-8,136,-12,136" />
-
 <item itemtype="Connector" uid="Connector-3009" startpinid="Node-223-2" endpinid="Node-1202-0" pointList="-88,136,-12,136" />
 
 <item itemtype="Connector" uid="Connector-3010" startpinid="Node-1202-2" endpinid="Node-221-1" pointList="-12,136,-4,136" />
 
-<item itemtype="Connector" uid="Connector-3011" startpinid="BJT-1136-emiter" endpinid="Node-1203-1" pointList="-88,256,-88,136,-92,136" />
-
 <item itemtype="Connector" uid="Connector-3012" startpinid="Node-222-1" endpinid="Node-1203-0" pointList="-172,136,-92,136" />
 
 <item itemtype="Connector" uid="Connector-3013" startpinid="Node-1203-2" endpinid="Node-223-1" pointList="-92,136,-88,136" />
-
-<item itemtype="Connector" uid="Connector-3014" startpinid="BJT-1128-emiter" endpinid="Node-1204-1" pointList="-164,256,-164,136" />
 
 <item itemtype="Connector" uid="Connector-3015" startpinid="Node-222-2" endpinid="Node-1204-0" pointList="-172,136,-164,136" />
 
@@ -952,27 +1002,13 @@
 
 <item itemtype="Connector" uid="Connector-3065" startpinid="Node-1217-2" endpinid="Resistor-185-lPin" pointList="400,52,400,68" />
 
-<item itemtype="Connector" uid="Connector-3066" startpinid="BJT-1152-emiter" endpinid="Node-1218-1" pointList="244,256,244,136,232,136" />
-
 <item itemtype="Connector" uid="Connector-3067" startpinid="Node-219-2" endpinid="Node-1218-0" pointList="160,136,232,136" />
 
 <item itemtype="Connector" uid="Connector-3068" startpinid="Node-1218-2" endpinid="Node-218-1" pointList="232,136,244,136" />
 
-<item itemtype="Connector" uid="Connector-3194" startpinid="BJT-1383-collector" endpinid="DcMotor-1378-lPin" pointList="784,292,784,300,764,300" />
-
-<item itemtype="Connector" uid="Connector-3195" startpinid="BJT-1364-collector" endpinid="DcMotor-1361-lPin" pointList="708,292,708,300,688,300" />
-
-<item itemtype="Connector" uid="Connector-3199" startpinid="BJT-1353-collector" endpinid="DcMotor-1375-lPin" pointList="940,296,940,304,920,304" />
-
-<item itemtype="Connector" uid="Connector-3207" startpinid="BJT-1344-collector" endpinid="DcMotor-1350-lPin" pointList="628,292,628,300,608,300" />
-
 <item itemtype="Connector" uid="Connector-3208" startpinid="BJT-1364-base" endpinid="Resistor-1354-rPin" pointList="684,276,680,276,680,272" />
 
-<item itemtype="Connector" uid="Connector-3213" startpinid="BJT-1365-collector" endpinid="DcMotor-1369-lPin" pointList="1016,296,1016,304,996,304" />
-
 <item itemtype="Connector" uid="Connector-3214" startpinid="BJT-1344-base" endpinid="Resistor-1346-rPin" pointList="604,276,600,276,600,272" />
-
-<item itemtype="Connector" uid="Connector-3219" startpinid="BJT-1380-collector" endpinid="DcMotor-1368-lPin" pointList="860,296,860,304,840,304" />
 
 <item itemtype="Connector" uid="Connector-3226" startpinid="BJT-1383-base" endpinid="Resistor-1370-rPin" pointList="760,276,756,276,756,272" />
 
@@ -1024,29 +1060,19 @@
 
 <item itemtype="Connector" uid="Connector-3277" startpinid="Node-1391-2" endpinid="Resistor-1020-lPin" pointList="1020,56,1020,68" />
 
-<item itemtype="Connector" uid="Connector-3284" startpinid="BJT-1344-emiter" endpinid="Node-1394-1" pointList="628,260,628,136,624,136" />
-
 <item itemtype="Connector" uid="Connector-3285" startpinid="Node-1006-2" endpinid="Node-1394-0" pointList="700,136,624,136" />
 
 <item itemtype="Connector" uid="Connector-3286" startpinid="Node-1394-2" endpinid="Node-1019-1" pointList="624,136,628,136" />
-
-<item itemtype="Connector" uid="Connector-3299" startpinid="BJT-1364-emiter" endpinid="Node-1395-1" pointList="708,260,708,136,712,136" />
 
 <item itemtype="Connector" uid="Connector-3300" startpinid="Node-1011-2" endpinid="Node-1395-0" pointList="776,136,712,136" />
 
 <item itemtype="Connector" uid="Connector-3301" startpinid="Node-1395-2" endpinid="Node-1006-1" pointList="712,136,700,136" />
 
-<item itemtype="Connector" uid="Connector-3302" startpinid="BJT-1383-emiter" endpinid="Node-1396-1" pointList="784,260,784,136,792,136" />
-
 <item itemtype="Connector" uid="Connector-3303" startpinid="Node-1008-2" endpinid="Node-1396-0" pointList="856,136,792,136" />
 
 <item itemtype="Connector" uid="Connector-3304" startpinid="Node-1396-2" endpinid="Node-1011-1" pointList="792,136,776,136" />
 
-<item itemtype="Connector" uid="Connector-3305" startpinid="BJT-1353-emiter" endpinid="Node-1397-1" pointList="940,264,940,136,948,136" />
-
 <item itemtype="Connector" uid="Connector-3306" startpinid="Node-1015-1" endpinid="Node-1397-0" pointList="936,136,948,136" />
-
-<item itemtype="Connector" uid="Connector-3308" startpinid="BJT-1365-emiter" endpinid="Node-1398-1" pointList="1016,264,1016,136" />
 
 <item itemtype="Connector" uid="Connector-3309" startpinid="Node-1397-2" endpinid="Node-1398-0" pointList="948,136,1016,136" />
 
@@ -1069,8 +1095,6 @@
 <item itemtype="Connector" uid="Connector-3367" startpinid="Resistor-1149-lPin" endpinid="Node-1199-1" pointList="132,236,132,52,160,52" />
 
 <item itemtype="Connector" uid="Connector-3370" startpinid="Node-1419-2" endpinid="Diode-1404-rPin" pointList="544,448,560,448" />
-
-<item itemtype="Connector" uid="Connector-3373" startpinid="Node-1421-1" endpinid="Node-1422-1" pointList="608,448,608,504,184,504,184,212,216,212" />
 
 <item itemtype="Connector" uid="Connector-3374" startpinid="DcMotor-1350-rPin" endpinid="Node-1421-0" pointList="608,380,608,448" />
 
@@ -1102,7 +1126,7 @@
 
 <item itemtype="Connector" uid="Connector-3400" startpinid="Node-218-2" endpinid="Node-217-1" pointList="244,136,324,136" />
 
-<item itemtype="Connector" uid="Connector-3401" startpinid="Node-1419-1" endpinid="Node-1216-1" pointList="544,448,544,484,264,484,264,224,292,224,292,56,324,56" />
+<item itemtype="Connector" uid="Connector-3401" startpinid="Node-1419-1" endpinid="Node-1216-1" pointList="544,448,544,484,292,484,292,56,324,56" />
 
 <item itemtype="Connector" uid="Connector-3402" startpinid="Node-1035-2" endpinid="Node-217-0" pointList="396,136,324,136" />
 
@@ -1125,8 +1149,6 @@
 <item itemtype="Connector" uid="Connector-3413" startpinid="Resistor-388-lPin" endpinid="Node-1038-1" pointList="-692,-40,-696,-40,-696,-64" />
 
 <item itemtype="Connector" uid="Connector-3415" startpinid="Resistor-583-lPin" endpinid="Node-835-0" pointList="-628,32,-628,-8,-616,-8" />
-
-<item itemtype="Connector" uid="Connector-3416" startpinid="BJT-1380-emiter" endpinid="Node-1435-1" pointList="860,264,860,136,864,136" />
 
 <item itemtype="Connector" uid="Connector-3417" startpinid="Node-1015-2" endpinid="Node-1435-0" pointList="936,136,864,136" />
 
@@ -1157,5 +1179,151 @@
 <item itemtype="Connector" uid="Connector-3486" startpinid="Node-906-2" endpinid="Node-1460-0" pointList="-200,-740,-100,-740,-100,-604" />
 
 <item itemtype="Connector" uid="Connector-3487" startpinid="Node-1460-2" endpinid="Node-857-0" pointList="-100,-604,-24,-604,-24,-608" />
+
+<item itemtype="Connector" uid="Connector-3491" startpinid="Node-1421-1" endpinid="Node-1422-1" pointList="608,448,608,504,184,504,184,212,216,212" />
+
+<item itemtype="Connector" uid="Connector-3492" startpinid="Node-1480-1" endpinid="Diode-1466-lPin" pointList="-164,296,-144,296,-144,288" />
+
+<item itemtype="Connector" uid="Connector-3493" startpinid="BJT-1128-collector" endpinid="Node-1480-0" pointList="-164,288,-164,296" />
+
+<item itemtype="Connector" uid="Connector-3494" startpinid="Node-1480-2" endpinid="DcMotor-1042-lPin" pointList="-164,296,-184,296" />
+
+<item itemtype="Connector" uid="Connector-3495" startpinid="Diode-1466-rPin" endpinid="Node-1481-1" pointList="-144,256,-144,240,-164,240" />
+
+<item itemtype="Connector" uid="Connector-3496" startpinid="BJT-1128-emiter" endpinid="Node-1481-0" pointList="-164,256,-164,240" />
+
+<item itemtype="Connector" uid="Connector-3497" startpinid="Node-1481-2" endpinid="Node-1204-1" pointList="-164,240,-164,136" />
+
+<item itemtype="Connector" uid="Connector-3498" startpinid="Node-1482-1" endpinid="Diode-1467-lPin" pointList="-88,296,-64,296,-64,292" />
+
+<item itemtype="Connector" uid="Connector-3499" startpinid="BJT-1136-collector" endpinid="Node-1482-0" pointList="-88,288,-88,296" />
+
+<item itemtype="Connector" uid="Connector-3500" startpinid="Node-1482-2" endpinid="DcMotor-1138-lPin" pointList="-88,296,-108,296" />
+
+<item itemtype="Connector" uid="Connector-3501" startpinid="Diode-1467-rPin" endpinid="Node-1483-1" pointList="-64,260,-64,236,-88,236" />
+
+<item itemtype="Connector" uid="Connector-3502" startpinid="BJT-1136-emiter" endpinid="Node-1483-0" pointList="-88,256,-88,236" />
+
+<item itemtype="Connector" uid="Connector-3503" startpinid="Node-1483-2" endpinid="Node-1203-1" pointList="-88,236,-88,136,-92,136" />
+
+<item itemtype="Connector" uid="Connector-3504" startpinid="Node-1484-1" endpinid="Diode-1468-lPin" pointList="-8,296,12,296,12,288" />
+
+<item itemtype="Connector" uid="Connector-3505" startpinid="BJT-1140-collector" endpinid="Node-1484-0" pointList="-8,288,-8,296" />
+
+<item itemtype="Connector" uid="Connector-3506" startpinid="Node-1484-2" endpinid="DcMotor-1142-lPin" pointList="-8,296,-28,296" />
+
+<item itemtype="Connector" uid="Connector-3507" startpinid="Diode-1468-rPin" endpinid="Node-1485-1" pointList="12,256,12,232,-8,232" />
+
+<item itemtype="Connector" uid="Connector-3508" startpinid="BJT-1140-emiter" endpinid="Node-1485-0" pointList="-8,256,-8,232" />
+
+<item itemtype="Connector" uid="Connector-3509" startpinid="Node-1485-2" endpinid="Node-1202-1" pointList="-8,232,-8,136,-12,136" />
+
+<item itemtype="Connector" uid="Connector-3510" startpinid="Node-1486-1" endpinid="Diode-1469-lPin" pointList="84,296,104,296,104,288" />
+
+<item itemtype="Connector" uid="Connector-3511" startpinid="BJT-1144-collector" endpinid="Node-1486-0" pointList="84,288,84,296" />
+
+<item itemtype="Connector" uid="Connector-3512" startpinid="Node-1486-2" endpinid="DcMotor-1146-lPin" pointList="84,296,64,296" />
+
+<item itemtype="Connector" uid="Connector-3513" startpinid="Diode-1469-rPin" endpinid="Node-1487-1" pointList="104,256,104,232,84,232" />
+
+<item itemtype="Connector" uid="Connector-3514" startpinid="BJT-1144-emiter" endpinid="Node-1487-0" pointList="84,256,84,232" />
+
+<item itemtype="Connector" uid="Connector-3515" startpinid="Node-1487-2" endpinid="Node-1201-1" pointList="84,232,84,136,80,136" />
+
+<item itemtype="Connector" uid="Connector-3516" startpinid="Node-1488-1" endpinid="Diode-1470-lPin" pointList="160,296,176,296,176,288" />
+
+<item itemtype="Connector" uid="Connector-3517" startpinid="BJT-1148-collector" endpinid="Node-1488-0" pointList="160,288,160,296" />
+
+<item itemtype="Connector" uid="Connector-3518" startpinid="Node-1488-2" endpinid="DcMotor-1150-lPin" pointList="160,296,140,296" />
+
+<item itemtype="Connector" uid="Connector-3519" startpinid="Diode-1470-rPin" endpinid="Node-1489-1" pointList="176,256,176,232,160,232" />
+
+<item itemtype="Connector" uid="Connector-3520" startpinid="BJT-1148-emiter" endpinid="Node-1489-0" pointList="160,256,160,232" />
+
+<item itemtype="Connector" uid="Connector-3521" startpinid="Node-1489-2" endpinid="Node-1200-1" pointList="160,232,160,136,152,136" />
+
+<item itemtype="Connector" uid="Connector-3522" startpinid="Node-1490-1" endpinid="Diode-1473-lPin" pointList="244,296,264,296,264,288" />
+
+<item itemtype="Connector" uid="Connector-3523" startpinid="BJT-1152-collector" endpinid="Node-1490-0" pointList="244,288,244,296" />
+
+<item itemtype="Connector" uid="Connector-3524" startpinid="Node-1490-2" endpinid="DcMotor-1154-lPin" pointList="244,296,224,296" />
+
+<item itemtype="Connector" uid="Connector-3525" startpinid="Diode-1473-rPin" endpinid="Node-1491-1" pointList="264,256,264,240,244,240" />
+
+<item itemtype="Connector" uid="Connector-3526" startpinid="BJT-1152-emiter" endpinid="Node-1491-0" pointList="244,256,244,240" />
+
+<item itemtype="Connector" uid="Connector-3527" startpinid="Node-1491-2" endpinid="Node-1218-1" pointList="244,240,244,136,232,136" />
+
+<item itemtype="Connector" uid="Connector-3528" startpinid="Node-1492-1" endpinid="Diode-1474-lPin" pointList="628,300,648,300,648,292" />
+
+<item itemtype="Connector" uid="Connector-3529" startpinid="BJT-1344-collector" endpinid="Node-1492-0" pointList="628,292,628,300" />
+
+<item itemtype="Connector" uid="Connector-3530" startpinid="Node-1492-2" endpinid="DcMotor-1350-lPin" pointList="628,300,608,300" />
+
+<item itemtype="Connector" uid="Connector-3531" startpinid="Node-1493-1" endpinid="Diode-1474-rPin" pointList="628,244,648,244,648,260" />
+
+<item itemtype="Connector" uid="Connector-3532" startpinid="BJT-1344-emiter" endpinid="Node-1493-0" pointList="628,260,628,244" />
+
+<item itemtype="Connector" uid="Connector-3533" startpinid="Node-1493-2" endpinid="Node-1394-1" pointList="628,244,628,136,624,136" />
+
+<item itemtype="Connector" uid="Connector-3534" startpinid="Node-1494-1" endpinid="Diode-1475-lPin" pointList="708,300,708,292,728,292" />
+
+<item itemtype="Connector" uid="Connector-3535" startpinid="BJT-1364-collector" endpinid="Node-1494-0" pointList="708,292,708,300" />
+
+<item itemtype="Connector" uid="Connector-3536" startpinid="Node-1494-2" endpinid="DcMotor-1361-lPin" pointList="708,300,688,300" />
+
+<item itemtype="Connector" uid="Connector-3537" startpinid="Diode-1475-rPin" endpinid="Node-1495-1" pointList="728,260,728,236,708,236" />
+
+<item itemtype="Connector" uid="Connector-3538" startpinid="BJT-1364-emiter" endpinid="Node-1495-0" pointList="708,260,708,236" />
+
+<item itemtype="Connector" uid="Connector-3539" startpinid="Node-1495-2" endpinid="Node-1395-1" pointList="708,236,708,136,712,136" />
+
+<item itemtype="Connector" uid="Connector-3540" startpinid="Node-1496-1" endpinid="Diode-1476-lPin" pointList="784,300,804,300,804,292" />
+
+<item itemtype="Connector" uid="Connector-3541" startpinid="BJT-1383-collector" endpinid="Node-1496-0" pointList="784,292,784,300" />
+
+<item itemtype="Connector" uid="Connector-3542" startpinid="Node-1496-2" endpinid="DcMotor-1378-lPin" pointList="784,300,764,300" />
+
+<item itemtype="Connector" uid="Connector-3543" startpinid="Diode-1476-rPin" endpinid="Node-1497-1" pointList="804,260,804,240,784,240" />
+
+<item itemtype="Connector" uid="Connector-3544" startpinid="BJT-1383-emiter" endpinid="Node-1497-0" pointList="784,260,784,240" />
+
+<item itemtype="Connector" uid="Connector-3545" startpinid="Node-1497-2" endpinid="Node-1396-1" pointList="784,240,784,136,792,136" />
+
+<item itemtype="Connector" uid="Connector-3546" startpinid="Node-1498-1" endpinid="Diode-1477-lPin" pointList="860,304,880,304,880,296" />
+
+<item itemtype="Connector" uid="Connector-3547" startpinid="BJT-1380-collector" endpinid="Node-1498-0" pointList="860,296,860,304" />
+
+<item itemtype="Connector" uid="Connector-3548" startpinid="Node-1498-2" endpinid="DcMotor-1368-lPin" pointList="860,304,840,304" />
+
+<item itemtype="Connector" uid="Connector-3549" startpinid="Diode-1477-rPin" endpinid="Node-1499-1" pointList="880,264,880,244,860,244" />
+
+<item itemtype="Connector" uid="Connector-3550" startpinid="BJT-1380-emiter" endpinid="Node-1499-0" pointList="860,264,860,244" />
+
+<item itemtype="Connector" uid="Connector-3551" startpinid="Node-1499-2" endpinid="Node-1435-1" pointList="860,244,860,136,864,136" />
+
+<item itemtype="Connector" uid="Connector-3552" startpinid="Node-1500-1" endpinid="Diode-1478-lPin" pointList="940,304,960,304,960,296" />
+
+<item itemtype="Connector" uid="Connector-3553" startpinid="BJT-1353-collector" endpinid="Node-1500-0" pointList="940,296,940,304" />
+
+<item itemtype="Connector" uid="Connector-3554" startpinid="Node-1500-2" endpinid="DcMotor-1375-lPin" pointList="940,304,920,304" />
+
+<item itemtype="Connector" uid="Connector-3555" startpinid="Diode-1478-rPin" endpinid="Node-1501-1" pointList="960,264,960,244,940,244" />
+
+<item itemtype="Connector" uid="Connector-3556" startpinid="BJT-1353-emiter" endpinid="Node-1501-0" pointList="940,264,940,244" />
+
+<item itemtype="Connector" uid="Connector-3557" startpinid="Node-1501-2" endpinid="Node-1397-1" pointList="940,244,940,136,948,136" />
+
+<item itemtype="Connector" uid="Connector-3558" startpinid="Node-1502-1" endpinid="Diode-1479-lPin" pointList="1016,304,1036,304,1036,296" />
+
+<item itemtype="Connector" uid="Connector-3559" startpinid="BJT-1365-collector" endpinid="Node-1502-0" pointList="1016,296,1016,304" />
+
+<item itemtype="Connector" uid="Connector-3560" startpinid="Node-1502-2" endpinid="DcMotor-1369-lPin" pointList="1016,304,996,304" />
+
+<item itemtype="Connector" uid="Connector-3561" startpinid="Diode-1479-rPin" endpinid="Node-1503-1" pointList="1036,264,1036,244,1016,244" />
+
+<item itemtype="Connector" uid="Connector-3562" startpinid="BJT-1365-emiter" endpinid="Node-1503-0" pointList="1016,264,1016,244" />
+
+<item itemtype="Connector" uid="Connector-3563" startpinid="Node-1503-2" endpinid="Node-1398-1" pointList="1016,244,1016,136" />
 
 </circuit>
