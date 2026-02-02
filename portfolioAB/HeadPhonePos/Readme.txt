@@ -1,4 +1,4 @@
-The current repository was moved to https://github.com/AndresHugoBernardez/TactilSoundRadar/ Go there if you want the lasted updates
+The current repository was moved to https://github.com/AndresHugoBernardez/TactilSoundRadar/ Go there if you want the last updates
 
 
 
