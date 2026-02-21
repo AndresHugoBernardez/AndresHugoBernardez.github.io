@@ -323,6 +323,8 @@ function parseMulChoice(inTxt) {
     
   }
 
+
+  if(Qflag == 1) {
   question += '",';
   trueOption += '",';
   options += '"';
@@ -330,8 +332,10 @@ function parseMulChoice(inTxt) {
   jsnString += trueOption;
   jsnString += options;
   jsnString += ']}]}';
-
   return jsnString;
+  }
+  
+  else return '{"multiple":[]}';
 }
 
 
