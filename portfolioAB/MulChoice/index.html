@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="./MCccs/MyStyle.css">
+  <title>Multiple Choice</title>
+
+  <script src="./mcjs/mulch.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Multiple Choice Creator</h1>
+  </header>
+  <div class="mainWindow">
+    
+    
+  
+  <form class="centralizar">
+    <textarea id="inText"  placeholder="// Formato:
+// En cada comienzo de línea escribir:
+//  #Q# : para nueva pregunta (Question)
+//  #T# : para Respuesta correcta (True)
+//  #F# : para Respuesta incorrecta (False)
+//  //  : para Comentario de línea
+//
+// Ej:
+
+// Pregunta 1
+#Q# ¿Qué es un automóvil?
+#T# Un vehículo de cuatro ruedas.
+#F# Un vehículo de 2 ruedas.
+#F# Un vehículo volador.
+#F# Un bote.
+#F# Un motor.
+#F# Un electrodoméstico.
+#F# Un submarino.
+
+// Pregunta 2
+#Q# ¿Cuántos lados tiene un hexágono?
+#T# 6
+#F# 3
+#F# 9
+#F# 7
+#F# 8"></textarea>
+
+    <br>
+    <button id="CreateButton" type="button">Crear Multiple Choice</button>
+  </form>
+
+  <br>
+
+  </div>
+  <div id="Output">
+        <button id="close"> X</button>
+        <div id="MulChoice"></div>
+        <br>
+        <p>Resultado:</p>
+        <p id="correctAnswers">0</p>
+  </div>
+  <footer>
+    <p> Andrés Hugo Bernárdez 2026</p>
+    <p> Creado con asistencia de GitHub Copilot.</p>
+    <br>
+  </footer>
+
+</body>
+</html>
