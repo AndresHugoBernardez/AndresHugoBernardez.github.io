@@ -1,0 +1,138 @@
+
+<!------  Hecho por copilot. Esta página tiene como objetivo mostrar un libro el texto es escrito por mí, Andrés Bernárdez-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civilization Spacial Guards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .book-content {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            min-height: 400px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 16px;
+            white-space: pre-wrap;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #667eea;
+            color: white;
+            transition: 0.3s;
+        }
+        
+        button:hover {
+            background: #764ba2;
+        }
+        
+        .page-info {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀Civilizations Spacial Guards🛸</h1>
+            <p>Un libro de Andrés Bernárdez</p>
+        </div>
+        
+        <div class="book-content" id="content">
+            <p>Welcome to the Book Reader! This is a simple application to read books online.</p>
+            <p><br></p>
+            <p>Click the "Next Page" button to continue reading, or "Previous Page" to go back.</p>
+        </div>
+        
+        <div class="controls">
+            <button onclick="previousPage()">← Previous Page</button>
+            <button onclick="nextPage()">Next Page →</button>
+        </div>
+        
+        <div class="page-info">
+            <span>Página <span id="currentPage">1</span> of <span id="totalPages">1</span></span>
+        </div>
+    </div>
+    
+    <script>
+        let currentPage = 1;
+        const pages = [
+            "Andy's Books presents\n🚀Civilizations Spacial Guards🛸\n\nHace varios años atrás.\n\n(se escucha un bip-bip en una nave espacial)\n\nDofter: ¿Computadora, qué es eso?\nComputadora: Se ha detectado un campo electromagnético fuerte anormal en el sector jjk8457.\nDofter: Déjame ver...\nComputadora: Se encuentran en la tercera luna de la estrella jjk8457.\nDofter: Computadora, apunta los satélites cuánticos a ese sector.\nDofter: ¡No es posible!\nDofter: Dime, la probabilidad de la existencia de vida inteligente. \nComputadora: ... 95%\nDofter: Realiza confirmaciones de análisis. \nComputadora: ..... Efectivamente, existen comunicaciones electromagnéticas débiles.\nDofter: ¿Puedes decifrarlas?\nComputadora: Decifrando.. esto puede tardar varias horas.\n(varias horas después)\nComputadora: Se ha logrado decifrar. Se ha detectado un sistema audio y video.\nDofter: O sea, que está civilización ya controla la comunicación inalámbrica.\nDofter: Computadora, Muéstrame.\n\n(se ve televisión de la Tierra)\n\nDofter: Atención, Central, aquí Yughzert004, Informo de un protocolo 498 en sector jjk8457, mando ubicación.\n\nCentral: Confirmado, Yughzert004, proceda con el protocolo 498, usted es la nave más cercana, preparece para viajar a velocidad luz. \n\nDofter: Copiado, Central, misión aceptada, procedo según protocolo.\n\nDofter: Computadora, prepara la crionización y programa rumbo a 3era luna de jjk8457\n\nComputadora: tiempo estimado de llegada 56 años. Proceda a cámara de Crionización, buen viaje. \n\n(entra, y la nave se dispara a velocidad luz)\n\n",
+            "Civilizations Spacial Guards (CSG 01.01)\n\n(2026 en algún lugar del planeta tierra)\n\n(pffffffssss)\n(la nave aterriza dentro de un bosque del planeta Tierra)\n\nComputadora: Bienvenido a la tercera luna del sector jjk8457, confirme salud y saludo.\nDofter: Hola, computadora, me duele la cabeza un poco pero el resto estoy bien.\nComputadora: Hemos viajado 58 años a velocidad de la luz. \nDofter: ¡Siento que solo fue un segundo!\nComputadora: Eso significa que el viaje fue óptimo. En 10 minutos el dolor de cabeza debería desaparecer, caso contrario reportar. Recomiendo descansar un poco.\nDofter: Atención, Central, aquí Yughzert004 en posición jjk8457, siguiendo con el protocolo 498, espero instrucciones, envío status, cambio. \n\nCentral: Confirmado. Se le ha asignado un ojo guía, ella tiene las instrucciones, se pondrá en contacto con usted, cambio.\n\nDofter: Espero, stand by, ping, cambio.\n\nOjo guía: ¡Hola, Dofter! ¡Un placer por fin conocerlo! Soy Nuxy, ojo guía. Con esta misión terminaré mi tesis. Se todo lo que hay que saber de la Tierra, solo me falta estar allí pero ya sabes, estoy a 349 años luz de distancia, he estado analizando sus comunicaciones prácticamente desde que nací, en breve enviaré una enciclopedia con todo lo que debe saber del planeta. ¿Cual es su salud y saludo?\n\nDofter: Nuxy, el placer es mío, mi salud es correcta, el viaje fue un éxito. Así que Tierra, vaya nombre, la superficie es más agua que tierra, ya se que esta civilización no vive bajo líquidos. Bien, Nuxy, envíame la enciclopedia y comencemos con las misión.\n\nNuxy: Listo! Enviado! Nuestra primera misión es que conectes un nodo a su Internet, o sea, a su sistema de datos comunitarios. \n\nDofter: Bien, prepararé el transgenemutador para mimetizarme con está civilización. Vi que utilizan una especie de uniforme.\n\nNuxy: Le llaman ropa, ahí te envío apariencia de un humano típico y el diseño de ropa adecuada. \n\nDofter: Bien, Nuxy, comencemos!\n",
+            "( CSG 01.02)\n \n \n Dofter: ¿Nuxy, qué mutación tienes?\n Nuxy: Elige tu avatar, a continuación podrás personalizar tu perfil, o skin como le dicen en los videojuegos aquí.\n Dofter: Veo que tienen 10 articulaciones en sus tentáculos, adivino, usan numeración de base 10. Entonces la rotación debe regirse en 10 periodos o 20.\n Nuxy: Son seres vertebrados, te refieres a sus brazos y en sus extremidades tienen manos de cinco dedos cada una. Sí, usan base 10 pero al día lo dividen en 24 periodos a los que llaman horas. \n Dofter: Qué raro!\n Nuxy: Eso no es todo, al año de 365 rotaciones lo dividen en 12 meses pero hay meses de 31 días, otros de 30 y otro de 28.\n Dofter: y no es más práctico 13 meses de 28 días y un día extra por año?\n Nuxy: La lógica pura no es su filosofía, sino la lógica-socio-historica. Ya aprenderás.\n Dofter: Veo que son un poco complicados, ya que se basan en la historia elijo este perfil como avatar.\n Nuxy: Excelente elección! Serás, un granjero de 44 años.\n Dofter: Nada más respetado en una civilización que un granjero, soporte lógico de una civilización. \n Nuxy: No necesariamente aquí pero es un oficio digno, lógicamente.\n (luego de la transgenemutación)\n \n Dofter: Ya estoy listo para salir a explorar!\n Nuxy: La primera misión es colocar subterráneamente un comunicador cuántico bajo una antena de telecomunicaciones para así conectarnos a su Internet, me muero de felicidad, ansío tanto poder interactuar libremente. Tener que leer y descifrar comunicaciones es muy denso.\n (Dofter sale de la nave)\n Nuxy: Estás en un bosque, alrededor tuyo hay árboles y arbustos. Dirígete hacia el punto en tu radar.\n Dofter: Quieres que colecte muestras en el viaje?\n Nuxy: Está bien! Colecta 4 hojas, son esas láminas verdes pequeñas que cuelgan de los cilindros duros llamados ramas.\n Dofter: Ya estoy cerca.\n Nuxy: Verás algo gris en el suelo, se llama asfalto y por allí se desplazan vehículos. Ten cuidado, no tienen sistemas antiimpacto, así que pueden dañarte. Cruzando el asfalto (autopista) verás una torre enrejada. Asegúrate de no estar siendo visto por humanos y da un salto por arriba de la reja, dispara el nodo cuántico en el suelo.\n Dofter: Veo lo que decís, tu lo ves?\n Nuxy: saca tu collar así tengo visión. Sí, estás cerca, puedo verlo desde los satélites.\n Dofter: Voy a cruzar.\n (cruza la autopista y unos vehículos empiezan a tocar bocina)\n Nuxy: Ten cuidado, esos vehículos están siendo manejados por seres humanos. \n Dofter: Por qué harían eso? Espera! uno de esos vehículos se ha detenido. Se baja el bipedo, creo que viene hacia mí.\n Nuxy: mmm, me temo que quiere dañarte con intención cohesiva.\n Dofter: A que te refieres?\n Conductor: Hey, imbecil! Que te pasa? querés que te pisen?\n \n Dofter: Hola, humano, salud y saludos!\n Conductor: Vos sos idiota? Casi me mato por tu culpa! \n Dofter: Qué hago, Nuxy?\n ",
+            "(CSG 01.03) \nNuxy: Pídele disculpas, y luego corre adentrándote en el bosque de aquel lado de la autopista. \nDofter: Afirmativo!\nDofter: Le pido disculpas, humano!\n(Dofter corre al bosque)\n(El conductor grita otro improperio)\nNuxy: Escucha, esperemos a que el conductor se vaya y luego sigues con tu misión.\nDofter: Por qué me escondo de los humanos?\nNuxy: No están preparados para recibirnos.\nDofter: Eso lo entiendo pero por qué no me dejaste interactuar más con ese bípedo?\nNuxy: Tenía los nervios alterados, la racionalidad no era una opción. Veo que el conductor se ha retirado. Vuelve! Tenemos tiempo acotado, es probable que llame a la Policía.\nDofter: En curso, luego me explicas que es la policía.\nNuxy: La policía es un sistema para la aplicación de orden y justicia. Son los que obligan a que las leyes se cumplan. Las leyes son algo así como los protocolos. La gente no siempre obedece y no solo por ignorancia si no por voluntad.\nDofter: No obedecen los protocolos? Cual es su problema?\nNuxy: Tampoco lo entiendo mucho por eso necesito que conectes el nodo. Aparentemente tienen una especie de instinto llamado maldad.\nDofter: Estoy en la reja, no hay nadie, voy a saltar.\n(Dofter salta 3 metros, atraviesa la reja, se posiciona cerca de la antena, dispara el nodo hacia el suelo, se va saltando otra vez)\nDofter: Misión cumplida, Nuxy. Fue una misión impecable.\nNuxy: Yo no diría impecable pero si exitosa, ahora vuelve a cruzar la autopista pero ten en cuenta que los humanos tienen una reacción de 200 ms. Manten una distancia prudente entre vehiculos.\nDofter: Protocolo aceptado, cruzo.\nNuxy: Sí! Qué bien! tengo Internet! Vaya, esto es fabuloso! \nDofter: Qué cosa? \nNuxy: Tengo estudios biológicos de casi todos los seres vivos.\nDofter: Entonces no son necesarias las muestras de seres?\nNuxy: No creo que necesitemos abducir a nadie. Déjame un par de horas con esto y te digo tu siguiente misión.\n\n(Dofter vuelve a la nave)\n(Unas horas después)\nNuxy: Cambio de planes, ya tienes refugio humano.\nDofter: Qué quieres decir?\nNuxy: Adquirí un rancho a unos kilómetros, felicitaciones eres el nuevo propietario de una modesta granja. \nDofter: Entiendo, decodificaste su sistema monetario. Pero eso no iría en contra del protocolo?\nNuxy: Si crees que lo he robado, estás equivocado solo puse a trabajar a la computadora, abrí muchas cuentas de contenido pago y luego hice inversiones con lo ganado. Conseguí el dinero legalmente. Además las leyes solo aplican a los humanos. Ahora ve a tu nuevo rancho.\nDofter: No entendí nada de lo que hiciste, solo me importa que no hayamos roto el protocolo. Mándame coordenadas.\n"
+        ];
+        
+        function displayPage() {
+            document.getElementById('content').textContent = pages[currentPage - 1];
+            document.getElementById('currentPage').textContent = currentPage;
+            document.getElementById('totalPages').textContent = pages.length;
+        }
+        
+        function nextPage() {
+            if (currentPage < pages.length) currentPage++;
+            displayPage();
+        }
+        
+        function previousPage() {
+            if (currentPage > 1) currentPage--;
+            displayPage();
+        }
+        
+        displayPage();
+    </script>
+</body>
+</html>
