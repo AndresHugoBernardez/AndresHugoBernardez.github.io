@@ -1,0 +1,24 @@
+
+
+[
+  {
+    "title": "Extintor flotante",
+    "content": [
+      "🔥 Idea para combatir incendios forestales aprovechando el propio calor del fuego 🔥",
+      "Imaginé un sistema de apoyo para drones basado en cápsulas flotantes.",
+      "La idea consiste en que un dron transporte una red de cápsulas infladas con un gas no inflamable, como helio. La flotabilidad ayudaría a reducir el peso efectivo que debe soportar el dron, permitiéndole transportar una mayor cantidad de agente extintor.",
+      "Cada cápsula contendría una pequeña La de polvo extintor, espuma o gel retardante y estaría diseñada para abrirse automáticamente mediante un mecanismo termosensible al detectar temperaturas elevadas. Así, el propio calor del incendio activaría la liberación del agente justo sobre la zona crítica.",
+      "",
+"Posibles ventajas:",
+"✅ Menor esfuerzo para el dron gracias a la flotabilidad de las cápsulas.",
+"✅ Liberación automática sin sistemas electrónicos complejos.",
+"✅ Posibilidad de cubrir un área amplia con muchas descargas pequeñas.",
+"✅ Sistema modular y escalable según el tamaño del inceforestaless solo un concepto inicial y seguramente requeriría muchas pruebas para evaluar su viabilidad, especialmente por el efecto del viento y las corrientes térmicas. Aun así, creo que podría ser una línea interesante para investigar en el desarrollo de nuevas herramientas de combate contra incendios forestales.",
+"",
+"Es solo un concepto inicial y seguramente requeriría muchas pruebas para evaluar su viabilidad, especialmente por el efecto del viento y las corrientes térmicas. Aun así, creo que podría ser una línea interesante para investigar en el desarrollo de nuevas herramientas de combate contra incendios forestales."
+],
+"images": [
+      "./images/noimages.jpg"
+    ]
+  }
+]
