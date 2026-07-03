@@ -20,5 +20,34 @@
 "images": [
       "./images/file_0000000048a871f5ab22593ef5328874.png"
     ]
-  }
+  },
+
+    {
+    "title": "Cable Lunar",
+    "content": [
+      "🌙 Perfil Lunar – Concepto de perfil óptico pasivo para captación y conducción de luz ambiental",
+"Propongo un perfil transparente cuya sección transversal está diseñada para captar, concentrar y guiar la luz ambiental sin utilizar energía eléctrica.",
+"Propuesta de sección",
+"• Superficie superior curva, diseñada para maximizar la captación de luz proveniente de múltiples direcciones (Sol, cielo, iluminación urbana e incluso luz lunar).",
+"• Región inferior reflectante, con una geometría que redirige la mayor parte de los rayos mediante reflexión hacia un único borde emisor.",
+"• Núcleo fotoluminiscente, ubicado cerca del recorrido principal de los rayos. Su función no es producir la iluminación principal, sino almacenar una pequeña fracción de la energía luminosa para proporcionar un resplandor residual cuando disminuye la luz incidente.",
+"• Aleta emisora flexible, situada en el borde inferior del perfil. Esta concentra la luz guiada y puede orientarse durante la instalación para dirigir la iluminación hacia el suelo, una pared, una escalera o cualquier otra superficie.",
+"Objetivo",
+"El objetivo es desarrollar un perfil óptico capaz de aprovechar la luz ya disponible en el entorno y transformarla en una línea luminosa útil, reduciendo o incluso eliminando la necesidad de alimentación eléctrica en determinadas aplicaciones de señalización o iluminación decorativa.",
+"Posibles aplicaciones",
+"• Senderos y caminos.",
+"• Escaleras.",
+"• Fachadas.",
+"• Jardines.",
+"• Señalización pasiva.",
+"• Arquitectura e iluminación ornamental.",
+"El siguiente paso sería modelar la sección mediante simulación de trazado de rayos (ray tracing) para optimizar la geometría y cuantificar cuánta luz puede concentrarse realmente en el borde emisor.",
+"Toda crítica técnica o sugerencia para mejorar el diseño será bienvenida."
+
+],
+"images": [
+      "./images/perfilLunar1.png",
+      "./images/perfilLunar2.png"
+    ]
+    }
 ]
