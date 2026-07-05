@@ -42,6 +42,7 @@
 "• Señalización pasiva.",
 "• Arquitectura e iluminación ornamental.",
 "El siguiente paso sería modelar la sección mediante simulación de trazado de rayos (ray tracing) para optimizar la geometría y cuantificar cuánta luz puede concentrarse realmente en el borde emisor."
+    ],
 "images": [
       "./images/perfilLunar1.png",
       "./images/perfilLunar2.png"
