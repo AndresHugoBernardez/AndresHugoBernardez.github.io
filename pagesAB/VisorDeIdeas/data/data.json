@@ -1,5 +1,4 @@
 
-
 [
   {
     "title": "Extintor flotante",
@@ -46,6 +45,39 @@
 "images": [
       "./images/perfilLunar1.png",
       "./images/perfilLunar2.png"
+    ]
+    },
+    
+    
+    
+    
+    
+    
+    
+        {
+    "title": "Tapas dentadas",
+    "content": 
+    [
+  "¿Y si las tapas de los envases se diseñaran para tener una segunda vida?",
+  "Cada día se fabrican miles de millones de tapas de botellas, frascos y bolígrafos.",
+  "Una vez cumplida su función, la mayoría termina como residuo.",
+  "Propongo un cambio muy simple: estandarizar el perfil exterior de las tapas para que funcione como una rueda dentada.",
+  "No sería necesario cambiar su función principal ni utilizar más material.",
+  "Bastaría con modificar el estampado o el molde para que los dientes tengan un perfil y un tamaño estándar (módulo), permitiendo que tapas de distintos fabricantes puedan engranar entre sí.",
+  "¿Qué se conseguiría?",
+  "♻️ Dar una segunda utilidad a un objeto que normalmente se desecha.",
+  "🤖 Crear una enorme fuente de componentes para robótica, educación y proyectos DIY.",
+  "📚 Permitir que estudiantes construyan mecanismos reales reutilizando residuos.",
+  "💰 Añadir valor al producto con un costo de fabricación prácticamente nulo.",
+  "🌍 Impulsar el ecodiseño y la economía circular desde el origen.",
+  "Estas tapas no reemplazarían a los engranajes industriales, pero sí serían ideales para mecanismos de baja carga: reductores, juguetes, modelos didácticos, sistemas de transmisión y prototipos.",
+  "Una pequeña modificación en el diseño de un envase podría convertir miles de millones de residuos potenciales en piezas mecánicas reutilizables.",
+  "A veces, la innovación no consiste en fabricar algo nuevo, sino en dar una segunda vida inteligente a lo que ya producimos.",
+  "#EconomíaCircular #Ecodiseño #Ingeniería #Robótica #EducaciónSTEM #Innovación #DiseñoIndustrial #Sostenibilidad #Maker #ReciclajeCreativo"
+],
+"images": [
+      "./images/tapasDentadas.png",
+      "./images/tapaFoto.jpg"
     ]
     }
 ]
