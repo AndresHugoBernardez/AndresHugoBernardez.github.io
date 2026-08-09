@@ -79,5 +79,37 @@
       "./images/tapasDentadas.png",
       "./images/tapaFoto.jpg"
     ]
-    }
+    },
+
+
+
+
+  {
+  "title": "Parrilloventor",
+  "content": [
+    "Freidora Térmica Off-Grid (Parrilloventor)",
+    "¿Y si repensamos los electrodomésticos desde la termodinámica básica y eliminamos la obsolescencia programada? 🚀",
+    "Las freidoras de aire revolucionaron nuestras cocinas, pero tienen un costo oculto: demandan hasta 2000W, estresan la red eléctrica local y dependen de componentes electrónicos sensibles al calor.",
+    "Me puse a pensar cómo podríamos llevar la ventaja de la cocción sin aceite al mundo off-grid, al camping o simplemente a un entorno donde queramos ahorrar energía de red. El resultado es un concepto de diseño que llamo Freidora Térmica Off-Grid (o cariñosamente, el \"Parrilloventor\").",
+    "El diseño es absurdamente simple y se basa en un principio clave: separar el almacenamiento de calor de la cámara de cocción.",
+    "",
+    "¿Cómo funciona?",
+    "🔥 1. El Cartucho Térmico: En lugar de una resistencia eléctrica, utilizamos una serpentina de acero sellada y rellena de arena de cuarzo (una excelente batería térmica). Este módulo se calienta directamente sobre brasas de carbón o una hornalla a gas. Una vez caliente, se inserta en la freidora.",
+    "🌪️ 2. Convección Independiente: Un ventilador blower de 12V, alimentado por un simple Power Bank USB, genera el ciclo de aire interno. Total independencia de la red eléctrica.",
+    "🎛️ 3. El Bypass Mecánico (La magia): Para que la comida quede crujiente, el aire debe impactar a máxima velocidad, por lo que no podemos bajar las revoluciones del motor. ¿La solución? Una válvula mecánica interna. Funciona como la canilla mezcladora de la ducha: una perilla exterior mueve una aleta que decide qué porcentaje del aire en circulación pasa por la serpentina caliente y cuánto la esquiva. Regulación de temperatura sin un solo microcontrolador.",
+    "",
+    "El impacto de este enfoque:",
+    "✅ Economía Circular: Materiales duraderos, económicos y reciclables.",
+    "✅ Eficiencia Energética: Aprovechamiento del gas o biomasa para la fuerza bruta (calor), y apenas unos pocos watts de una batería para el control del fluido (aire).",
+    "✅ Cero Obsolescencia: Al eliminar relés, termistores y placas de control expuestas a altas temperaturas, creamos una herramienta diseñada para durar décadas.",
+    "",
+    "A veces, la verdadera innovación no requiere procesadores más rápidos, sino mirar la dinámica de fluidos y la mecánica clásica para resolver problemas globales de consumo y acceso a la tecnología.",
+    "¿Qué opinan en la red? ¿Creen que hay mercado para electrodomésticos híbridos que prioricen la durabilidad mecánica por sobre la automatización electrónica? Los leo en los comentarios. 👇",
+    "",
+    "#Innovacion #BajaTecnologia #Sustentabilidad #Ingenieria #EconomiaCircular #OffGrid #Termodinamica"
+  ],
+  "images": [
+    "./images/freidoraDeAireACartucho.png"
+  ]
+}
 ]
