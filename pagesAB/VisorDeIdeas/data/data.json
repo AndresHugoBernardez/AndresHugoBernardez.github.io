@@ -111,5 +111,31 @@
   "images": [
     "./images/freidoraDeAireACartucho.png"
   ]
+},
+
+
+
+
+
+
+
+  {
+  "title": "Climatizador elastocalórico",
+  "content": [
+    "💡 Idea para un aire acondicionado ecológico sin gases refrigerantes 🌬️",
+    "Imaginé un sistema de refrigeración de desplazamiento sincronizado aprovechando la física del caucho al estirarse y contraerse.",
+    "La idea consiste en una matriz de tiras de caucho accionada por una varilla superior. Al subir y estirarse, el caucho genera calor y la propia elevación lo encaja mecánicamente en la ranura de un ducto exterior, donde una turbina expulsa la energía térmica al ambiente.",
+    "Al aflojar la tensión, el caucho absorbe calor y se enfría drásticamente. En este punto, una varilla inferior adosada a un resorte tira de la matriz hacia abajo manteniéndola recta y tensa, posicionándola en la ranura del ducto interior para que una segunda turbina haga circular y enfríe el aire de la habitación.",
+    "",
+    "Posibles ventajas:",
+    "✅ Cero uso de gases fluorados o contaminantes.",
+    "✅ Sincronización del cambio térmico y la posición física en un solo movimiento mecánico.",
+    "✅ Eliminación de compuertas motorizadas y electrónica compleja.",
+    "✅ El resorte inferior actúa como guiado de precisión evitando atascos y acumulando energía cinética.",
+    "",
+    "Es solo un concepto inicial y requeriría pruebas para evaluar la fatiga del material tras ciclos prolongados y optimizar la fuerza necesaria para el estiramiento. Aun así, creo que la refrigeración elastocalórica de bajo costo es una línea muy interesante para investigar soluciones sostenibles.",
+    "Fuente:https://youtube.com/shorts/0xPkfqKZKN4?si=j-43WtLutgaNyoAz"
+  ]
 }
+
 ]
