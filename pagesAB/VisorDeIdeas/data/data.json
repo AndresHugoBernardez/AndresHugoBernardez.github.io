@@ -136,6 +136,27 @@
     "Es solo un concepto inicial y requeriría pruebas para evaluar la fatiga del material tras ciclos prolongados y optimizar la fuerza necesaria para el estiramiento. Aun así, creo que la refrigeración elastocalórica de bajo costo es una línea muy interesante para investigar soluciones sostenibles.",
     "Fuente:<a href='https://youtube.com/shorts/0xPkfqKZKN4?si=j-43WtLutgaNyoAz'> short youtube</a>"
   ]
-}
+},
+
+  {
+"title": "Reloj analógico a 'digital'",
+"content": [
+"💡 ¿Se puede convertir un reloj analógico clásico en un display digital de 12 horas sin una sola línea de código ni motores complejos? ⏱️🔄",
+"Imaginé un sistema de máscaras mecánicas aprovechando la relación cinemática natural de la caja reductora interna (la tradicional relación 12:1 entre los ejes de horas y minutos).",
+"Desarmando el reloj y reubicando las agujas con discos transparentes en cada eje, logré un sistema que revela la hora exacta actual sobre un fondo contrastado, ocultando los números inactivos en apenas una hora de taller.",
+"Como alternativa óptica, este proyecto también puede abordarse utilizando láminas de film polarizador lineal rotadas a 90 grados. Al cruzar los polarizadores, la luz se bloquea por completo debido a la interferencia en la onda electromagnética, permitiendo encender y apagar los dígitos digitalmente de forma puramente pasiva.",
+"",
+"Posibles ventajas:",
+"✅ Sin necesidad de código, microcontroladores ni electrónica compleja.",
+"✅ Aprovechamiento directo de la física mecánica y óptica existente.",
+"✅ Dualidad de métodos: desde máscaras mecánicas económicas hasta efectos de obturación con polarización.",
+"✅ Reinterpretación creativa de componentes cotidianos.",
+"",
+"La ingeniería no siempre requiere agregar complejidad, sino simplificar y exprimir los principios físicos disponibles para crear soluciones ingeniosas y funcionales."
+],
+"images": [
+"./images/relojAnalogicoDigital.png"
+]
+  }
 
 ]
