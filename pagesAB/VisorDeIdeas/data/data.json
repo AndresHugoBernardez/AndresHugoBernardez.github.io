@@ -172,7 +172,7 @@
 "Con la polea alineada verticalmente, la tensión del cable presenta una componente vertical máxima, haciendo ascender la cabina.",
 "Al desplazar lateralmente la polea, el cable forma un ángulo θ, reduciendo la componente vertical:",
 "Fv=Tcos(θ)",
-"Cuando Fv<Mg, la gravedad provoca el descenso de la cabina.",
+"Cuando Fv &lt; Mg, la gravedad provoca el descenso de la cabina.",
 "El desplazamiento de la polea constituye así un control vectorial de la fuerza de elevación.",
 "",
 "Accionamiento",
