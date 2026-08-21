@@ -158,6 +158,51 @@
 "images": [
 "./images/relojAnalogicoDigital.jpg"
 ]
-  }
+  },
+  
+{"title":"Montacarga Vectorial",
+"content":[
+"Un sistema de elevación para robots pequeños, diseñado para trasladarlos verticalmente entre el piso y superficies elevadas como mesas o muebles.",
+"",
+"Principio de funcionamiento",
+"",
+"Una cabina guiada por un riel vertical solo puede desplazarse en el eje vertical.",
+"La cabina está vinculada mediante un cable a un contrapeso ligeramente más pesado.",
+"El cable pasa por una polea móvil lateralmente.",
+"Con la polea alineada verticalmente, la tensión del cable presenta una componente vertical máxima, haciendo ascender la cabina.",
+"Al desplazar lateralmente la polea, el cable forma un ángulo θ, reduciendo la componente vertical:",
+"Fv=Tcos(θ)",
+"Cuando Fv<Mg, la gravedad provoca el descenso de la cabina.",
+"El desplazamiento de la polea constituye así un control vectorial de la fuerza de elevación.",
+"",
+"Accionamiento",
+"",
+"El propio robot puede accionar una correa de transmisión ubicada en la cabina. Mediante un sistema de engranajes, la correa desplaza horizontalmente la polea vectorial, permitiendo al robot controlar su propia elevación.",
+"",
+"Retención mecánica",
+"",
+"La posición de la polea se mantiene mediante un engranaje horizontal y trabas accionadas por resortes, configuradas para permitir el desplazamiento en un sentido u otro.",
+"",
+"Esto permite:",
+"",
+"* subir;",
+"* detenerse sin consumo energético;",
+"* bajar;",
+"* mantener la posición ante una interrupción de alimentación.",
+"",
+"Concepto energético",
+"",
+"El sistema no utiliza el motor del robot para levantar directamente su propio peso. La energía potencial del contrapeso proporciona la mayor parte del trabajo mecánico. El robot solamente aporta energía para modificar la geometría del sistema y vencer pérdidas mecánicas.",
+"",
+"Característica distintiva",
+"",
+"El montacarga no controla directamente la fuerza de elevación: controla la dirección del vector de tensión mediante el desplazamiento de la polea.",
+"",
+"El resultado sería un ascensor gravitacional mecánicamente controlado por el propio robot, pensado para cargas pequeñas y movimientos lentos, con posibilidad de funcionamiento prácticamente sin consumo durante las etapas de retención."
+],
+"images":[
+  "./images/ascensorVectorial.png"
+]
+}
 
 ]
