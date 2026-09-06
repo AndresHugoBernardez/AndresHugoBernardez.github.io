@@ -210,7 +210,7 @@
   "¿Cuántos litros de agua potable tiramos por el inodoro cada día mientras descartamos agua perfectamente reutilizable del lavarropas? La transición hacia la eficiencia hídrica residencial no siempre exige sensores, microcontroladores ni electroválvulas costosas. A veces, la respuesta más elegante reside en llevar la mecánica de fluidos pasiva al límite mediante soluciones low-tech de alto impacto y cero consumo eléctrico.",
 "Este concepto de mochila de inodoro con doble flotador resuelve mecánicamente la priorización de flujos: mientras exista volumen proveniente del lavarropas, el flotador primario interrumpe la red potable. Si el caudal entrante supera la capacidad del depósito, un segundo flotador de sobrellenado acciona la válvula de descarga central por simple empuje hidrostático, canalizando el exceso directamente a la taza para evitar inundaciones sin depender de la red eléctrica.",
 "Para garantizar la durabilidad del sistema en condiciones reales, el diseño se optimiza con dos mejoras críticas: una trampa de pelusas extraíble en la admisión del agua gris y sellos de silicona de alta resistencia para prevenir la degradación por tensoactivos y detergentes. La innovación sostenible no radica en volver los sistemas más complejos, sino en hacerlos lo suficientemente simples, robustos y accesibles para que cualquiera pueda implementarlos."
-]
+],
 
 "images":[
   "./images/inodoroGris.png"
