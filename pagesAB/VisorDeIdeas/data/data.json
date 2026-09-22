@@ -280,5 +280,28 @@
 	],
 	"images":["./images/DepositoMuseo.jpg"]
 }
+	,{   
+"title":"🚪⏱️ Pasador temporizado",
+"content":[
+"Una idea simple para baños: un pasador mecánico con temporizador y alarma sonora mediante buzzer.",
+"",
+"La persona puede cerrar la puerta normalmente, pero después de un tiempo determinado —por ejemplo, 15 o 20 minutos— el sistema emite una alarma y finalmente libera el pasador.",
+"",
+"La idea es que el mecanismo principal sea completamente mecánico. La pila solamente alimentaría el buzzer.",
+"",
+"Podría utilizarse para evitar que queden atrapados durante períodos prolongados niños, personas con discapacidad o adultos mayores.",
+"",
+"Sin Wi-Fi.",
+"Sin aplicaciones.",
+"Sin electrónica complicada.",
+"",
+"Un pasador, un temporizador, un buzzer y un problema menos.",
+"",
+"💡 Una idea más para convertir una necesidad cotidiana en una solución sencilla.",
+"",
+"#Inventos #Innovación #Diseño #Ingeniería #Seguridad #Tecnología"
+],
+"images":["./images/pasador.png"]
+	}
   
 ]
