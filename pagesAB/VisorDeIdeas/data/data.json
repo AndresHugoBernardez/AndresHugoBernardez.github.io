@@ -302,6 +302,35 @@
 "#Inventos #Innovación #Diseño #Ingeniería #Seguridad #Tecnología"
 ],
 "images":["./images/pasador.png"]
-	}
+	},
+
+	{
+"title":"🥔 Papas Fritas rápidas",
+"content":[
+	"Truco arcaico para hacer papas 'fritas' al horno: más rápido, más baratas y más saludables.",
+  "",
+    "El mundo debe ahorrar recursos: Energía, aceite.",
+	"",
+    "A veces la solución a un problema de eficiencia cotidiano no es comprar un electrodoméstico nuevo, sino volver a la termodinámica básica.",
+"Cocinar papas bastón al horno partiendo de la papa cruda suele ser un proceso ineficiente: tarda más de 40 minutos, requiere mucho gas/electricidad, y si te pasás con el aceite o las amontonás, terminás con papas hervidas al vapor en lugar de crocantes.",
+"¿La solución? El blanqueado previo en agua hirviendo. Un proceso tan antiguo como efectivo.",
+"",
+"⏱️ El flujo optimizado (en 20 minutos):",
+"Precalentado paralelo: Ponés a hervir la olla con agua y, al mismo tiempo, metés la asadera con un hilo de aceite a precalentar en el horno al máximo.",
+"Precocción (4-5 min): Tiras las papas en el agua hirviendo hasta que el exterior empiece a ablandarse apenas.",
+"Sacudida y sellado: Colás las papas, las volcás de nuevo en la olla vacía con 1 cucharada de aceite y sacudís la olla tapada. Esto crea una fina película de almidón en la superficie.",
+"Horno directo (12-15 min): Las tirás sobre la asadera que ya está hirviendo. El impacto térmico inicial las sella al instante.",
+"",
+"🔬 ¿Por qué funciona tan bien desde la física y la química?",
+"Traspaso térmico eficiente: El agua transmite calor por conducción mucho más rápido que el aire seco del horno. Cocinar el centro en agua lleva 4 minutos; en el horno lleva 30.",
+"Reducción de almidón y textura: El hervor disuelve el exceso de almidón libre de la superficie, evitando que queden pastosas y garantizando una corteza crocante.
+"Cero absorción de grasa: Como la papa entra al horno con la estructura celular ya cocida y sellada, no "chupa" aceite hacia el interior. Solo necesitás una película mínima para dorar la superficie.",
+"Ahorro de recursos: Menos tiempo de horno encendido = menos consumo de gas/luz y fracción del uso de aceite comparado con la fritura tradicional.",
+"A veces, optimizar los procesos diarios solo requiere reordenar los pasos. 💡",
+    ""],
+    "images":["./images/AhorroPapas.jpg"]
+    
+    }
+    
   
 ]
