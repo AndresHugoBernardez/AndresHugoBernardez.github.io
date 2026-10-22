@@ -8,7 +8,7 @@
     <style>
         @font-face {
             font-family: 'DynamicPictogramFont';
-            src: url('ScleraFont.woff2') format('woff2');
+            src: url('https://AndresHugoBernardez.github.io/pagesAB/PictoWriter/ScleraFont.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
         }
@@ -203,11 +203,11 @@
            
 
                     
-                       console.log("palabras:")
+                       //console.log("palabras:")
                         synonymsWords.forEach(palabra => {
                             if (!uniqueSynonyms.includes(palabra) && palabra !== "") {
                                 uniqueSynonyms.push(palabra);
-                                console.log(palabra);
+                                //console.log(palabra);
                                 
                 
                             
@@ -216,7 +216,9 @@
                         
                 }
 
-                if(uniqueSynonyms.length>0){
+                // Solo añade sinónimos si no encontró la palabra exacta.
+                if(options.length==0){
+                    if(uniqueSynonyms.length>0){
                   uniqueSynonyms.forEach(palabra =>{
                                 if (pictogramData[palabra]) {
                                     options.push(...extractOptions(pictogramData[palabra]));
@@ -227,8 +229,13 @@
                         });
                     }
 
+                }
+
+
                 // Si no hay mapeo en el JSON, mostramos el token original como respaldo para ver si la fuente afecta a los caracteres
                 let activeChar = options.length > 0 ? String.fromCodePoint(parseInt(options[0], 16)) : token; 
+
+                
              
                 pictoBox.textContent = activeChar;
 
