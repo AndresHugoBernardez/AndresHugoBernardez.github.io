@@ -1,6 +1,7 @@
 {
   "niño": {
     "codigos": [
+      "F1F13",
       "F0000",
       "F0055",
       "F032C",
@@ -19,13 +20,13 @@
       "F1F0E",
       "F1F0F",
       "F1F12",
-      "F1F13",
       "F1F39",
       "F20EC",
       "F2AFE",
       "F2AFF"
     ],
     "tags": [
+      "niño",
       "un niño hablando enfadado con un adulto",
       "Abuelo con el niño",
       "Hablando con enojo, un niño a un adulto_1",
@@ -44,7 +45,6 @@
       "niñera trayendo al niño_1",
       "niñera trayendo al niño_2",
       "niño bebe",
-      "niño",
       "nombre del niño",
       "pasear a un niño por el parque en el parque",
       "traer al niño",
@@ -1455,10 +1455,7 @@
       "F0BE5",
       "F0BE6",
       "F0BE7",
-      "F0BE8",
-      "F0BE9",
       "F0BEA",
-      "F0BEB",
       "F0BEC",
       "F0BED",
       "F0BEE",
@@ -1517,10 +1514,7 @@
       "botón de parada del tranvía_2",
       "botón de parada del tranvía_3",
       "botón de parrilla del horno b4",
-      "botón de pene circuncidado",
-      "botón de vagina",
       "botón del panel táctil derecho del ratón",
-      "botón del pene",
       "botón derecho de la rata",
       "botón nodo",
       "botón vacío del horno",
@@ -21965,6 +21959,7 @@
   },
   "no": {
     "codigos": [
+      "F1F32",
       "F026B",
       "F02BF",
       "F02C0",
@@ -22061,7 +22056,6 @@
       "F1F2F",
       "F1F30",
       "F1F31",
-      "F1F32",
       "F22E0",
       "F22E1",
       "F22E2",
@@ -22081,6 +22075,7 @@
       "F2B43"
     ],
     "tags": [
+      "no",
       "El papel higiénico no está sucio",
       "Espacio de visualización no tranquilo para ver",
       "Espacio de visualización no tranquilo para ver_1",
@@ -22177,7 +22172,6 @@
       "no te quedes en el patio de juegos_2",
       "no te quedes en el patio de recreo_1",
       "no tener ideas",
-      "no",
       "plato no vacío",
       "plato no vacío_1",
       "plato no vacío_2",
@@ -23173,8 +23167,6 @@
     "codigos": [
       "F028F",
       "F029C",
-      "F0BE8",
-      "F0BEB",
       "F14F8",
       "F1B02",
       "F1B18",
@@ -23192,8 +23184,8 @@
     "tags": [
       "Enjuagar el pene",
       "Enjuague el pene_1",
-      "botón de pene circuncidado",
-      "botón del pene",
+      "grano de pene circuncidado",
+      "grano del pene",
       "erección del pene",
       "lavar el pene ",
       "lavar pene circuncidado",
@@ -24859,23 +24851,23 @@
   },
   "temperatura": {
     "codigos": [
+      "F299B",
       "F02D2",
       "F02D3",
       "F0717",
       "F072E",
       "F072F",
-      "F299B",
       "F299C",
       "F299D",
       "F2A75"
     ],
     "tags": [
+      "termómetro con indicador de temperatura",
       "Etiqueta de secadora de baja temperatura",
       "Etiqueta de secadora de ropa a temperatura normal",
       "Termómetro con temperatura fría_1",
       "Tomando la temperatura anal",
       "Tomando la temperatura del oído",
-      "termómetro con indicador de temperatura",
       "termómetro con temperatura alta",
       "termómetro con temperatura fría",
       "tomando la temperatura anal_1"
@@ -34193,24 +34185,6 @@
       "No interrumpas la conversación_1"
     ]
   },
-  "le": {
-    "codigos": [
-      "F04E7",
-      "F2B8C"
-    ],
-    "tags": [
-      "No le gusta el coito anal",
-      "unonner le coup de tête"
-    ]
-  },
-  "gusta": {
-    "codigos": [
-      "F04E7"
-    ],
-    "tags": [
-      "No le gusta el coito anal"
-    ]
-  },
   "coito": {
     "codigos": [
       "F04E7",
@@ -39115,25 +39089,25 @@
   },
   "seco": {
     "codigos": [
+      "F1627",
       "F0677",
       "F11A7",
       "F161B",
       "F161C",
       "F161D",
       "F161E",
-      "F1627",
       "F21BF",
       "F2287",
       "F2C3B"
     ],
     "tags": [
+      "etiqueta sin limpieza en seco ",
       "Seco entre los dedos de los pies",
       "cuello seco",
       "etiqueta de limpieza en seco de hidrocarburos _1",
       "etiqueta de limpieza en seco de hidrocarburos",
       "etiqueta de limpieza en seco percloroetileno",
       "etiqueta de limpieza en seco percloroetileno_1",
-      "etiqueta sin limpieza en seco ",
       "pene seco",
       "pincel seco ",
       "vientre seco"
@@ -41533,18 +41507,6 @@
     ],
     "tags": [
       "Tocar otra cara deseable"
-    ]
-  },
-  "tomando": {
-    "codigos": [
-      "F072E",
-      "F072F",
-      "F2A75"
-    ],
-    "tags": [
-      "Tomando la temperatura anal",
-      "Tomando la temperatura del oído",
-      "tomando la temperatura anal_1"
     ]
   },
   "toque": {
@@ -49801,36 +49763,36 @@
   },
   "circuncidado": {
     "codigos": [
+      "pene circuncidado",
       "F0BE8",
       "F1B18",
       "F1B19",
-      "F21BE",
       "F2450",
       "F2C0A"
     ],
     "tags": [
-      "botón de pene circuncidado",
+      "pene circuncidado",
+      "grano de pene circuncidado",
       "lavar pene circuncidado",
       "lavar pene no circuncidado",
-      "pene circuncidado",
       "pústula de pene circuncidado",
       "verruga del pene circuncidado"
     ]
   },
   "vagina": {
     "codigos": [
+      "F2BC7"
       "F0BE9",
       "F1259",
       "F1B0E",
       "F1B1A",
-      "F2BC7"
     ],
     "tags": [
-      "botón de vagina",
+      "vagina"
+      "grano de vagina",
       "dedo en la vagina masturbación femenina",
       "lavar la vagina",
       "lavar vagina_1",
-      "vagina"
     ]
   },
   "panel": {
@@ -57525,24 +57487,6 @@
       "masturbación_2",
       "masturbación_22",
       "masturbación_3"
-    ]
-  },
-  "femenina": {
-    "codigos": [
-      "F1259",
-      "F18D4",
-      "F1B5A",
-      "F1D54",
-      "F1D55",
-      "F1D56"
-    ],
-    "tags": [
-      "dedo en la vagina masturbación femenina",
-      "homosexualidad femenina",
-      "lencería femenina",
-      "masturbación femenina",
-      "masturbación femenina_1",
-      "masturbación femenina_22"
     ]
   },
   "sangrante": {
@@ -77809,14 +77753,6 @@
     ],
     "tags": [
       "tejido de encaje"
-    ]
-  },
-  "tejidos": {
-    "codigos": [
-      "F294F"
-    ],
-    "tags": [
-      "tejidos del orgasmo masculino"
     ]
   },
   "tamiz": {
