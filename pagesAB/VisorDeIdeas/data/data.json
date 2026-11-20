@@ -330,7 +330,76 @@
     ""],
     "images":["./images/AhorroPapas.jpg"]
     
-    }
+    },
+
+{
+    "title": "Stackable Jumper System",
+    "content": [
+		"🔌 **Stackable Jumper System: ¿Y si los circuitos en protoboard fueran tan fáciles de conectar como piezas de LEGO?**",
+		"",
+		"",
+		"Quienes experimentamos con electrónica conocemos el problema: una protoboard puede terminar convertida en un verdadero *cable spaghetti*.",
+		"",
+		"Cables Dupont de diferentes longitudes, conexiones difíciles de seguir, cruces incómodos y circuitos que se vuelven cada vez más desordenados.",
+		"",
+		"💡 **Mi propuesta: Stackable Jumper System.**",
+		"",
+		"Un sistema de interconexión modular diseñado para organizar y simplificar el cableado de las protoboards.",
+		"",
+		"La idea se basa en tres componentes:",
+		"",
+		"🔴 **1. Pistas microperforadas**",
+		"",
+		"Barras conductoras rígidas con perforaciones cada 2,54 mm, cortables a medida y disponibles en distintos colores para identificar VCC, GND y señales.",
+		"",
+		"🔌 **2. Pines estaca apilables**",
+		"",
+		"Conectores macho-hembra que permiten fijar las pistas al protoboard y continuar conectando componentes desde arriba.",
+		"",
+		"🧩 **3. Uniones modulares**",
+		"",
+		"Conectores dobles y triples para realizar extensiones, derivaciones en T, cruces y conexiones en diferentes niveles.",
+		"",
+		"🚀 **¿Qué buscamos conseguir?**",
+		"",
+		"- Circuitos más prolijos y fáciles de interpretar.",
+		"- Menos cables sueltos y conexiones improvisadas.",
+		"- Mayor rapidez para montar y modificar prototipos.",
+		"- Posibilidad de construir conexiones en varios niveles.",
+		"- Una experiencia de aprendizaje más visual y organizada.",
+		"",
+		"Imaginen poder distribuir alimentación, señales y conexiones auxiliares utilizando piezas rígidas que encajan entre sí, sin tener que fabricar cada jumper individualmente.",
+		"",
+		"**La electrónica también puede ser modular en su cableado.**",
+		"",
+		"Esta es una propuesta conceptual que todavía requiere desarrollo y validación técnica.",
+		"",
+		"Me interesa conocer la opinión de la comunidad electrónica:",
+		"",
+		"¿Utilizarían un sistema así en sus prototipos, laboratorios o aulas?",
+		"",
+		"¿Ven alguna dificultad técnica que debería resolver antes de construir el primer prototipo?",
+		"",
+		"💡 Las buenas ideas mejoran cuando se comparten.",
+		"",
+		"— Andrés Bernárdez",
+		"",
+		"#Electrónica #Prototipado #Arduino #Hardware #EducaciónTecnológica #Innovación #DIY",
+		"",
+
+		"🚀 Una posibilidad adicional: ¿Y si ni siquiera necesitáramos una protoboard?",
+		"",
+		"Al desarrollar esta idea aparece una posibilidad todavía más interesante: utilizar las propias pistas microperforadas como estructura de montaje y conexión del circuito. Los componentes podrían conectarse directamente mediante los pines estaca y las uniones modulares, construyendo circuitos sin necesidad de una protoboard convencional.",
+		"",
+		"Esto abriría la puerta a un sistema de prototipado electrónico autónomo, expandible y tridimensional, donde el propio cableado constituye la estructura del circuito.",
+		""
+		],
+
+	"images": [
+		"./images/Sistema de Jumpers Modulares para Protoboard.png",
+		"./images/ImgConceptualStacableJumper.png"
+		]
+	}	
     
   
 ]
