@@ -333,7 +333,7 @@
     },
 
 {
-    "title": "Stackable Jumper System",
+    "title": "🗡🔌Stackable Jumper System",
     "content": [
 		"🔌 **Stackable Jumper System: ¿Y si los circuitos en protoboard fueran tan fáciles de conectar como piezas de LEGO?**",
 		"",
@@ -348,17 +348,18 @@
 		"",
 		"La idea se basa en tres componentes:",
 		"",
-		"🔴 **1. Pistas microperforadas**",
+		"🔴 **1. Pistas microperforadas (jumpers hembras de perforaciones con contacto pasantes)**",
 		"",
 		"Barras conductoras rígidas con perforaciones cada 2,54 mm, cortables a medida y disponibles en distintos colores para identificar VCC, GND y señales.",
 		"",
-		"🔌 **2. Pines estaca apilables**",
+		"🔌 **2. Pines estaca apilables (pin hembra-macho con espada larga)**",
 		"",
 		"Conectores macho-hembra que permiten fijar las pistas al protoboard y continuar conectando componentes desde arriba.",
+		"La parte hembra tiene doble función: ser la 'empuñadura' de la estaca y permitir conectar otros pines arriba",
 		"",
-		"🧩 **3. Uniones modulares**",
+		"🧩 **3. Uniones modulares (jumpers machos dobles y triples/ pines estacas dobles y triples)**",
 		"",
-		"Conectores dobles y triples para realizar extensiones, derivaciones en T, cruces y conexiones en diferentes niveles.",
+		"Conectores dobles y triples para realizar extensiones, derivaciones en T, ensambles L, ensambles/derivación X/cruces y conexiones en diferentes niveles.",
 		"",
 		"🚀 **¿Qué buscamos conseguir?**",
 		"",
@@ -382,8 +383,6 @@
 		"",
 		"💡 Las buenas ideas mejoran cuando se comparten.",
 		"",
-		"— Andrés Bernárdez",
-		"",
 		"#Electrónica #Prototipado #Arduino #Hardware #EducaciónTecnológica #Innovación #DIY",
 		"",
 
@@ -392,7 +391,7 @@
 		"Al desarrollar esta idea aparece una posibilidad todavía más interesante: utilizar las propias pistas microperforadas como estructura de montaje y conexión del circuito. Los componentes podrían conectarse directamente mediante los pines estaca y las uniones modulares, construyendo circuitos sin necesidad de una protoboard convencional.",
 		"",
 		"Esto abriría la puerta a un sistema de prototipado electrónico autónomo, expandible y tridimensional, donde el propio cableado constituye la estructura del circuito.",
-		""
+		"",
 		],
 
 	"images": [
